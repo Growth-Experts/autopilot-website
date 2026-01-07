@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Clock, Shield, Users } from "lucide-react";
 import DashboardImage from "@assets/generated_images/saas_dashboard_workflow_interface.png";
+import LogoApprovals from "@assets/Autopilot_Logo_Approvals_-_Primary_1767782851207.png";
+import LogoOnboarding from "@assets/Autopilot_Logo_Onboarding_-_Primary_1767782851208.png";
 import { Link } from "wouter";
 
 export default function Home() {
@@ -66,13 +68,13 @@ export default function Home() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          {/* Autopilot Onboarding - Swapped to Accent/Orange */}
           <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
-            <div className="h-3 bg-primary w-full"></div>
+            <div className="h-3 bg-accent w-full"></div>
             <CardHeader className="pt-8 pb-4">
-              <div className="mb-4 w-12 h-12 rounded-none bg-blue-100 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                <Users size={24} />
+              <div className="mb-4 h-12 flex items-center justify-start">
+                <img src={LogoOnboarding} alt="Autopilot Onboarding" className="h-full w-auto" />
               </div>
-              <CardTitle className="text-2xl font-bold">Autopilot Onboarding</CardTitle>
               <h3 className="text-lg text-accent font-medium mt-1">One Coordinated Onboarding Flow</h3>
             </CardHeader>
             <CardContent>
@@ -97,20 +99,20 @@ export default function Home() {
               </div>
             </CardContent>
             <CardFooter className="pb-8">
-              <Button className="w-full bg-primary hover:bg-primary/90">
+              <Button className="w-full bg-accent hover:bg-accent/90 text-white">
                 Explore Onboarding <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </CardFooter>
           </Card>
 
+          {/* Autopilot Approvals - Swapped to Primary/Blue */}
           <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
-            <div className="h-3 bg-accent w-full"></div>
+            <div className="h-3 bg-primary w-full"></div>
             <CardHeader className="pt-8 pb-4">
-              <div className="mb-4 w-12 h-12 rounded-none bg-orange-100 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
-                <CheckCircle size={24} />
+              <div className="mb-4 h-12 flex items-center justify-start">
+                <img src={LogoApprovals} alt="Autopilot Approvals" className="h-full w-auto" />
               </div>
-              <CardTitle className="text-2xl font-bold">Autopilot Approvals</CardTitle>
-              <h3 className="text-lg text-accent font-medium mt-1">One Workflow for All Internal Teams</h3>
+              <h3 className="text-lg text-primary font-medium mt-1">One Workflow for All Internal Teams</h3>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-6 min-h-[80px]">
@@ -135,7 +137,7 @@ export default function Home() {
             </CardContent>
             <CardFooter className="pb-8">
               <Link href="/products">
-                <Button className="w-full bg-accent hover:bg-accent/90 text-white">
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white">
                   Explore Approvals <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>

@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import LogoApprovals from "@assets/Autopilot_Logo_Approvals_-_Primary_1767782851207.png";
+import LogoOnboarding from "@assets/Autopilot_Logo_Onboarding_-_Primary_1767782851208.png";
 
 export default function Products() {
   return (
@@ -22,7 +24,7 @@ export default function Products() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5 space-y-6">
               <div className="inline-block px-3 py-1 bg-blue-100 text-primary font-bold rounded-none text-sm mb-2">External + Internal</div>
-              <h2 className="text-3xl md:text-4xl font-bold text-primary">Autopilot Onboarding</h2>
+              <img src={LogoOnboarding} alt="Autopilot Onboarding" className="h-16 w-auto" />
               <h3 className="text-xl text-accent font-medium">One Coordinated Onboarding Flow</h3>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Connect external parties with internal teams through a single, step-by-step digital process that captures clean, validated data from the start.
@@ -77,8 +79,8 @@ export default function Products() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5 space-y-6 lg:order-last">
               <div className="inline-block px-3 py-1 bg-orange-100 text-accent font-bold rounded-none text-sm mb-2">Internal Teams</div>
-              <h2 className="text-3xl md:text-4xl font-bold text-primary">Autopilot Approvals</h2>
-              <h3 className="text-xl text-accent font-medium">One Workflow for All Internal Teams</h3>
+              <img src={LogoApprovals} alt="Autopilot Approvals" className="h-16 w-auto" />
+              <h3 className="text-xl text-primary font-medium">One Workflow for All Internal Teams</h3>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Replace spreadsheets, inbox approvals, and mental checklists with parallel, auditable approval workflows that scale across teams.
               </p>

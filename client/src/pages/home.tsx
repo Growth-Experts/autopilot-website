@@ -11,6 +11,7 @@ import LogoBidvest from "@assets/bidvest-logo_1767792280625.png";
 import LogoMetrofile from "@assets/metrofile-logo_1767792280626.png";
 import LogoTongaat from "@assets/Tongaat-Huletts-Logo_1767792280626.png";
 import LaptopImage from "@assets/app-screenshot_1767787178377.png";
+import OverviewImage from "@assets/app_screenshot_1767792853559.png";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 
@@ -313,17 +314,13 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="bg-white rounded-none p-2 border border-gray-200 shadow-xl overflow-hidden min-h-[400px] flex items-center justify-center bg-gray-50">
-             {/* Screenshot Placeholder */}
-             <div className="text-gray-400 font-medium flex flex-col items-center gap-4">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm">
-                  <Layers className="w-8 h-8 text-gray-300" />
-                </div>
-                <div className="text-center">
-                  <p className="text-lg font-semibold text-gray-500">Platform Overview Screenshot</p>
-                  <p className="text-sm text-gray-400">Dashboard or Workflow View</p>
-                </div>
-             </div>
+          <div className="bg-white rounded-none p-2 border border-gray-200 shadow-xl overflow-hidden flex items-center justify-center bg-gray-50 relative group hover:shadow-2xl transition-shadow duration-300">
+             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent z-10"></div>
+             <img 
+               src={OverviewImage} 
+               alt="Autopilot Platform Overview" 
+               className="w-full h-auto object-cover"
+             />
           </div>
         </div>
       </Section>

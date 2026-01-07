@@ -16,11 +16,11 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8 animate-in slide-in-from-left duration-700">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight text-primary">
-                Stop Chasing <br/>
-                <span className="text-accent">Email Threads.</span>
+                Stop Chasing Email Threads. <br/>
+                <span className="text-accent">Start Process Automation That Scales.</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-                Start process automation that scales. Autopilot replaces confusing emails, duplicate requests, and scattered internal tasks with one clear, guided workflow.
+                Autopilot replaces confusing emails, duplicate requests, and scattered internal tasks with one clear, guided workflow.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold h-14 px-8 text-lg">

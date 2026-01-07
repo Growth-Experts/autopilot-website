@@ -20,6 +20,8 @@ import app_screenshot__1_ from "@assets/app screenshot (1).png";
 
 import app_screenshot__1__Background_Removed from "@assets/app screenshot (1) Background Removed.png";
 
+import app_screenshot_left from "@assets/app-screenshot-left.png";
+
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -287,7 +289,7 @@ export default function Home() {
                    style={{ left: 'calc(50% - 50vw)' }}
                  >
                     <img 
-                      src={LeftScreenshot} 
+                      src={app_screenshot_left} 
                       alt="Autopilot Dashboard" 
                       className="w-full h-auto object-contain object-left"
                     />

@@ -278,31 +278,27 @@ export default function Home() {
         </div>
       </Section>
       {/* Features / Advantage */}
-      <section className="py-16 md:py-24 bg-gray-50 overflow-hidden">
-        <div className="container mx-auto px-4 relative">
+      <section className="relative py-16 md:py-24 bg-gray-50 overflow-hidden">
+        {/* Desktop Image - Absolute Flush Left */}
+        <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[50vw] z-10">
+           <img 
+             src={LeftScreenshot} 
+             alt="Autopilot Dashboard" 
+             className="w-full h-auto object-contain object-left"
+           />
+        </div>
+
+        <div className="container mx-auto px-4 relative z-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              {/* Image Column - Flush Left */}
-              <div className="relative order-2 lg:order-1">
-                 {/* Desktop Image */}
-                 <div 
-                   className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[45vw] z-10"
-                   style={{ left: 'calc(50% - 50vw)' }}
-                 >
-                    <img 
-                      src={app_screenshot_left} 
-                      alt="Autopilot Dashboard" 
-                      className="w-full h-auto object-contain object-left"
-                    />
-                 </div>
-                 
-                 {/* Mobile Image */}
+              {/* Left Column (Spacer for Desktop, Image for Mobile) */}
+              <div className="order-2 lg:order-1">
                  <div className="lg:hidden w-full">
                     <img src={LeftScreenshot} alt="Autopilot Dashboard" className="w-full h-auto" />
                  </div>
               </div>
 
               {/* Text Column */}
-              <div className="space-y-8 order-1 lg:order-2 z-10 relative">
+              <div className="space-y-8 order-1 lg:order-2">
                 <div>
                   <h2 className="text-3xl md:text-4xl font-bold mb-4">The Autopilot Advantage</h2>
                   <p className="text-xl text-accent font-medium">Made for People. Powered by Process. Enhanced by AI.</p>

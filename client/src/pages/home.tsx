@@ -314,14 +314,11 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="bg-white rounded-none p-2 border border-gray-200 shadow-xl overflow-hidden flex items-center justify-center bg-gray-50 relative group hover:shadow-2xl transition-shadow duration-300">
-             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent z-10"></div>
-             <img 
-               src={OverviewImage} 
-               alt="Autopilot Platform Overview" 
-               className="w-full h-auto object-cover"
-             />
-          </div>
+          <img 
+             src={OverviewImage} 
+             alt="Autopilot Platform Overview" 
+             className="w-full h-auto object-contain shadow-xl"
+          />
         </div>
       </Section>
       {/* Stats/Results */}

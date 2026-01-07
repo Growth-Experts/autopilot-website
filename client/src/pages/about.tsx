@@ -1,6 +1,7 @@
 import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import OfficeImage from "@assets/generated_images/professional_corporate_office_team.png";
+import AdamPhoto from "@assets/adam_shapiro_1767786578211.jpg";
 
 export default function About() {
   return (
@@ -36,10 +37,7 @@ export default function About() {
           
           <div className="bg-white rounded-none shadow-lg overflow-hidden flex flex-col md:flex-row">
             <div className="md:w-1/3 bg-gray-200 min-h-[300px] relative">
-               {/* Placeholder for Adam's photo if we had one, otherwise a generic silhouette or pattern */}
-               <div className="absolute inset-0 flex items-center justify-center text-gray-400 bg-gray-300">
-                 [Adam Shapiro Photo]
-               </div>
+               <img src={AdamPhoto} alt="Adam Shapiro" className="absolute inset-0 w-full h-full object-cover" />
             </div>
             <div className="md:w-2/3 p-8 md:p-12 space-y-4">
               <h3 className="text-2xl font-bold text-primary">Adam Shapiro</h3>

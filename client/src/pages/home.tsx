@@ -84,7 +84,7 @@ export default function Home() {
           <p className="text-center text-gray-500 font-medium mb-8 text-sm uppercase tracking-wider">
             Proudly powering process for these leading companies
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 grayscale opacity-70 hover:opacity-100 transition-opacity duration-300">
+          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 transition-opacity duration-300">
              <img src={Logo3Way} alt="3Way" className="h-8 md:h-12 w-auto object-contain" />
              <img src={LogoBidvest} alt="Bidvest" className="h-8 md:h-10 w-auto object-contain" />
              <img src={LogoLawd} alt="LAWD" className="h-8 md:h-12 w-auto object-contain" />

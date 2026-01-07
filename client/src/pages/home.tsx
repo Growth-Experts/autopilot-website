@@ -7,6 +7,7 @@ import LogoOnboarding from "@assets/Autopilot_Logo_Onboarding_-_Primary_17677828
 import LogoLawd from "@assets/lawd-logo_1767785021289.png";
 import LogoSyntech from "@assets/Syntech-Logo_1767785021290.png";
 import BackofficeImage from "@assets/Backoffice_004_1767785634187.PNG";
+import LaptopFrame from "@assets/generated_images/macbook_pro_laptop_isolated_on_white_background.png";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 
@@ -22,13 +23,13 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             {/* Left Column: Text Content */}
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="lg:col-span-3 space-y-8 text-center lg:text-left z-10"
+              className="space-y-8 text-center lg:text-left z-10"
             >
               <h1 className="text-4xl md:text-6xl md:leading-[1.1] font-bold text-primary tracking-tight">
                 Stop Chasing Email Threads. <br className="hidden md:block" />
@@ -56,29 +57,18 @@ export default function Home() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative lg:col-span-2 lg:translate-x-12 xl:translate-x-24"
+              className="relative w-full max-w-[900px] lg:w-[140%] lg:-mr-[40%]"
             >
-              {/* Laptop Frame (CSS-based) */}
-              <div className="relative mx-auto w-full max-w-[600px]">
-                {/* Lid */}
-                <div className="relative bg-[#272729] rounded-t-xl p-[3%] shadow-2xl ring-1 ring-white/10">
-                   {/* Camera */}
-                   <div className="absolute top-[4%] left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-[#4a4a4a] rounded-full z-20 shadow-inner"></div>
-                   
-                   {/* Screen Container with Border */}
-                   <div className="relative bg-black rounded overflow-hidden shadow-inner ring-1 ring-black">
-                      <img src={BackofficeImage} alt="Autopilot Dashboard" className="w-full h-auto block" />
-                   </div>
-                </div>
-                
-                {/* Base Top (Hinge Area) */}
-                <div className="relative h-3 bg-[#3a3a3c] rounded-b-sm mx-[3%] z-10 shadow-md flex justify-center">
-                   <div className="w-[15%] h-full bg-[#1c1c1e] rounded-b-md"></div>
-                </div>
-                
-                {/* Base Bottom */}
-                <div className="relative h-2 bg-[#e2e2e4] rounded-b-xl mx-[1%] shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)] bg-gradient-to-b from-[#d1d1d6] to-[#aeaeb2]"></div>
-              </div>
+               <div className="relative">
+                 {/* Laptop Frame */}
+                 <img src={LaptopFrame} alt="MacBook Pro" className="w-full relative z-20 pointer-events-none" />
+                 
+                 {/* Screen Content - Absolute Positioned */}
+                 {/* Adjust these percentages based on the generated image bezel size */}
+                 <div className="absolute top-[11%] left-[12.8%] w-[74.5%] h-[68%] z-10 overflow-hidden bg-black">
+                    <img src={BackofficeImage} alt="Autopilot Dashboard" className="w-full h-full object-cover object-top" />
+                 </div>
+               </div>
             </motion.div>
           </div>
         </div>

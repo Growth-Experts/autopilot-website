@@ -78,6 +78,18 @@ export default function Home() {
               <div className="mb-4 h-12 flex items-center justify-start">
                 <img src={LogoOnboarding} alt="Autopilot Onboarding" className="h-full w-auto" />
               </div>
+              
+              {/* Screenshot Placeholder */}
+              <div className="w-full h-48 bg-gray-100 border border-gray-200 rounded-none mb-4 flex items-center justify-center relative overflow-hidden group-hover:border-accent/20 transition-colors">
+                <div className="text-gray-400 text-sm font-medium flex flex-col items-center gap-2">
+                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+                     <LogoOnboarding className="w-6 h-6 opacity-50" /> {/* Just using as icon placeholder if it was a component, but it's an img src. Using generic icon instead */}
+                     <FileText className="w-6 h-6 text-gray-300" />
+                   </div>
+                   <span>App Screenshot Placeholder</span>
+                </div>
+              </div>
+
               <h3 className="text-lg text-accent font-medium mt-1">One Coordinated Onboarding Flow</h3>
             </CardHeader>
             <CardContent>
@@ -115,6 +127,17 @@ export default function Home() {
               <div className="mb-4 h-12 flex items-center justify-start">
                 <img src={LogoApprovals} alt="Autopilot Approvals" className="h-full w-auto" />
               </div>
+
+              {/* Screenshot Placeholder */}
+              <div className="w-full h-48 bg-gray-100 border border-gray-200 rounded-none mb-4 flex items-center justify-center relative overflow-hidden group-hover:border-[#3A82D3]/20 transition-colors">
+                <div className="text-gray-400 text-sm font-medium flex flex-col items-center gap-2">
+                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+                     <UserCheck className="w-6 h-6 text-gray-300" />
+                   </div>
+                   <span>App Screenshot Placeholder</span>
+                </div>
+              </div>
+
               <h3 className="text-lg text-primary font-medium mt-1">One Workflow for All Internal Teams</h3>
             </CardHeader>
             <CardContent>
@@ -193,36 +216,16 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="bg-white rounded-none p-8 md:p-12 border border-gray-200 shadow-inner">
-             {/* Abstract representation of the process */}
-             <div className="space-y-6">
-                <div className="bg-gray-50 p-4 rounded-none shadow-sm flex items-center justify-between opacity-50">
-                   <div className="flex items-center gap-3">
-                     <div className="w-8 h-8 rounded-none bg-gray-200"></div>
-                     <div className="h-3 w-32 bg-gray-200 rounded-none"></div>
-                   </div>
-                   <div className="h-3 w-16 bg-green-100 rounded-none text-xs text-green-600 flex items-center justify-center">Completed</div>
+          <div className="bg-white rounded-none p-2 border border-gray-200 shadow-xl overflow-hidden min-h-[400px] flex items-center justify-center bg-gray-50">
+             {/* Screenshot Placeholder */}
+             <div className="text-gray-400 font-medium flex flex-col items-center gap-4">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm">
+                  <Layers className="w-8 h-8 text-gray-300" />
                 </div>
-                <div className="bg-white p-4 rounded-none shadow-lg flex items-center justify-between border-l-4 border-accent transform scale-105">
-                   <div className="flex items-center gap-3">
-                     <div className="w-8 h-8 rounded-none bg-accent/20 text-accent flex items-center justify-center font-bold">AI</div>
-                     <div>
-                       <div className="h-3 w-40 bg-gray-800 rounded-none mb-2"></div>
-                       <div className="h-2 w-24 bg-gray-400 rounded-none"></div>
-                     </div>
-                   </div>
-                   <Button size="sm" className="bg-accent text-white h-8">Review</Button>
+                <div className="text-center">
+                  <p className="text-lg font-semibold text-gray-500">Platform Overview Screenshot</p>
+                  <p className="text-sm text-gray-400">Dashboard or Workflow View</p>
                 </div>
-                <div className="bg-gray-50 p-4 rounded-none shadow-sm flex items-center justify-between opacity-50">
-                   <div className="flex items-center gap-3">
-                     <div className="w-8 h-8 rounded-none bg-gray-200"></div>
-                     <div className="h-3 w-32 bg-gray-200 rounded-none"></div>
-                   </div>
-                   <div className="h-3 w-16 bg-gray-100 rounded-none text-xs flex items-center justify-center">Pending</div>
-                </div>
-             </div>
-             <div className="mt-8 text-center text-sm text-gray-500 font-medium">
-               Real-time visibility into every step
              </div>
           </div>
         </div>

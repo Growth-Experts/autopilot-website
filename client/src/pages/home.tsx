@@ -136,7 +136,7 @@ export default function Home() {
               </div>
             </CardContent>
             <CardFooter className="pb-8">
-              <Link href="/products">
+              <Link href="/products" className="w-full">
                 <Button className="w-full bg-[#3A82D3] hover:bg-[#3A82D3]/90 text-white">
                   Explore Approvals <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>

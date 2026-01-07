@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Layout from "@/components/layout/Layout";
+import ScrollToTop from "@/components/layout/ScrollToTop";
 
 // Pages
 import Home from "@/pages/home";
@@ -18,6 +19,7 @@ import Contact from "@/pages/contact";
 function Router() {
   return (
     <Layout>
+      <ScrollToTop />
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/products" component={Products} />

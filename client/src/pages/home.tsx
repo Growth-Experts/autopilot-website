@@ -6,8 +6,7 @@ import LogoApprovals from "@assets/Autopilot_Logo_Approvals_-_Primary_1767782851
 import LogoOnboarding from "@assets/Autopilot_Logo_Onboarding_-_Primary_1767782851208.png";
 import LogoLawd from "@assets/lawd-logo_1767785021289.png";
 import LogoSyntech from "@assets/Syntech-Logo_1767785021290.png";
-import BackofficeImage from "@assets/Backoffice_004_1767785634187.PNG";
-import LaptopFrame from "@assets/generated_images/macbook_pro_laptop_isolated_on_white_background.png";
+import LaptopImage from "@assets/app-screenshot_1767787178377.png";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 
@@ -57,19 +56,20 @@ export default function Home() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative w-full max-w-[900px] lg:w-[140%] lg:-mr-[40%]"
+              className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 h-[120%] w-[55%] z-20"
             >
-               <div className="relative">
-                 {/* Laptop Frame */}
-                 <img src={LaptopFrame} alt="MacBook Pro" className="w-full relative z-20 pointer-events-none" />
-                 
-                 {/* Screen Content - Absolute Positioned */}
-                 {/* Adjust these percentages based on the generated image bezel size */}
-                 <div className="absolute top-[11%] left-[12.8%] w-[74.5%] h-[68%] z-10 overflow-hidden bg-black">
-                    <img src={BackofficeImage} alt="Autopilot Dashboard" className="w-full h-full object-cover object-top" />
-                 </div>
-               </div>
+               <img 
+                 src={LaptopImage} 
+                 alt="Autopilot Dashboard" 
+                 className="absolute right-0 top-1/2 -translate-y-1/2 min-w-full h-auto object-contain object-right"
+                 style={{ maxWidth: 'none', width: '130%' }} 
+               />
             </motion.div>
+            
+            {/* Mobile/Tablet Image (visible only on smaller screens) */}
+            <div className="lg:hidden w-full">
+               <img src={LaptopImage} alt="Autopilot Dashboard" className="w-full h-auto" />
+            </div>
           </div>
         </div>
       </section>

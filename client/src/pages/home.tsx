@@ -280,7 +280,7 @@ export default function Home() {
       {/* Features / Advantage */}
       <section className="relative py-16 md:py-24 bg-gray-50 overflow-hidden">
         {/* Desktop Image - Absolute Flush Left */}
-        <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[50vw] z-10">
+        <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[60vw] z-10">
            <img 
              src={LeftScreenshot} 
              alt="Autopilot Dashboard" 

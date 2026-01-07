@@ -11,7 +11,7 @@ import LogoBidvest from "@assets/bidvest-logo_1767792280625.png";
 import LogoMetrofile from "@assets/metrofile-logo_1767792280626.png";
 import LogoTongaat from "@assets/Tongaat-Huletts-Logo_1767792280626.png";
 import LaptopImage from "@assets/app-screenshot_1767787178377.png";
-import OverviewImage from "@assets/app_screenshot_1767792853559.png";
+import OverviewImage from "@assets/app_screenshot_1767792973731.png";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 
@@ -317,7 +317,7 @@ export default function Home() {
           <img 
              src={OverviewImage} 
              alt="Autopilot Platform Overview" 
-             className="w-full h-auto object-contain shadow-xl"
+             className="w-full h-auto object-contain"
           />
         </div>
       </Section>

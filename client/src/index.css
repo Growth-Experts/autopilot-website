@@ -6,9 +6,9 @@
 @theme inline {
   --font-sans: "Montserrat", sans-serif;
   
-  --radius-sm: 0.2rem;
-  --radius-md: 0.4rem;
-  --radius-lg: 0.6rem;
+  --radius-sm: 0rem;
+  --radius-md: 0rem;
+  --radius-lg: 0rem;
 
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
@@ -70,7 +70,7 @@
   --input: 214 32% 91%;
   --ring: 210 58% 33%;
   
-  --radius: 0.5rem;
+  --radius: 0rem;
 }
 
 .dark {

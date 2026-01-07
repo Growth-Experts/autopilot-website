@@ -15,15 +15,15 @@ export default function Pricing() {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left max-w-3xl mx-auto mt-12">
-            <div className="bg-white/10 backdrop-blur-sm p-4 rounded border border-white/20 flex items-center gap-3">
+            <div className="bg-white/10 backdrop-blur-sm p-4 rounded-none border border-white/20 flex items-center gap-3">
               <Check className="h-5 w-5 text-accent" />
               <span>Unlimited Internal Users</span>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-4 rounded border border-white/20 flex items-center gap-3">
+            <div className="bg-white/10 backdrop-blur-sm p-4 rounded-none border border-white/20 flex items-center gap-3">
               <Check className="h-5 w-5 text-accent" />
               <span>Unlimited Forms & Processes</span>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-4 rounded border border-white/20 flex items-center gap-3">
+            <div className="bg-white/10 backdrop-blur-sm p-4 rounded-none border border-white/20 flex items-center gap-3">
               <Check className="h-5 w-5 text-accent" />
               <span>Unlimited External Users</span>
             </div>
@@ -122,7 +122,7 @@ export default function Pricing() {
             </Card>
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-10 text-center border border-gray-200">
+          <div className="bg-gray-50 rounded-none p-10 text-center border border-gray-200">
             <h2 className="text-2xl font-bold mb-4">Ready to Build Your Custom Workflow?</h2>
             <p className="text-gray-600 mb-8">
               The best way to understand your investment is to see the platform in action and discuss your specific workflow needs.

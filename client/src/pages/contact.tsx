@@ -20,7 +20,7 @@ export default function Contact() {
           {/* General Inquiries */}
           <Card className="border-gray-100 shadow-lg">
             <CardHeader>
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-primary mb-4">
+              <div className="w-12 h-12 bg-blue-100 rounded-none flex items-center justify-center text-primary mb-4">
                 <Users className="h-6 w-6" />
               </div>
               <CardTitle>General Inquiries</CardTitle>
@@ -43,7 +43,7 @@ export default function Contact() {
           {/* Technical Support */}
           <Card className="border-gray-100 shadow-lg">
             <CardHeader>
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-primary mb-4">
+              <div className="w-12 h-12 bg-blue-100 rounded-none flex items-center justify-center text-primary mb-4">
                 <HelpCircle className="h-6 w-6" />
               </div>
               <CardTitle>Technical Support</CardTitle>
@@ -62,7 +62,7 @@ export default function Contact() {
           {/* Partnership */}
           <Card className="border-gray-100 shadow-lg">
             <CardHeader>
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-primary mb-4">
+              <div className="w-12 h-12 bg-blue-100 rounded-none flex items-center justify-center text-primary mb-4">
                 <Handshake className="h-6 w-6" />
               </div>
               <CardTitle>Partnership Opportunities</CardTitle>
@@ -82,7 +82,7 @@ export default function Contact() {
 
       {/* Contact Form */}
       <Section background="gray">
-        <div className="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg">
+        <div className="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-none shadow-lg">
           <h2 className="text-2xl font-bold mb-6 text-center">Schedule Your Live Demo</h2>
           <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

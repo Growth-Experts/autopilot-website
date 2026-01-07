@@ -21,7 +21,7 @@ export default function Products() {
           {/* Autopilot Onboarding */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5 space-y-6">
-              <div className="inline-block px-3 py-1 bg-blue-100 text-primary font-bold rounded-full text-sm mb-2">External + Internal</div>
+              <div className="inline-block px-3 py-1 bg-blue-100 text-primary font-bold rounded-none text-sm mb-2">External + Internal</div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary">Autopilot Onboarding</h2>
               <h3 className="text-xl text-accent font-medium">One Coordinated Onboarding Flow</h3>
               <p className="text-gray-600 text-lg leading-relaxed">
@@ -76,7 +76,7 @@ export default function Products() {
           {/* Autopilot Approvals */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5 space-y-6 lg:order-last">
-              <div className="inline-block px-3 py-1 bg-orange-100 text-accent font-bold rounded-full text-sm mb-2">Internal Teams</div>
+              <div className="inline-block px-3 py-1 bg-orange-100 text-accent font-bold rounded-none text-sm mb-2">Internal Teams</div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary">Autopilot Approvals</h2>
               <h3 className="text-xl text-accent font-medium">One Workflow for All Internal Teams</h3>
               <p className="text-gray-600 text-lg leading-relaxed">

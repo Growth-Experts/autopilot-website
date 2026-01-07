@@ -51,24 +51,24 @@ export default function Partners() {
         </div>
 
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-           <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 text-center">
-             <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-primary mx-auto mb-6">
+           <div className="bg-white p-8 rounded-none shadow-sm border border-gray-100 text-center">
+             <div className="w-12 h-12 bg-blue-100 rounded-none flex items-center justify-center text-primary mx-auto mb-6">
                <Zap className="h-6 w-6" />
              </div>
              <h3 className="font-bold text-lg mb-2">Sales Collateral</h3>
              <p className="text-sm text-gray-600">Access to standardized sales decks and content to present our solutions effectively.</p>
            </div>
            
-           <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 text-center">
-             <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-primary mx-auto mb-6">
+           <div className="bg-white p-8 rounded-none shadow-sm border border-gray-100 text-center">
+             <div className="w-12 h-12 bg-blue-100 rounded-none flex items-center justify-center text-primary mx-auto mb-6">
                <Zap className="h-6 w-6" />
              </div>
              <h3 className="font-bold text-lg mb-2">Growth Opportunities</h3>
              <p className="text-sm text-gray-600">Implement solutions for high-demand needs like employee and client onboarding.</p>
            </div>
            
-           <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 text-center">
-             <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-primary mx-auto mb-6">
+           <div className="bg-white p-8 rounded-none shadow-sm border border-gray-100 text-center">
+             <div className="w-12 h-12 bg-blue-100 rounded-none flex items-center justify-center text-primary mx-auto mb-6">
                <Zap className="h-6 w-6" />
              </div>
              <h3 className="font-bold text-lg mb-2">Dedicated Support</h3>

@@ -32,11 +32,11 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-in slide-in-from-right duration-700 delay-200">
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-100 to-transparent rounded-full blur-3xl opacity-30"></div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-100 to-transparent rounded-none blur-3xl opacity-30"></div>
               <img 
                 src={DashboardImage} 
                 alt="Autopilot Dashboard" 
-                className="relative rounded-lg shadow-2xl border border-gray-200 w-full object-cover transform hover:scale-[1.02] transition-transform duration-500"
+                className="relative rounded-none shadow-2xl border border-gray-200 w-full object-cover transform hover:scale-[1.02] transition-transform duration-500"
               />
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function Home() {
           <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
             <div className="h-3 bg-primary w-full"></div>
             <CardHeader className="pt-8 pb-4">
-              <div className="mb-4 w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+              <div className="mb-4 w-12 h-12 rounded-none bg-blue-100 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                 <Users size={24} />
               </div>
               <CardTitle className="text-2xl font-bold">Autopilot Onboarding</CardTitle>
@@ -79,7 +79,7 @@ export default function Home() {
               <p className="text-gray-600 mb-6 min-h-[80px]">
                 Connect external parties with internal teams through a single, step-by-step digital process that captures clean, validated data from the start.
               </p>
-              <div className="bg-gray-50 p-6 rounded-md mb-6 border border-gray-100">
+              <div className="bg-gray-50 p-6 rounded-none mb-6 border border-gray-100">
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2 text-sm text-gray-700">
                     <CheckCircle className="h-5 w-5 text-green-500 shrink-0" />
@@ -106,7 +106,7 @@ export default function Home() {
           <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
             <div className="h-3 bg-accent w-full"></div>
             <CardHeader className="pt-8 pb-4">
-              <div className="mb-4 w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+              <div className="mb-4 w-12 h-12 rounded-none bg-orange-100 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
                 <CheckCircle size={24} />
               </div>
               <CardTitle className="text-2xl font-bold">Autopilot Approvals</CardTitle>
@@ -116,7 +116,7 @@ export default function Home() {
               <p className="text-gray-600 mb-6 min-h-[80px]">
                 Replace spreadsheets, inbox approvals, and mental checklists with parallel, auditable approval workflows that scale across teams.
               </p>
-               <div className="bg-gray-50 p-6 rounded-md mb-6 border border-gray-100">
+               <div className="bg-gray-50 p-6 rounded-none mb-6 border border-gray-100">
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2 text-sm text-gray-700">
                     <CheckCircle className="h-5 w-5 text-green-500 shrink-0" />
@@ -155,7 +155,7 @@ export default function Home() {
             
             <div className="space-y-6">
               <div className="flex gap-4">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-primary font-bold">1</div>
+                <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">1</div>
                 <div>
                   <h4 className="text-xl font-bold mb-2">Seamless Coordination</h4>
                   <p className="text-gray-600">Stop chasing emails. Connect internal teams and external stakeholders in one guided workflow that ensures accurate, complete data capture.</p>
@@ -163,7 +163,7 @@ export default function Home() {
               </div>
               
               <div className="flex gap-4">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-primary font-bold">2</div>
+                <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">2</div>
                 <div>
                   <h4 className="text-xl font-bold mb-2">AI-Assisted Automation</h4>
                   <p className="text-gray-600">Reduce manual effort with AI-powered document processing, validation, and routing - while keeping humans in control.</p>
@@ -171,7 +171,7 @@ export default function Home() {
               </div>
               
               <div className="flex gap-4">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-primary font-bold">3</div>
+                <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">3</div>
                 <div>
                   <h4 className="text-xl font-bold mb-2">Bulletproof Compliance</h4>
                   <p className="text-gray-600">Combine compliant e-signatures with tamper-evident storage and full audit trails for every workflow and document.</p>
@@ -179,7 +179,7 @@ export default function Home() {
               </div>
 
               <div className="flex gap-4">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-primary font-bold">4</div>
+                <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">4</div>
                 <div>
                   <h4 className="text-xl font-bold mb-2">Effortless Management</h4>
                   <p className="text-gray-600">Track progress in real time and see exactly who did what, when, and where - across every step of the process.</p>
@@ -188,32 +188,32 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="bg-gray-100 rounded-lg p-8 md:p-12 border border-gray-200 shadow-inner">
+          <div className="bg-gray-100 rounded-none p-8 md:p-12 border border-gray-200 shadow-inner">
              {/* Abstract representation of the process */}
              <div className="space-y-6">
-                <div className="bg-white p-4 rounded shadow-sm flex items-center justify-between opacity-50">
+                <div className="bg-white p-4 rounded-none shadow-sm flex items-center justify-between opacity-50">
                    <div className="flex items-center gap-3">
-                     <div className="w-8 h-8 rounded-full bg-gray-200"></div>
-                     <div className="h-3 w-32 bg-gray-200 rounded"></div>
+                     <div className="w-8 h-8 rounded-none bg-gray-200"></div>
+                     <div className="h-3 w-32 bg-gray-200 rounded-none"></div>
                    </div>
-                   <div className="h-3 w-16 bg-green-100 rounded text-xs text-green-600 flex items-center justify-center">Completed</div>
+                   <div className="h-3 w-16 bg-green-100 rounded-none text-xs text-green-600 flex items-center justify-center">Completed</div>
                 </div>
-                <div className="bg-white p-4 rounded shadow-lg flex items-center justify-between border-l-4 border-accent transform scale-105">
+                <div className="bg-white p-4 rounded-none shadow-lg flex items-center justify-between border-l-4 border-accent transform scale-105">
                    <div className="flex items-center gap-3">
-                     <div className="w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center font-bold">AI</div>
+                     <div className="w-8 h-8 rounded-none bg-accent/20 text-accent flex items-center justify-center font-bold">AI</div>
                      <div>
-                       <div className="h-3 w-40 bg-gray-800 rounded mb-2"></div>
-                       <div className="h-2 w-24 bg-gray-400 rounded"></div>
+                       <div className="h-3 w-40 bg-gray-800 rounded-none mb-2"></div>
+                       <div className="h-2 w-24 bg-gray-400 rounded-none"></div>
                      </div>
                    </div>
                    <Button size="sm" className="bg-accent text-white h-8">Review</Button>
                 </div>
-                <div className="bg-white p-4 rounded shadow-sm flex items-center justify-between opacity-50">
+                <div className="bg-white p-4 rounded-none shadow-sm flex items-center justify-between opacity-50">
                    <div className="flex items-center gap-3">
-                     <div className="w-8 h-8 rounded-full bg-gray-200"></div>
-                     <div className="h-3 w-32 bg-gray-200 rounded"></div>
+                     <div className="w-8 h-8 rounded-none bg-gray-200"></div>
+                     <div className="h-3 w-32 bg-gray-200 rounded-none"></div>
                    </div>
-                   <div className="h-3 w-16 bg-gray-100 rounded text-xs flex items-center justify-center">Pending</div>
+                   <div className="h-3 w-16 bg-gray-100 rounded-none text-xs flex items-center justify-center">Pending</div>
                 </div>
              </div>
              <div className="mt-8 text-center text-sm text-gray-500 font-medium">
@@ -231,13 +231,13 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20">
+          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-none border border-white/20">
             <div className="text-4xl font-bold text-accent mb-2">50%</div>
             <h4 className="text-xl font-bold mb-2 text-white">Efficiency Gain</h4>
             <p className="text-blue-100">LAWD halved time spent managing onboarding, supporting weekly new hires without an internal HR or IT team.</p>
           </div>
           
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20">
+          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-none border border-white/20">
             <div className="text-4xl font-bold text-accent mb-2">10x</div>
             <h4 className="text-xl font-bold mb-2 text-white">Faster Approvals</h4>
             <p className="text-blue-100">Syntech cut reseller approval time from 10 days to 1 day by pushing clean, validated data directly into CRM systems.</p>
@@ -255,7 +255,7 @@ export default function Home() {
 
       {/* Bottom CTA */}
       <Section background="white">
-        <div className="bg-gray-50 rounded-2xl p-12 md:p-20 text-center max-w-5xl mx-auto border border-gray-100 shadow-sm">
+        <div className="bg-gray-50 rounded-none p-12 md:p-20 text-center max-w-5xl mx-auto border border-gray-100 shadow-sm">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Processes?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Replace scattered emails and loose tasks with one clean, auditable workflow. Most workflows go live in days, not months.

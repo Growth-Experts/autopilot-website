@@ -20,11 +20,11 @@ export default function About() {
             </p>
           </div>
           <div className="relative">
-             <div className="absolute -inset-4 bg-accent/10 rounded-xl transform rotate-3"></div>
+             <div className="absolute -inset-4 bg-accent/10 rounded-none transform rotate-3"></div>
              <img 
                src={OfficeImage} 
                alt="Autopilot Team" 
-               className="relative rounded-lg shadow-xl w-full object-cover aspect-video"
+               className="relative rounded-none shadow-xl w-full object-cover aspect-video"
              />
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center">Our Founder</h2>
           
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+          <div className="bg-white rounded-none shadow-lg overflow-hidden flex flex-col md:flex-row">
             <div className="md:w-1/3 bg-gray-200 min-h-[300px] relative">
                {/* Placeholder for Adam's photo if we had one, otherwise a generic silhouette or pattern */}
                <div className="absolute inset-0 flex items-center justify-center text-gray-400 bg-gray-300">

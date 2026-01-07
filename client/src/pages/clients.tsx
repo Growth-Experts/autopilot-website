@@ -62,7 +62,7 @@ export default function Clients() {
             <Card key={index} className="border-none shadow-md hover:shadow-lg transition-shadow duration-300">
               <CardHeader className="pb-2">
                 <div className="flex items-center gap-3 mb-2">
-                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                   <div className="w-10 h-10 bg-primary/10 rounded-none flex items-center justify-center text-primary">
                      <Quote className="h-5 w-5 fill-current" />
                    </div>
                    <CardTitle className="text-2xl font-bold text-gray-800">{study.company}</CardTitle>

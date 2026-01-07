@@ -4,6 +4,8 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription }
 import { ArrowRight, CheckCircle, Clock, Shield, Users, FileText, UserCheck, Send, Layers } from "lucide-react";
 import LogoApprovals from "@assets/Autopilot_Logo_Approvals_-_Primary_1767782851207.png";
 import LogoOnboarding from "@assets/Autopilot_Logo_Onboarding_-_Primary_1767782851208.png";
+import LogoLawd from "@assets/lawd-logo_1767785021289.png";
+import LogoSyntech from "@assets/Syntech-Logo_1767785021290.png";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 
@@ -239,12 +241,18 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="bg-white/10 backdrop-blur-sm p-8 rounded-none border border-white/20">
+            <div className="h-12 bg-white/90 rounded-none mb-6 flex items-center justify-center px-4">
+               <img src={LogoLawd} alt="LAWD" className="h-8 object-contain" />
+            </div>
             <div className="text-4xl font-bold text-accent mb-2">50%</div>
             <h4 className="text-xl font-bold mb-2 text-white">Efficiency Gain</h4>
             <p className="text-blue-100">LAWD halved time spent managing onboarding, supporting weekly new hires without an internal HR or IT team.</p>
           </div>
           
           <div className="bg-white/10 backdrop-blur-sm p-8 rounded-none border border-white/20">
+            <div className="h-12 bg-white/90 rounded-none mb-6 flex items-center justify-center px-4">
+               <img src={LogoSyntech} alt="Syntech" className="h-8 object-contain" />
+            </div>
             <div className="text-4xl font-bold text-accent mb-2">10x</div>
             <h4 className="text-xl font-bold mb-2 text-white">Faster Approvals</h4>
             <p className="text-blue-100">Syntech cut reseller approval time from 10 days to 1 day by pushing clean, validated data directly into CRM systems.</p>

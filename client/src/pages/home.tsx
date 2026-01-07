@@ -6,6 +6,7 @@ import LogoApprovals from "@assets/Autopilot_Logo_Approvals_-_Primary_1767782851
 import LogoOnboarding from "@assets/Autopilot_Logo_Onboarding_-_Primary_1767782851208.png";
 import LogoLawd from "@assets/lawd-logo_1767785021289.png";
 import LogoSyntech from "@assets/Syntech-Logo_1767785021290.png";
+import BrowserWindowImage from "@assets/generated_images/browser_window_frame_with_saas_dashboard_screenshot.png";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 
@@ -45,6 +46,24 @@ export default function Home() {
                   Explore Solutions
                 </Button>
               </Link>
+            </div>
+
+            {/* Browser Window Image */}
+            <div className="pt-12 md:pt-16 px-4">
+               <div className="relative rounded-t-xl overflow-hidden shadow-2xl border border-gray-200 bg-white max-w-5xl mx-auto">
+                  {/* Browser Header */}
+                  <div className="bg-gray-100 border-b border-gray-200 h-10 flex items-center px-4 gap-2">
+                    <div className="flex gap-2">
+                      <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                      <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                      <div className="w-3 h-3 rounded-full bg-green-400"></div>
+                    </div>
+                    <div className="mx-auto w-1/2 h-6 bg-white rounded border border-gray-200 text-[10px] text-gray-400 flex items-center justify-center">
+                      app.autopilot.com/dashboard
+                    </div>
+                  </div>
+                  <img src={BrowserWindowImage} alt="Autopilot Dashboard" className="w-full h-auto block" />
+               </div>
             </div>
           </motion.div>
         </div>

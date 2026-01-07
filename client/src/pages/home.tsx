@@ -18,69 +18,6 @@ export default function Home() {
            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
         </div>
         
-        {/* Abstract Workflow Elements */}
-        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-          {/* Node 1 - Request */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="absolute top-[15%] left-[10%] md:left-[20%] p-4 bg-white border border-gray-200 shadow-lg flex items-center gap-3 rounded-none"
-          >
-            <div className="p-2 bg-blue-50 text-primary">
-              <FileText size={20} />
-            </div>
-            <div className="text-sm font-medium text-gray-600">New Request</div>
-          </motion.div>
-
-          {/* Connector 1 */}
-          <motion.div 
-             initial={{ pathLength: 0, opacity: 0 }}
-             animate={{ pathLength: 1, opacity: 0.2 }}
-             transition={{ duration: 1.5, delay: 0.5 }}
-             className="absolute top-[20%] left-[25%] md:left-[30%] w-[100px] h-[2px] bg-gray-400 hidden md:block"
-          />
-
-          {/* Node 2 - Review */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.6 }}
-            className="absolute top-[25%] right-[10%] md:right-[20%] p-4 bg-white border border-gray-200 shadow-lg flex items-center gap-3 rounded-none"
-          >
-            <div className="p-2 bg-orange-50 text-accent">
-              <UserCheck size={20} />
-            </div>
-            <div className="text-sm font-medium text-gray-600">Manager Review</div>
-          </motion.div>
-
-          {/* Node 3 - Process */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1 }}
-            className="absolute bottom-[20%] left-[15%] md:left-[25%] p-4 bg-white border border-gray-200 shadow-lg flex items-center gap-3 rounded-none"
-          >
-            <div className="p-2 bg-green-50 text-green-600">
-              <Layers size={20} />
-            </div>
-            <div className="text-sm font-medium text-gray-600">Processing</div>
-          </motion.div>
-
-          {/* Node 4 - Complete */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.4 }}
-            className="absolute bottom-[15%] right-[15%] md:right-[30%] p-4 bg-white border border-gray-200 shadow-lg flex items-center gap-3 rounded-none"
-          >
-             <div className="p-2 bg-blue-50 text-primary">
-              <Send size={20} />
-            </div>
-            <div className="text-sm font-medium text-gray-600">Completed</div>
-          </motion.div>
-        </div>
-
         <div className="container mx-auto px-4 relative z-10 text-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}

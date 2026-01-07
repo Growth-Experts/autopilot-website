@@ -4,8 +4,12 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription }
 import { ArrowRight, CheckCircle, Clock, Shield, Users, FileText, UserCheck, Send, Layers, X, Mail, FileQuestion, AlertCircle, Check, GitBranch, FileCheck, LayoutDashboard } from "lucide-react";
 import LogoApprovals from "@assets/Autopilot_Logo_Approvals_-_Primary_1767782851207.png";
 import LogoOnboarding from "@assets/Autopilot_Logo_Onboarding_-_Primary_1767782851208.png";
-import LogoLawd from "@assets/lawd-logo_1767785021289.png";
-import LogoSyntech from "@assets/Syntech-Logo_1767785021290.png";
+import LogoLawd from "@assets/lawd-logo_1767792280625.png";
+import LogoSyntech from "@assets/Syntech-Logo_1767792280626.png";
+import Logo3Way from "@assets/3way-logo_1767792280625.png";
+import LogoBidvest from "@assets/bidvest-logo_1767792280625.png";
+import LogoMetrofile from "@assets/metrofile-logo_1767792280626.png";
+import LogoTongaat from "@assets/Tongaat-Huletts-Logo_1767792280626.png";
 import LaptopImage from "@assets/app-screenshot_1767787178377.png";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
@@ -73,6 +77,24 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Client Logos Section */}
+      <section className="py-10 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-4">
+          <p className="text-center text-gray-500 font-medium mb-8 text-sm uppercase tracking-wider">
+            Proudly powering process for these leading companies
+          </p>
+          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 grayscale opacity-70 hover:opacity-100 transition-opacity duration-300">
+             <img src={Logo3Way} alt="3Way" className="h-8 md:h-12 w-auto object-contain" />
+             <img src={LogoBidvest} alt="Bidvest" className="h-8 md:h-10 w-auto object-contain" />
+             <img src={LogoLawd} alt="LAWD" className="h-8 md:h-12 w-auto object-contain" />
+             <img src={LogoMetrofile} alt="Metrofile" className="h-6 md:h-8 w-auto object-contain" />
+             <img src={LogoSyntech} alt="Syntech" className="h-8 md:h-12 w-auto object-contain" />
+             <img src={LogoTongaat} alt="Tongaat Hulett" className="h-8 md:h-12 w-auto object-contain" />
+          </div>
+        </div>
+      </section>
+
       {/* Problem Statement */}
       <Section background="gray">
         <div className="max-w-5xl mx-auto">

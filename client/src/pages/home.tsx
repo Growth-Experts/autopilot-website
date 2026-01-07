@@ -15,6 +15,8 @@ import OverviewImage from "@assets/app_screenshot_1767792973731.png";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 
+import app_screenshot__1_ from "@assets/app screenshot (1).png";
+
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -315,7 +317,7 @@ export default function Home() {
           </div>
           
           <img 
-             src={OverviewImage} 
+             src={app_screenshot__1_} 
              alt="Autopilot Platform Overview" 
              className="w-full h-auto object-contain"
           />

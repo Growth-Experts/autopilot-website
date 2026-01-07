@@ -12,6 +12,7 @@ import LogoMetrofile from "@assets/metrofile-logo_1767792280626.png";
 import LogoTongaat from "@assets/Tongaat-Huletts-Logo_1767792280626.png";
 import LaptopImage from "@assets/app-screenshot_1767787178377.png";
 import OverviewImage from "@assets/app_screenshot_1767792973731.png";
+import LeftScreenshot from "@assets/app-screenshot-left_1767793647658.png";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 
@@ -275,56 +276,73 @@ export default function Home() {
         </div>
       </Section>
       {/* Features / Advantage */}
-      <Section background="gray">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">The Autopilot Advantage</h2>
-              <p className="text-xl text-accent font-medium">Made for People. Powered by Process. Enhanced by AI.</p>
-            </div>
-            
-            <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">1</div>
-                <div>
-                  <h4 className="text-xl font-bold mb-2">Seamless Coordination</h4>
-                  <p className="text-gray-600">Stop chasing emails. Connect internal teams and external stakeholders in one guided workflow that ensures accurate, complete data capture.</p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">2</div>
-                <div>
-                  <h4 className="text-xl font-bold mb-2">AI-Assisted Automation</h4>
-                  <p className="text-gray-600">Reduce manual effort with AI-powered document processing, validation, and routing - while keeping humans in control.</p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">3</div>
-                <div>
-                  <h4 className="text-xl font-bold mb-2">Bulletproof Compliance</h4>
-                  <p className="text-gray-600">Combine compliant e-signatures with tamper-evident storage and full audit trails for every workflow and document.</p>
-                </div>
+      <section className="py-16 md:py-24 bg-gray-50 overflow-hidden">
+        <div className="container mx-auto px-4 relative">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              {/* Image Column - Flush Left */}
+              <div className="relative order-2 lg:order-1">
+                 {/* Desktop Image */}
+                 <div 
+                   className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[45vw] z-10"
+                   style={{ left: 'calc(50% - 50vw)' }}
+                 >
+                    <img 
+                      src={LeftScreenshot} 
+                      alt="Autopilot Dashboard" 
+                      className="w-full h-auto object-contain object-left"
+                    />
+                 </div>
+                 
+                 {/* Mobile Image */}
+                 <div className="lg:hidden w-full">
+                    <img src={LeftScreenshot} alt="Autopilot Dashboard" className="w-full h-auto" />
+                 </div>
               </div>
 
-              <div className="flex gap-4">
-                <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">4</div>
+              {/* Text Column */}
+              <div className="space-y-8 order-1 lg:order-2 z-10 relative">
                 <div>
-                  <h4 className="text-xl font-bold mb-2">Effortless Management</h4>
-                  <p className="text-gray-600">Track progress in real time and see exactly who did what, when, and where - across every step of the process.</p>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">The Autopilot Advantage</h2>
+                  <p className="text-xl text-accent font-medium">Made for People. Powered by Process. Enhanced by AI.</p>
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">1</div>
+                    <div>
+                      <h4 className="text-xl font-bold mb-2">Seamless Coordination</h4>
+                      <p className="text-gray-600">Stop chasing emails. Connect internal teams and external stakeholders in one guided workflow that ensures accurate, complete data capture.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex gap-4">
+                    <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">2</div>
+                    <div>
+                      <h4 className="text-xl font-bold mb-2">AI-Assisted Automation</h4>
+                      <p className="text-gray-600">Reduce manual effort with AI-powered document processing, validation, and routing - while keeping humans in control.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex gap-4">
+                    <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">3</div>
+                    <div>
+                      <h4 className="text-xl font-bold mb-2">Bulletproof Compliance</h4>
+                      <p className="text-gray-600">Combine compliant e-signatures with tamper-evident storage and full audit trails for every workflow and document.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">4</div>
+                    <div>
+                      <h4 className="text-xl font-bold mb-2">Effortless Management</h4>
+                      <p className="text-gray-600">Track progress in real time and see exactly who did what, when, and where - across every step of the process.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          <img 
-             src={app_screenshot__1__Background_Removed} 
-             alt="Autopilot Platform Overview" 
-             className="w-full h-auto object-contain"
-          />
         </div>
-      </Section>
+      </section>
       {/* Stats/Results */}
       <Section background="blue" className="text-white">
         <div className="text-center mb-16">

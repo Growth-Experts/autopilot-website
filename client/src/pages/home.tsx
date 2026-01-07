@@ -6,7 +6,7 @@ import LogoApprovals from "@assets/Autopilot_Logo_Approvals_-_Primary_1767782851
 import LogoOnboarding from "@assets/Autopilot_Logo_Onboarding_-_Primary_1767782851208.png";
 import LogoLawd from "@assets/lawd-logo_1767785021289.png";
 import LogoSyntech from "@assets/Syntech-Logo_1767785021290.png";
-import BrowserWindowImage from "@assets/generated_images/browser_window_frame_with_saas_dashboard_screenshot.png";
+import BackofficeImage from "@assets/Backoffice_004_1767785634187.PNG";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 
@@ -21,51 +21,59 @@ export default function Home() {
            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
         </div>
         
-        <div className="container mx-auto px-4 relative z-10 text-center">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto space-y-8"
-          >
-            <h1 className="text-4xl md:text-6xl md:leading-[1.1] font-bold text-primary tracking-tight">
-              Stop Chasing Email Threads. <br className="hidden md:block" />
-              <span className="text-accent">Start Process Automation That Scales.</span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-              Autopilot replaces confusing emails, duplicate requests, and scattered internal tasks with one clear, guided workflow.
-            </p>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column: Text Content */}
+            <motion.div 
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="max-w-2xl space-y-8 text-center lg:text-left"
+            >
+              <h1 className="text-4xl md:text-6xl md:leading-[1.1] font-bold text-primary tracking-tight">
+                Stop Chasing Email Threads. <br className="hidden md:block" />
+                <span className="text-accent">Start Process Automation That Scales.</span>
+              </h1>
+              
+              <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+                Autopilot replaces confusing emails, duplicate requests, and scattered internal tasks with one clear, guided workflow.
+              </p>
 
-            <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold h-14 px-8 text-lg w-full sm:w-auto">
-                Book a Live Demo
-              </Button>
-              <Link href="/products">
-                <Button variant="outline" size="lg" className="h-14 px-8 text-lg border-primary text-primary hover:bg-primary/5 w-full sm:w-auto">
-                  Explore Solutions
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold h-14 px-8 text-lg w-full sm:w-auto">
+                  Book a Live Demo
                 </Button>
-              </Link>
-            </div>
+                <Link href="/products">
+                  <Button variant="outline" size="lg" className="h-14 px-8 text-lg border-primary text-primary hover:bg-primary/5 w-full sm:w-auto">
+                    Explore Solutions
+                  </Button>
+                </Link>
+              </div>
+            </motion.div>
 
-            {/* Browser Window Image */}
-            <div className="pt-12 md:pt-16 px-4">
-               <div className="relative rounded-t-xl overflow-hidden shadow-2xl border border-gray-200 bg-white max-w-5xl mx-auto">
-                  {/* Browser Header */}
-                  <div className="bg-gray-100 border-b border-gray-200 h-10 flex items-center px-4 gap-2">
-                    <div className="flex gap-2">
-                      <div className="w-3 h-3 rounded-full bg-red-400"></div>
-                      <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-                      <div className="w-3 h-3 rounded-full bg-green-400"></div>
-                    </div>
-                    <div className="mx-auto w-1/2 h-6 bg-white rounded border border-gray-200 text-[10px] text-gray-400 flex items-center justify-center">
-                      app.autopilot.com/dashboard
-                    </div>
-                  </div>
-                  <img src={BrowserWindowImage} alt="Autopilot Dashboard" className="w-full h-auto block" />
-               </div>
-            </div>
-          </motion.div>
+            {/* Right Column: Laptop Image */}
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative lg:absolute lg:right-[-15%] lg:w-[70%] top-10 lg:top-auto w-full"
+            >
+              {/* Laptop Frame (CSS-based) */}
+              <div className="relative mx-auto">
+                <div className="relative bg-[#1a1a1a] rounded-t-xl p-[2%] pt-[2%] pb-[1%] shadow-xl ring-1 ring-white/10">
+                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-gray-800 rounded-full mt-1.5 z-20"></div>
+                   {/* Screen Content */}
+                   <div className="relative overflow-hidden bg-white rounded-md aspect-[16/10]">
+                      <img src={BackofficeImage} alt="Autopilot Dashboard" className="w-full h-full object-cover object-top" />
+                   </div>
+                </div>
+                {/* Laptop Base */}
+                <div className="relative h-4 bg-[#2a2a2a] rounded-b-xl shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)] mx-[2%]">
+                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[15%] h-2 bg-[#3a3a3a] rounded-b-md"></div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
       {/* Problem Statement */}

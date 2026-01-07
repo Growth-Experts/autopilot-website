@@ -107,7 +107,7 @@ export default function Home() {
 
           {/* Autopilot Approvals - Swapped to Primary/Blue */}
           <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
-            <div className="h-3 bg-primary w-full"></div>
+            <div className="h-3 w-full bg-[#3A82D3]"></div>
             <CardHeader className="pt-8 pb-4">
               <div className="mb-4 h-12 flex items-center justify-start">
                 <img src={LogoApprovals} alt="Autopilot Approvals" className="h-full w-auto" />
@@ -137,7 +137,7 @@ export default function Home() {
             </CardContent>
             <CardFooter className="pb-8">
               <Link href="/products">
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                <Button className="w-full bg-[#3A82D3] hover:bg-[#3A82D3]/90 text-white">
                   Explore Approvals <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>

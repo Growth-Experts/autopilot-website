@@ -30,7 +30,7 @@ export default function Products() {
                 Connect external parties with internal teams through a single, step-by-step digital process that captures clean, validated data from the start.
               </p>
               <div className="pt-4">
-                <Button className="bg-accent hover:bg-accent/90 text-white font-bold px-8">
+                <Button className="bg-accent hover:bg-accent/90 text-white font-bold px-8 w-full">
                   Explore Onboarding
                 </Button>
               </div>
@@ -78,14 +78,14 @@ export default function Products() {
           {/* Autopilot Approvals */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5 space-y-6 lg:order-last">
-              <div className="inline-block px-3 py-1 bg-orange-100 text-accent font-bold rounded-none text-sm mb-2">Internal Teams</div>
+              <div className="inline-block px-3 py-1 bg-[#3A82D3] text-white font-bold rounded-none text-sm mb-2">Internal Teams</div>
               <img src={LogoApprovals} alt="Autopilot Approvals" className="h-16 w-auto" />
               <h3 className="text-xl text-primary font-medium">One Workflow for All Internal Teams</h3>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Replace spreadsheets, inbox approvals, and mental checklists with parallel, auditable approval workflows that scale across teams.
               </p>
               <div className="pt-4">
-                <Button className="bg-primary hover:bg-primary/90 text-white font-bold px-8">
+                <Button className="bg-[#3A82D3] hover:bg-[#3A82D3]/90 text-white font-bold px-8 w-full">
                   Explore Approvals
                 </Button>
               </div>

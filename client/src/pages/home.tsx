@@ -237,7 +237,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="bg-white/10 backdrop-blur-sm p-8 rounded-none border border-white/20">
-            <div className="h-12 bg-white/90 rounded-none mb-6 flex items-center justify-center px-4">
+            <div className="h-12 rounded-none mb-6 flex items-center justify-center px-4 bg-[#fff]">
                <img src={LogoLawd} alt="LAWD" className="h-8 object-contain" />
             </div>
             <div className="text-4xl font-bold text-accent mb-2">50%</div>

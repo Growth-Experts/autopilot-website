@@ -21,6 +21,7 @@ import app_screenshot__1_ from "@assets/app screenshot (1).png";
 import app_screenshot__1__Background_Removed from "@assets/app screenshot (1) Background Removed.png";
 
 import app_screenshot_left from "@assets/app-screenshot-left.png";
+import AutopilotBackground from "@assets/autopilot-background_1767798365737.jpg";
 
 export default function Home() {
   return (
@@ -278,27 +279,22 @@ export default function Home() {
         </div>
       </Section>
       {/* Features / Advantage */}
-      <section className="relative py-16 md:py-24 bg-gray-50 overflow-hidden">
-        {/* Desktop Image - Absolute Flush Left */}
-        <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[60vw] z-10">
-           <img 
-             src={LeftScreenshot} 
-             alt="Autopilot Dashboard" 
-             className="w-full h-auto object-contain object-left"
-           />
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        {/* Full Width Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={AutopilotBackground} 
+            alt="Autopilot Advantage Background" 
+            className="w-full h-full object-cover"
+          />
+          {/* Overlay to ensure text readability */}
+          <div className="absolute inset-0 bg-white/80 md:bg-white/40 md:bg-gradient-to-r from-white via-white/80 to-transparent"></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              {/* Left Column (Spacer for Desktop, Image for Mobile) */}
-              <div className="order-2 lg:order-1">
-                 <div className="lg:hidden w-full">
-                    <img src={LeftScreenshot} alt="Autopilot Dashboard" className="w-full h-auto" />
-                 </div>
-              </div>
-
-              {/* Text Column */}
-              <div className="space-y-8 order-1 lg:order-2">
+              {/* Text Column - Now on the left */}
+              <div className="space-y-8">
                 <div>
                   <h2 className="text-3xl md:text-4xl font-bold mb-4">The Autopilot Advantage</h2>
                   <p className="text-xl text-accent font-medium">Made for People. Powered by Process. Enhanced by AI.</p>
@@ -307,37 +303,40 @@ export default function Home() {
                 <div className="space-y-6">
                   <div className="flex gap-4">
                     <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">1</div>
-                    <div>
+                    <div className="bg-white/50 backdrop-blur-sm p-4 rounded-lg md:bg-transparent md:p-0 md:backdrop-blur-none">
                       <h4 className="text-xl font-bold mb-2">Seamless Coordination</h4>
-                      <p className="text-gray-600">Stop chasing emails. Connect internal teams and external stakeholders in one guided workflow that ensures accurate, complete data capture.</p>
+                      <p className="text-gray-800 font-medium md:font-normal md:text-gray-600">Stop chasing emails. Connect internal teams and external stakeholders in one guided workflow that ensures accurate, complete data capture.</p>
                     </div>
                   </div>
                   
                   <div className="flex gap-4">
                     <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">2</div>
-                    <div>
+                    <div className="bg-white/50 backdrop-blur-sm p-4 rounded-lg md:bg-transparent md:p-0 md:backdrop-blur-none">
                       <h4 className="text-xl font-bold mb-2">AI-Assisted Automation</h4>
-                      <p className="text-gray-600">Reduce manual effort with AI-powered document processing, validation, and routing - while keeping humans in control.</p>
+                      <p className="text-gray-800 font-medium md:font-normal md:text-gray-600">Reduce manual effort with AI-powered document processing, validation, and routing - while keeping humans in control.</p>
                     </div>
                   </div>
                   
                   <div className="flex gap-4">
                     <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">3</div>
-                    <div>
+                    <div className="bg-white/50 backdrop-blur-sm p-4 rounded-lg md:bg-transparent md:p-0 md:backdrop-blur-none">
                       <h4 className="text-xl font-bold mb-2">Bulletproof Compliance</h4>
-                      <p className="text-gray-600">Combine compliant e-signatures with tamper-evident storage and full audit trails for every workflow and document.</p>
+                      <p className="text-gray-800 font-medium md:font-normal md:text-gray-600">Combine compliant e-signatures with tamper-evident storage and full audit trails for every workflow and document.</p>
                     </div>
                   </div>
 
                   <div className="flex gap-4">
                     <div className="shrink-0 w-10 h-10 rounded-none bg-blue-100 flex items-center justify-center text-primary font-bold">4</div>
-                    <div>
+                    <div className="bg-white/50 backdrop-blur-sm p-4 rounded-lg md:bg-transparent md:p-0 md:backdrop-blur-none">
                       <h4 className="text-xl font-bold mb-2">Effortless Management</h4>
-                      <p className="text-gray-600">Track progress in real time and see exactly who did what, when, and where - across every step of the process.</p>
+                      <p className="text-gray-800 font-medium md:font-normal md:text-gray-600">Track progress in real time and see exactly who did what, when, and where - across every step of the process.</p>
                     </div>
                   </div>
                 </div>
               </div>
+              
+              {/* Empty column to push text to left and reveal background image on right */}
+              <div className="hidden lg:block"></div>
             </div>
         </div>
       </section>

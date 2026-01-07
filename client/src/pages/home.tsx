@@ -22,13 +22,13 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
             {/* Left Column: Text Content */}
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="max-w-2xl space-y-8 text-center lg:text-left"
+              className="lg:col-span-3 space-y-8 text-center lg:text-left z-10"
             >
               <h1 className="text-4xl md:text-6xl md:leading-[1.1] font-bold text-primary tracking-tight">
                 Stop Chasing Email Threads. <br className="hidden md:block" />
@@ -56,21 +56,28 @@ export default function Home() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative lg:absolute lg:right-[-15%] lg:w-[70%] top-10 lg:top-auto w-full"
+              className="relative lg:col-span-2 lg:translate-x-12 xl:translate-x-24"
             >
               {/* Laptop Frame (CSS-based) */}
-              <div className="relative mx-auto">
-                <div className="relative bg-[#1a1a1a] rounded-t-xl p-[2%] pt-[2%] pb-[1%] shadow-xl ring-1 ring-white/10">
-                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-gray-800 rounded-full mt-1.5 z-20"></div>
-                   {/* Screen Content */}
-                   <div className="relative overflow-hidden bg-white rounded-md aspect-[16/10]">
-                      <img src={BackofficeImage} alt="Autopilot Dashboard" className="w-full h-full object-cover object-top" />
+              <div className="relative mx-auto w-full max-w-[600px]">
+                {/* Lid */}
+                <div className="relative bg-[#272729] rounded-t-xl p-[3%] shadow-2xl ring-1 ring-white/10">
+                   {/* Camera */}
+                   <div className="absolute top-[4%] left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-[#4a4a4a] rounded-full z-20 shadow-inner"></div>
+                   
+                   {/* Screen Container with Border */}
+                   <div className="relative bg-black rounded overflow-hidden shadow-inner ring-1 ring-black">
+                      <img src={BackofficeImage} alt="Autopilot Dashboard" className="w-full h-auto block" />
                    </div>
                 </div>
-                {/* Laptop Base */}
-                <div className="relative h-4 bg-[#2a2a2a] rounded-b-xl shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)] mx-[2%]">
-                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[15%] h-2 bg-[#3a3a3a] rounded-b-md"></div>
+                
+                {/* Base Top (Hinge Area) */}
+                <div className="relative h-3 bg-[#3a3a3c] rounded-b-sm mx-[3%] z-10 shadow-md flex justify-center">
+                   <div className="w-[15%] h-full bg-[#1c1c1e] rounded-b-md"></div>
                 </div>
+                
+                {/* Base Bottom */}
+                <div className="relative h-2 bg-[#e2e2e4] rounded-b-xl mx-[1%] shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)] bg-gradient-to-b from-[#d1d1d6] to-[#aeaeb2]"></div>
               </div>
             </motion.div>
           </div>

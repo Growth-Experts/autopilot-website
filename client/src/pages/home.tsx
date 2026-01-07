@@ -1,52 +1,118 @@
 import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { ArrowRight, CheckCircle, Clock, Shield, Users } from "lucide-react";
-import DashboardImage from "@assets/generated_images/saas_dashboard_workflow_interface.png";
+import { ArrowRight, CheckCircle, Clock, Shield, Users, FileText, UserCheck, Send, Layers } from "lucide-react";
 import LogoApprovals from "@assets/Autopilot_Logo_Approvals_-_Primary_1767782851207.png";
 import LogoOnboarding from "@assets/Autopilot_Logo_Onboarding_-_Primary_1767782851208.png";
 import { Link } from "wouter";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 md:pt-32 md:pb-48 bg-gray-50 overflow-hidden">
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8 animate-in slide-in-from-left duration-700">
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight text-primary">
-                Stop Chasing Email Threads. <br/>
-                <span className="text-accent">Start Process Automation That Scales.</span>
-              </h1>
-              <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-                Autopilot replaces confusing emails, duplicate requests, and scattered internal tasks with one clear, guided workflow.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold h-14 px-8 text-lg">
-                  Book a Live Demo
+      <section className="relative pt-24 pb-32 md:pt-40 md:pb-56 bg-white overflow-hidden">
+        {/* Background Visuals */}
+        <div className="absolute inset-0 z-0 opacity-5 pointer-events-none">
+           {/* Grid Pattern */}
+           <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        </div>
+        
+        {/* Abstract Workflow Elements */}
+        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+          {/* Node 1 - Request */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="absolute top-[15%] left-[10%] md:left-[20%] p-4 bg-white border border-gray-200 shadow-lg flex items-center gap-3 rounded-none"
+          >
+            <div className="p-2 bg-blue-50 text-primary">
+              <FileText size={20} />
+            </div>
+            <div className="text-sm font-medium text-gray-600">New Request</div>
+          </motion.div>
+
+          {/* Connector 1 */}
+          <motion.div 
+             initial={{ pathLength: 0, opacity: 0 }}
+             animate={{ pathLength: 1, opacity: 0.2 }}
+             transition={{ duration: 1.5, delay: 0.5 }}
+             className="absolute top-[20%] left-[25%] md:left-[30%] w-[100px] h-[2px] bg-gray-400 hidden md:block"
+          />
+
+          {/* Node 2 - Review */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.6 }}
+            className="absolute top-[25%] right-[10%] md:right-[20%] p-4 bg-white border border-gray-200 shadow-lg flex items-center gap-3 rounded-none"
+          >
+            <div className="p-2 bg-orange-50 text-accent">
+              <UserCheck size={20} />
+            </div>
+            <div className="text-sm font-medium text-gray-600">Manager Review</div>
+          </motion.div>
+
+          {/* Node 3 - Process */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+            className="absolute bottom-[20%] left-[15%] md:left-[25%] p-4 bg-white border border-gray-200 shadow-lg flex items-center gap-3 rounded-none"
+          >
+            <div className="p-2 bg-green-50 text-green-600">
+              <Layers size={20} />
+            </div>
+            <div className="text-sm font-medium text-gray-600">Processing</div>
+          </motion.div>
+
+          {/* Node 4 - Complete */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1.4 }}
+            className="absolute bottom-[15%] right-[15%] md:right-[30%] p-4 bg-white border border-gray-200 shadow-lg flex items-center gap-3 rounded-none"
+          >
+             <div className="p-2 bg-blue-50 text-primary">
+              <Send size={20} />
+            </div>
+            <div className="text-sm font-medium text-gray-600">Completed</div>
+          </motion.div>
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10 text-center">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-4xl mx-auto space-y-8"
+          >
+            <h1 className="text-4xl md:text-6xl md:leading-[1.1] font-bold text-primary tracking-tight">
+              Stop Chasing Email Threads. <br className="hidden md:block" />
+              <span className="text-accent">Start Process Automation That Scales.</span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
+              Autopilot replaces confusing emails, duplicate requests, and scattered internal tasks with one clear, guided workflow.
+            </p>
+
+            <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold h-14 px-8 text-lg w-full sm:w-auto">
+                Book a Live Demo
+              </Button>
+              <Link href="/products">
+                <Button variant="outline" size="lg" className="h-14 px-8 text-lg border-primary text-primary hover:bg-primary/5 w-full sm:w-auto">
+                  Explore Solutions
                 </Button>
-                <Link href="/products">
-                  <Button variant="outline" size="lg" className="h-14 px-8 text-lg border-primary text-primary hover:bg-primary/5">
-                    Explore Solutions
-                  </Button>
-                </Link>
-              </div>
+              </Link>
             </div>
-            <div className="relative animate-in slide-in-from-right duration-700 delay-200">
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-100 to-transparent rounded-none blur-3xl opacity-30"></div>
-              <img 
-                src={DashboardImage} 
-                alt="Autopilot Dashboard" 
-                className="relative rounded-none shadow-2xl border border-gray-200 w-full object-cover transform hover:scale-[1.02] transition-transform duration-500"
-              />
-            </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Problem Statement */}
-      <Section background="white">
+      <Section background="gray">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">Being Disorganized Looks Unprofessional</h2>
           <p className="text-lg text-gray-600 leading-relaxed">
@@ -61,7 +127,7 @@ export default function Home() {
       </Section>
 
       {/* Products Section */}
-      <Section background="gray">
+      <Section background="white">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Products</h2>
           <p className="text-gray-600">Streamline your operations with our dedicated solutions.</p>
@@ -147,7 +213,7 @@ export default function Home() {
       </Section>
 
       {/* Features / Advantage */}
-      <Section background="white">
+      <Section background="gray">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div>
@@ -190,10 +256,10 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="bg-gray-100 rounded-none p-8 md:p-12 border border-gray-200 shadow-inner">
+          <div className="bg-white rounded-none p-8 md:p-12 border border-gray-200 shadow-inner">
              {/* Abstract representation of the process */}
              <div className="space-y-6">
-                <div className="bg-white p-4 rounded-none shadow-sm flex items-center justify-between opacity-50">
+                <div className="bg-gray-50 p-4 rounded-none shadow-sm flex items-center justify-between opacity-50">
                    <div className="flex items-center gap-3">
                      <div className="w-8 h-8 rounded-none bg-gray-200"></div>
                      <div className="h-3 w-32 bg-gray-200 rounded-none"></div>
@@ -210,7 +276,7 @@ export default function Home() {
                    </div>
                    <Button size="sm" className="bg-accent text-white h-8">Review</Button>
                 </div>
-                <div className="bg-white p-4 rounded-none shadow-sm flex items-center justify-between opacity-50">
+                <div className="bg-gray-50 p-4 rounded-none shadow-sm flex items-center justify-between opacity-50">
                    <div className="flex items-center gap-3">
                      <div className="w-8 h-8 rounded-none bg-gray-200"></div>
                      <div className="h-3 w-32 bg-gray-200 rounded-none"></div>

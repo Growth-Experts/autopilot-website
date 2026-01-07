@@ -83,7 +83,6 @@ export default function Home() {
               <div className="w-full h-48 bg-gray-100 border border-gray-200 rounded-none mb-4 flex items-center justify-center relative overflow-hidden group-hover:border-accent/20 transition-colors">
                 <div className="text-gray-400 text-sm font-medium flex flex-col items-center gap-2">
                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
-                     <LogoOnboarding className="w-6 h-6 opacity-50" /> {/* Just using as icon placeholder if it was a component, but it's an img src. Using generic icon instead */}
                      <FileText className="w-6 h-6 text-gray-300" />
                    </div>
                    <span>App Screenshot Placeholder</span>

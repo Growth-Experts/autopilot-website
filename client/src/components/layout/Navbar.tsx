@@ -52,7 +52,7 @@ export default function Navbar() {
             className="bg-accent hover:bg-accent/90 text-white font-bold px-6"
             size="lg"
           >
-            Book a Live Demo
+            Book a Demo
           </Button>
         </div>
 
@@ -82,7 +82,7 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <Button className="bg-accent hover:bg-accent/90 text-white w-full">
-                  Book a Live Demo
+                  Book a Demo
                 </Button>
               </div>
             </SheetContent>

@@ -67,7 +67,7 @@ export default function About() {
            </p>
            <div className="pt-8">
              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-10">
-               Book a Live Demo with Our Specialists
+               Book a Demo
              </Button>
            </div>
         </div>

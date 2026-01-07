@@ -78,7 +78,7 @@ export default function Clients() {
 
         <div className="text-center mt-20">
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-10 h-14 text-lg">
-            Book a Live Demo with Autopilot
+            Book a Demo
           </Button>
         </div>
       </Section>

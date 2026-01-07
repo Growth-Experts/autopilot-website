@@ -49,7 +49,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
       {/* Problem Statement */}
       <Section background="gray">
         <div className="max-w-3xl mx-auto text-center space-y-6">
@@ -64,7 +63,6 @@ export default function Home() {
           </div>
         </div>
       </Section>
-
       {/* Products Section */}
       <Section background="white">
         <div className="text-center mb-16">
@@ -172,7 +170,6 @@ export default function Home() {
           </Card>
         </div>
       </Section>
-
       {/* Features / Advantage */}
       <Section background="gray">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -231,7 +228,6 @@ export default function Home() {
           </div>
         </div>
       </Section>
-
       {/* Stats/Results */}
       <Section background="blue" className="text-white">
         <div className="text-center mb-16">
@@ -250,7 +246,7 @@ export default function Home() {
           </div>
           
           <div className="bg-white/10 backdrop-blur-sm p-8 rounded-none border border-white/20">
-            <div className="h-12 bg-white/90 rounded-none mb-6 flex items-center justify-center px-4">
+            <div className="h-12 rounded-none mb-6 flex items-center justify-center px-4 bg-[#fff]">
                <img src={LogoSyntech} alt="Syntech" className="h-8 object-contain" />
             </div>
             <div className="text-4xl font-bold text-accent mb-2">10x</div>
@@ -267,7 +263,6 @@ export default function Home() {
           </Link>
         </div>
       </Section>
-
       {/* Bottom CTA */}
       <Section background="white">
         <div className="bg-gray-50 rounded-none p-12 md:p-20 text-center max-w-5xl mx-auto border border-gray-100 shadow-sm">

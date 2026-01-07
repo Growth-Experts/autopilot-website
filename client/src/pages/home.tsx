@@ -77,7 +77,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Client Logos Section */}
       <section className="py-10 bg-white border-b border-gray-100">
         <div className="container mx-auto px-4">
@@ -94,15 +93,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Problem Statement */}
       <Section background="gray">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Being Disorganized Looks Unprofessional</h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Unclear next steps and endless back-and-forth emails make your organization look hard to work with. The result? Poor first impressions, avoidable delays, and unnecessary risk.
-            </p>
+            <p className="text-lg text-gray-600 leading-relaxed">Unclear next steps and endless back-and-forth emails make your organization look hard to work with.
+             
+            The result? Poor first impressions, avoidable delays, and unnecessary risk.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">

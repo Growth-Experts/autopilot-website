@@ -16,11 +16,11 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 max-w-7xl mx-auto items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 max-w-7xl mx-auto items-stretch">
           {/* Left Column: Contact Info Blocks */}
-          <div className="lg:col-span-4 space-y-6">
+          <div className="lg:col-span-4 flex flex-col gap-6 h-full">
             {/* General Inquiries */}
-            <Card className="border-gray-100 shadow-md hover:shadow-lg transition-shadow">
+            <Card className="border-gray-100 shadow-md hover:shadow-lg transition-shadow flex-1">
               <CardHeader className="pb-3">
                 <div className="w-10 h-10 bg-blue-100 rounded-none flex items-center justify-center text-primary mb-3">
                   <Users className="h-5 w-5" />
@@ -43,7 +43,7 @@ export default function Contact() {
             </Card>
 
             {/* Technical Support */}
-            <Card className="border-gray-100 shadow-md hover:shadow-lg transition-shadow">
+            <Card className="border-gray-100 shadow-md hover:shadow-lg transition-shadow flex-1">
               <CardHeader className="pb-3">
                 <div className="w-10 h-10 bg-blue-100 rounded-none flex items-center justify-center text-primary mb-3">
                   <HelpCircle className="h-5 w-5" />
@@ -62,7 +62,7 @@ export default function Contact() {
             </Card>
 
             {/* Partnership */}
-            <Card className="border-gray-100 shadow-md hover:shadow-lg transition-shadow">
+            <Card className="border-gray-100 shadow-md hover:shadow-lg transition-shadow flex-1">
               <CardHeader className="pb-3">
                 <div className="w-10 h-10 bg-blue-100 rounded-none flex items-center justify-center text-primary mb-3">
                   <Handshake className="h-5 w-5" />
@@ -82,8 +82,8 @@ export default function Contact() {
           </div>
 
           {/* Right Column: Contact Form */}
-          <div className="lg:col-span-8">
-            <div className="bg-white p-8 md:p-12 rounded-none shadow-lg border border-gray-100">
+          <div className="lg:col-span-8 flex flex-col h-full">
+            <div className="bg-white p-8 md:p-12 rounded-none shadow-lg border border-gray-100 flex-1 h-full">
               <h2 className="text-2xl font-bold mb-6">Schedule Your Live Demo</h2>
               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

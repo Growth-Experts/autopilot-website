@@ -56,13 +56,12 @@ export default function Home() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 h-[120%] w-[55%] z-20"
+              className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 h-auto w-[45vw] z-20"
             >
                <img 
                  src={LaptopImage} 
                  alt="Autopilot Dashboard" 
-                 className="absolute right-0 top-1/2 -translate-y-1/2 min-w-full h-auto object-contain object-right"
-                 style={{ maxWidth: 'none', width: '130%' }} 
+                 className="w-full h-auto object-contain object-right"
                />
             </motion.div>
             

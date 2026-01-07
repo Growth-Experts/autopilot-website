@@ -287,6 +287,8 @@ export default function Home() {
             alt="Autopilot Advantage Background" 
             className="w-full h-full object-cover"
           />
+          {/* Left-side overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent pointer-events-none"></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-20">

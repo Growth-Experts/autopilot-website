@@ -17,6 +17,8 @@ import { motion } from "framer-motion";
 
 import app_screenshot__1_ from "@assets/app screenshot (1).png";
 
+import app_screenshot__1__Background_Removed from "@assets/app screenshot (1) Background Removed.png";
+
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -317,7 +319,7 @@ export default function Home() {
           </div>
           
           <img 
-             src={app_screenshot__1_} 
+             src={app_screenshot__1__Background_Removed} 
              alt="Autopilot Platform Overview" 
              className="w-full h-auto object-contain"
           />

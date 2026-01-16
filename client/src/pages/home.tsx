@@ -10,7 +10,7 @@ import Logo3Way from "@assets/3way-logo_1767792280625.png";
 import LogoBidvest from "@assets/bidvest-logo_1767792280625.png";
 import LogoMetrofile from "@assets/metrofile-logo_1767792280626.png";
 import LogoTongaat from "@assets/Tongaat-Huletts-Logo_1767792280626.png";
-import LogoYMCA from "@assets/ymca-logo.png";
+import LogoYMCA from "@assets/YMCA_Logo_1768585772781.jpg";
 import LaptopImage from "@assets/app-screenshot_1767787178377.png";
 import OverviewImage from "@assets/app_screenshot_1767792973731.png";
 import LeftScreenshot from "@assets/app-screenshot-left_1767793647658.png";

@@ -1,202 +1,197 @@
 import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Check } from "lucide-react";
+import { Check, Info, Plus } from "lucide-react";
 import { useState, useEffect } from "react";
+import { Badge } from "@/components/ui/badge";
+import { Switch } from "@/components/ui/switch";
 
 export default function Pricing() {
   const [currency, setCurrency] = useState<'USD' | 'ZAR'>('USD');
   const [locationChecked, setLocationChecked] = useState(false);
 
   useEffect(() => {
-    // Only ask for location once per session/mount
     if (locationChecked) return;
-
     if ("geolocation" in navigator) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
-          // Approximate bounding box for South Africa
-          // Latitude: -35 to -22
-          // Longitude: 16 to 33
-          const isSouthAfrica = 
-            latitude >= -35 && latitude <= -22 &&
-            longitude >= 16 && longitude <= 33;
-            
-          if (isSouthAfrica) {
-            setCurrency('ZAR');
-          }
+          const isSouthAfrica = latitude >= -35 && latitude <= -22 && longitude >= 16 && longitude <= 33;
+          if (isSouthAfrica) setCurrency('ZAR');
           setLocationChecked(true);
         },
         (error) => {
-          console.log("Location access denied or error:", error);
           setLocationChecked(true);
         }
       );
     }
   }, [locationChecked]);
 
-  const prices = {
-    base: { USD: "420", ZAR: "7 500" },
-    tier1: { USD: "1.00", ZAR: "19" },
-    tier2: { USD: "0.75", ZAR: "14" },
-    tier3: { USD: "0.50", ZAR: "9" },
-    esign: { USD: "2.20", ZAR: "40" },
-    bank: { USD: "1.20", ZAR: "22" },
-    cipc: { USD: "1.20", ZAR: "22" },
-    aiDoc: { USD: "0.03", ZAR: "0,50" },
-    aiCustom: { USD: "0.07", ZAR: "1,25" }
-  };
-
   const symbol = currency === 'USD' ? '$' : 'R';
+  
+  // Pricing tiers adapted to the new layout
+  const tiers = [
+    {
+      name: "Starter",
+      price: currency === 'USD' ? "420" : "7 500",
+      description: "Foundational workflow tools for small teams.",
+      features: [
+        "Up to 100 workflows / month",
+        "Unlimited Internal Users",
+        "Unlimited Forms",
+        "Basic Audit Logs",
+        "Email Support"
+      ],
+      cta: "Get Started",
+      ctaVariant: "outline" as const,
+      highlight: false
+    },
+    {
+      name: "Growth",
+      price: currency === 'USD' ? "850" : "15 000",
+      description: "Essential automation for growing businesses.",
+      features: [
+        "Up to 1,000 workflows / month",
+        "Advanced Verification Tools",
+        "CIPC Integration",
+        "Priority Email Support",
+        "90 days review history"
+      ],
+      includes: "EVERYTHING IN STARTER, PLUS:",
+      cta: "Try it free",
+      ctaVariant: "default" as const, // Blue
+      highlight: false
+    },
+    {
+      name: "Pro",
+      price: currency === 'USD' ? "1 500" : "28 000",
+      description: "Advanced collaboration and workflow for scaled teams.",
+      features: [
+        "Up to 5,000 workflows / month",
+        "Bank Account Verification",
+        "AI Document Processing",
+        "Dedicated Success Manager",
+        "Unlimited review history"
+      ],
+      includes: "EVERYTHING IN GROWTH, PLUS:",
+      cta: "Try it free",
+      ctaVariant: "default" as const,
+      highlight: true
+    },
+    {
+      name: "Enterprise",
+      price: "Custom",
+      isCustom: true,
+      description: "For large organizations with complex workflows.",
+      features: [
+        "Unlimited workflows",
+        "Custom AI Models",
+        "SLA Guarantees",
+        "On-premise deployment options",
+        "White-glove onboarding"
+      ],
+      includes: "EVERYTHING IN PRO, PLUS:",
+      cta: "Contact us",
+      ctaVariant: "destructive" as const, // Pink/Reddish
+      highlight: false
+    }
+  ];
 
   return (
     <div className="flex flex-col">
       <Section background="blue" className="text-white pt-24 pb-32">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Our Licensing Model: Simple, Scalable, Predictable</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Simple, Scalable Pricing</h1>
           <p className="text-xl text-blue-100 mb-8">
-            At Autopilot, we believe pricing should reflect the value you receive. Our licensing is based on the actual number of workflows or processes initiated per month.
+            Choose the plan that fits your workflow volume. Upgrade or downgrade at any time.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left max-w-3xl mx-auto mt-12">
-            <div className="bg-white/10 backdrop-blur-sm p-4 rounded-none border border-white/20 flex items-center gap-3">
-              <Check className="h-5 w-5 text-accent" />
-              <span>Unlimited Internal Users</span>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-4 rounded-none border border-white/20 flex items-center gap-3">
-              <Check className="h-5 w-5 text-accent" />
-              <span>Unlimited Forms & Processes</span>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-4 rounded-none border border-white/20 flex items-center gap-3">
-              <Check className="h-5 w-5 text-accent" />
-              <span>Unlimited External Users</span>
-            </div>
+          <div className="flex items-center justify-center gap-4 mt-8">
+            <span className={`text-sm font-bold ${currency === 'USD' ? 'text-white' : 'text-blue-200'}`}>USD</span>
+            <Switch 
+              checked={currency === 'ZAR'}
+              onCheckedChange={(checked) => setCurrency(checked ? 'ZAR' : 'USD')}
+              className="data-[state=checked]:bg-accent"
+            />
+            <span className={`text-sm font-bold ${currency === 'ZAR' ? 'text-white' : 'text-blue-200'}`}>ZAR</span>
           </div>
         </div>
       </Section>
 
-      <Section background="white" className="-mt-20 pt-0">
-        <div className="max-w-4xl mx-auto space-y-12">
-          
-          {/* Main Pricing Table */}
-          <Card className="shadow-xl border-t-4 border-t-accent overflow-hidden">
-            <CardHeader className="text-center bg-gray-50 border-b border-gray-100 py-8">
-              <CardTitle className="text-2xl font-bold text-gray-800">Workflow Volume Fees (Monthly License)</CardTitle>
-              <CardDescription>Costs scale predictably as your organization grows.</CardDescription>
-            </CardHeader>
-            <CardContent className="p-0">
-              <Table>
-                <TableHeader>
-                  <TableRow className="hover:bg-transparent">
-                    <TableHead className="w-[50%] px-8 py-4 text-base font-bold text-gray-900 bg-gray-50/50">Usage Tier</TableHead>
-                    <TableHead className="px-8 py-4 text-base font-bold text-gray-900 bg-gray-50/50">Fee Structure ({currency})</TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  <TableRow>
-                    <TableCell className="px-8 py-6 font-medium text-gray-700">Base License Fee</TableCell>
-                    <TableCell className="px-8 py-6">
-                      <div className="flex items-baseline gap-1">
-                         <span className="text-sm text-gray-500 font-medium">From</span>
-                         <span className="text-xl font-bold text-primary">{symbol} {prices.base[currency]}</span>
-                      </div>
-                      <p className="text-sm text-gray-500 mt-1">Includes the first 1–100 workflows initiated per month</p>
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="px-8 py-6 font-medium text-gray-700">Tier 1 (101–1,000 workflows p/mo.)</TableCell>
-                    <TableCell className="px-8 py-6">
-                      <div className="flex items-baseline gap-1">
-                        <span className="text-sm text-gray-500 font-medium">From</span>
-                        <span className="text-xl font-bold text-primary">{symbol} {prices.tier1[currency]}</span> <span className="text-gray-500">per workflow</span>
-                      </div>
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="px-8 py-6 font-medium text-gray-700">Tier 2 (1,001–5,000 workflows p/mo.)</TableCell>
-                    <TableCell className="px-8 py-6">
-                      <div className="flex items-baseline gap-1">
-                        <span className="text-sm text-gray-500 font-medium">From</span>
-                        <span className="text-xl font-bold text-primary">{symbol} {prices.tier2[currency]}</span> <span className="text-gray-500">per workflow</span>
-                      </div>
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="px-8 py-6 font-medium text-gray-700">Tier 3 (5,001+ workflows p/mo.)</TableCell>
-                    <TableCell className="px-8 py-6">
-                      <div className="flex items-baseline gap-1">
-                        <span className="text-sm text-gray-500 font-medium">From</span>
-                        <span className="text-xl font-bold text-primary">{symbol} {prices.tier3[currency]}</span> <span className="text-gray-500">per workflow</span>
-                      </div>
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="px-8 py-6 font-medium text-gray-700">Enterprise / Large Organizations</TableCell>
-                    <TableCell className="px-8 py-6">
-                      <span className="text-xl font-bold text-primary">Price on request</span>
-                      <p className="text-sm text-gray-500 mt-1">For organizations with high volume requirements</p>
-                    </TableCell>
-                  </TableRow>
-                </TableBody>
-              </Table>
-            </CardContent>
-          </Card>
+      <Section background="white" className="-mt-24 pt-0">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {tiers.map((tier, index) => (
+              <Card key={index} className={`relative flex flex-col h-full border-none shadow-xl rounded-none overflow-visible ${tier.highlight ? 'ring-2 ring-accent ring-offset-2' : ''}`}>
+                {tier.highlight && (
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                    <Badge className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-500 hover:to-purple-600 text-white border-none px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-md">
+                      Most popular
+                    </Badge>
+                  </div>
+                )}
+                
+                <CardHeader className="pb-4">
+                  <h3 className="text-xl font-bold text-gray-900">{tier.name}</h3>
+                  <div className="mt-4 mb-2">
+                    {tier.isCustom ? (
+                       <div className="flex items-baseline gap-1">
+                          <span className="text-4xl font-extrabold text-gray-900">Custom</span>
+                       </div>
+                    ) : (
+                        <div className="flex items-baseline gap-1">
+                          <span className="text-4xl font-extrabold text-gray-900">{symbol}{tier.price}</span>
+                          <span className="text-gray-500 font-medium">/ month</span>
+                        </div>
+                    )}
+                    {!tier.isCustom && <p className="text-xs text-gray-400 mt-1">billed monthly</p>}
+                  </div>
+                  <p className="text-sm text-gray-600 leading-relaxed min-h-[40px]">
+                    {tier.description}
+                  </p>
+                </CardHeader>
+                
+                <CardContent className="pb-8">
+                   <Button 
+                      className={`w-full h-12 rounded-full font-bold mb-8 ${
+                        tier.ctaVariant === 'outline' 
+                          ? 'bg-transparent border-2 border-gray-900 text-gray-900 hover:bg-gray-50' 
+                          : tier.ctaVariant === 'destructive'
+                             ? 'bg-[#E91E63] hover:bg-[#D81B60] text-white border-none'
+                             : 'bg-[#0066FF] hover:bg-[#0052CC] text-white border-none'
+                      }`}
+                      variant={tier.ctaVariant === 'outline' ? 'outline' : 'default'}
+                   >
+                     {tier.cta}
+                   </Button>
 
-          {/* 3rd Party Fees */}
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-center">Integrated 3rd Party Service Fees</h2>
-            <p className="text-center text-gray-600 max-w-2xl mx-auto">
-              If your solution requires advanced verification or e-signature services, these are integrated seamlessly and billed per transaction.
-            </p>
-            
-            <Card className="shadow-lg border-gray-100">
-              <CardContent className="p-0">
-                <Table>
-                  <TableHeader>
-                    <TableRow className="hover:bg-transparent">
-                      <TableHead className="w-[50%] px-8 py-4 text-base font-bold text-gray-900 bg-gray-50/50">Service</TableHead>
-                      <TableHead className="px-8 py-4 text-base font-bold text-gray-900 bg-gray-50/50">Fee ({currency})</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    <TableRow>
-                      <TableCell className="px-8 py-4 font-medium">e-signatures (DocuSign)</TableCell>
-                      <TableCell className="px-8 py-4">{symbol} {prices.esign[currency]} per transaction</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="px-8 py-4 font-medium">Bank Account Verification</TableCell>
-                      <TableCell className="px-8 py-4">{symbol} {prices.bank[currency]} per transaction</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="px-8 py-4 font-medium">CIPC Integration</TableCell>
-                      <TableCell className="px-8 py-4">{symbol} {prices.cipc[currency]} per transaction</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="px-8 py-4 font-medium">AI Document Processing (Invoices/Receipts)</TableCell>
-                      <TableCell className="px-8 py-4">{symbol} {prices.aiDoc[currency]} per page</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="px-8 py-4 font-medium">AI Document Processing (Custom)</TableCell>
-                      <TableCell className="px-8 py-4">{symbol} {prices.aiCustom[currency]} per page</TableCell>
-                    </TableRow>
-                  </TableBody>
-                </Table>
-              </CardContent>
-            </Card>
+                   {tier.includes && (
+                     <p className="text-xs font-bold text-gray-900 mb-4 uppercase tracking-wider">
+                       {tier.includes}
+                     </p>
+                   )}
+                   
+                   <ul className="space-y-4">
+                     {tier.features.map((feature, i) => (
+                       <li key={i} className="flex items-start gap-3 text-sm text-gray-600">
+                         {/* Using a custom bullet or check based on the image style (just text list or info icons) */}
+                         {/* Image implies simple list, maybe with tooltips? stick to simple text for now */}
+                         <div className="w-full flex justify-between items-center group cursor-pointer">
+                            <span>{feature}</span>
+                            <Info className="h-4 w-4 text-gray-300 group-hover:text-gray-500 transition-colors" />
+                         </div>
+                       </li>
+                     ))}
+                   </ul>
+                </CardContent>
+              </Card>
+            ))}
           </div>
 
-          <div className="bg-gray-50 rounded-none p-10 text-center border border-gray-200">
-            <h2 className="text-2xl font-bold mb-4">Ready to Build Your Custom Workflow?</h2>
-            <p className="text-gray-600 mb-8">
-              The best way to understand your investment is to see the platform in action and discuss your specific workflow needs.
-            </p>
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-10">
-              Request a Custom Quote
-            </Button>
+          {/* FAQ or Additional Info could go here */}
+          <div className="mt-20 text-center">
+             <p className="text-gray-500">Need help choosing the right plan? <a href="/contact" className="text-primary font-bold hover:underline">Contact our sales team</a></p>
           </div>
-
         </div>
       </Section>
     </div>

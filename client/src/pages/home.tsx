@@ -111,7 +111,7 @@ export default function Home() {
       <section className="py-12 bg-white border-b border-gray-100">
         <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              <Card className="bg-blue-50 border-none shadow-sm">
+              <Card className="bg-blue-50 border-none shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:bg-blue-100/80 cursor-default">
                 <CardContent className="p-8 flex items-start gap-4">
                    <div className="bg-white p-3 rounded-full shrink-0 shadow-sm">
                      <ShieldCheck className="h-6 w-6 text-primary" />
@@ -125,7 +125,7 @@ export default function Home() {
                 </CardContent>
               </Card>
               
-              <Card className="bg-orange-50 border-none shadow-sm">
+              <Card className="bg-orange-50 border-none shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:bg-orange-100/80 cursor-default">
                 <CardContent className="p-8 flex items-start gap-4">
                    <div className="bg-white p-3 rounded-full shrink-0 shadow-sm">
                      <Handshake className="h-6 w-6 text-accent" />

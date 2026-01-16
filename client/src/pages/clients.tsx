@@ -74,7 +74,12 @@ export default function Clients() {
       <Section background="gray" className="pt-6 md:pt-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {caseStudies.map((study, index) => (
-            <Card key={index} className="border-none shadow-md hover:shadow-lg transition-shadow duration-300">
+            <Card 
+              key={index} 
+              className={`border-none shadow-md hover:shadow-lg transition-shadow duration-300 ${
+                index === caseStudies.length - 1 ? "md:col-span-2 md:w-[calc(50%-1rem)] md:mx-auto" : ""
+              }`}
+            >
               <CardHeader className="pb-2">
                 <div className="flex items-center gap-4 mb-2">
                    <div className="w-16 h-16 bg-white rounded-md flex items-center justify-center p-1 border border-gray-100 shadow-sm shrink-0 overflow-hidden">

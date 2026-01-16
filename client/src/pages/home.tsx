@@ -377,7 +377,7 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-none border border-white/20">
+          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-none border border-white/20 transition-all duration-300 hover:bg-white/15 hover:border-white/40 hover:-translate-y-1 hover:shadow-lg">
             <div className="h-12 rounded-none mb-6 flex items-center justify-center px-4 bg-[#fff]">
                <img src={LogoLawd} alt="LAWD" className="h-8 object-contain" />
             </div>
@@ -386,7 +386,7 @@ export default function Home() {
             <p className="text-blue-100">LAWD halved time spent managing onboarding, supporting weekly new hires without an internal HR or IT team.</p>
           </div>
           
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-none border border-white/20">
+          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-none border border-white/20 transition-all duration-300 hover:bg-white/15 hover:border-white/40 hover:-translate-y-1 hover:shadow-lg">
             <div className="h-12 rounded-none mb-6 flex items-center justify-center px-4 bg-[#fff]">
                <img src={LogoSyntech} alt="Syntech" className="h-8 object-contain" />
             </div>

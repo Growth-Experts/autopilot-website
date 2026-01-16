@@ -98,26 +98,45 @@ export default function Pricing() {
                   <TableRow>
                     <TableCell className="px-8 py-6 font-medium text-gray-700">Base License Fee</TableCell>
                     <TableCell className="px-8 py-6">
-                      <span className="text-xl font-bold text-primary">{symbol} {prices.base[currency]}</span>
+                      <div className="flex items-baseline gap-1">
+                         <span className="text-sm text-gray-500 font-medium">From</span>
+                         <span className="text-xl font-bold text-primary">{symbol} {prices.base[currency]}</span>
+                      </div>
                       <p className="text-sm text-gray-500 mt-1">Includes the first 1–100 workflows initiated per month</p>
                     </TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="px-8 py-6 font-medium text-gray-700">Tier 1 (101–1,000 workflows p/mo.)</TableCell>
                     <TableCell className="px-8 py-6">
-                      <span className="text-xl font-bold text-primary">{symbol} {prices.tier1[currency]}</span> <span className="text-gray-500">per workflow</span>
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-sm text-gray-500 font-medium">From</span>
+                        <span className="text-xl font-bold text-primary">{symbol} {prices.tier1[currency]}</span> <span className="text-gray-500">per workflow</span>
+                      </div>
                     </TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="px-8 py-6 font-medium text-gray-700">Tier 2 (1,001–5,000 workflows p/mo.)</TableCell>
                     <TableCell className="px-8 py-6">
-                      <span className="text-xl font-bold text-primary">{symbol} {prices.tier2[currency]}</span> <span className="text-gray-500">per workflow</span>
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-sm text-gray-500 font-medium">From</span>
+                        <span className="text-xl font-bold text-primary">{symbol} {prices.tier2[currency]}</span> <span className="text-gray-500">per workflow</span>
+                      </div>
                     </TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="px-8 py-6 font-medium text-gray-700">Tier 3 (5,001+ workflows p/mo.)</TableCell>
                     <TableCell className="px-8 py-6">
-                      <span className="text-xl font-bold text-primary">{symbol} {prices.tier3[currency]}</span> <span className="text-gray-500">per workflow</span>
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-sm text-gray-500 font-medium">From</span>
+                        <span className="text-xl font-bold text-primary">{symbol} {prices.tier3[currency]}</span> <span className="text-gray-500">per workflow</span>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="px-8 py-6 font-medium text-gray-700">Enterprise / Large Organizations</TableCell>
+                    <TableCell className="px-8 py-6">
+                      <span className="text-xl font-bold text-primary">Price on request</span>
+                      <p className="text-sm text-gray-500 mt-1">For organizations with high volume requirements</p>
                     </TableCell>
                   </TableRow>
                 </TableBody>

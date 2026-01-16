@@ -1,6 +1,6 @@
 import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
-import ProductShot from "@assets/unnamed_(3)_1768588588330.png";
+import OfficeImage from "@assets/generated_images/professional_corporate_office_team.png";
 import AdamPhoto from "@assets/adam_shapiro_1767786578211.jpg";
 
 export default function About() {
@@ -23,9 +23,9 @@ export default function About() {
           <div className="relative">
              <div className="absolute -inset-4 bg-accent/10 rounded-none transform rotate-3"></div>
              <img 
-               src={ProductShot} 
-               alt="Autopilot Onboarding Dashboard" 
-               className="relative rounded-none shadow-xl w-full object-cover aspect-video bg-white"
+               src={OfficeImage} 
+               alt="Autopilot Team" 
+               className="relative rounded-none shadow-xl w-full object-cover aspect-video"
              />
           </div>
         </div>

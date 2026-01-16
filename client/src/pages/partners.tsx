@@ -1,5 +1,6 @@
 import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
 import { Handshake, ShieldCheck, Zap } from "lucide-react";
 
@@ -42,9 +43,11 @@ export default function Partners() {
         
         <div className="text-center">
           <h3 className="text-2xl font-bold mb-6">Join Our Partner Network</h3>
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold px-10">
-            Contact Adam
-          </Button>
+          <Link href="/contact">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold px-10">
+              Contact Adam
+            </Button>
+          </Link>
         </div>
       </Section>
     </div>

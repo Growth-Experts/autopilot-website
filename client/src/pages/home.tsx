@@ -142,7 +142,7 @@ export default function Home() {
         </div>
       </section>
       {/* Problem Statement */}
-      <Section background="gray">
+      <Section background="gray" className="pb-12 md:pb-16">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Being Disorganized Looks Unprofessional</h2>
@@ -211,7 +211,7 @@ export default function Home() {
         </div>
       </Section>
       {/* Products Section */}
-      <Section background="white" id="products" className="scroll-mt-24">
+      <Section background="white" id="products" className="scroll-mt-24 pt-12 md:pt-16">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Products</h2>
           <p className="text-gray-600">Streamline your operations with our dedicated solutions.</p>

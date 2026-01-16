@@ -9,7 +9,6 @@ import ScrollToTop from "@/components/layout/ScrollToTop";
 
 // Pages
 import Home from "@/pages/home";
-import Products from "@/pages/products";
 import Partners from "@/pages/partners";
 import Clients from "@/pages/clients";
 import Pricing from "@/pages/pricing";
@@ -22,7 +21,6 @@ function Router() {
       <ScrollToTop />
       <Switch>
         <Route path="/" component={Home} />
-        <Route path="/products" component={Products} />
         <Route path="/partners" component={Partners} />
         <Route path="/clients" component={Clients} />
         <Route path="/pricing" component={Pricing} />

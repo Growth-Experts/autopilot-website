@@ -56,11 +56,11 @@ export default function Home() {
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold h-14 px-8 text-lg w-full sm:w-auto">
                   Book a Demo
                 </Button>
-                <Link href="/products">
+                <a href="#products">
                   <Button variant="outline" size="lg" className="h-14 px-8 text-lg border-primary text-primary hover:bg-primary/5 w-full sm:w-auto">
                     Explore Solutions
                   </Button>
-                </Link>
+                </a>
               </div>
             </motion.div>
 
@@ -207,7 +207,7 @@ export default function Home() {
         </div>
       </Section>
       {/* Products Section */}
-      <Section background="white">
+      <Section background="white" id="products">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Products</h2>
           <p className="text-gray-600">Streamline your operations with our dedicated solutions.</p>
@@ -304,11 +304,9 @@ export default function Home() {
               </div>
             </CardContent>
             <CardFooter className="pb-8">
-              <Link href="/products" className="w-full">
-                <Button className="w-full bg-[#3A82D3] hover:bg-[#3A82D3]/90 text-white">
-                  Explore Approvals <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+              <Button className="w-full bg-[#3A82D3] hover:bg-[#3A82D3]/90 text-white">
+                Explore Approvals <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </CardFooter>
           </Card>
         </div>

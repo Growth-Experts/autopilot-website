@@ -174,12 +174,8 @@ export default function Pricing() {
                    <ul className="space-y-4">
                      {tier.features.map((feature, i) => (
                        <li key={i} className="flex items-start gap-3 text-sm text-gray-600">
-                         {/* Using a custom bullet or check based on the image style (just text list or info icons) */}
-                         {/* Image implies simple list, maybe with tooltips? stick to simple text for now */}
-                         <div className="w-full flex justify-between items-center group cursor-pointer">
-                            <span>{feature}</span>
-                            <Info className="h-4 w-4 text-gray-300 group-hover:text-gray-500 transition-colors" />
-                         </div>
+                         <Check className="h-4 w-4 text-gray-400 shrink-0 mt-0.5" />
+                         <span>{feature}</span>
                        </li>
                      ))}
                    </ul>

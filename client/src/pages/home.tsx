@@ -1,7 +1,7 @@
 import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { ArrowRight, CheckCircle, Clock, Shield, Users, FileText, UserCheck, Send, Layers, X, Mail, FileQuestion, AlertCircle, Check, GitBranch, FileCheck, LayoutDashboard } from "lucide-react";
+import { ArrowRight, CheckCircle, Clock, Shield, Users, FileText, UserCheck, Send, Layers, X, Mail, FileQuestion, AlertCircle, Check, GitBranch, FileCheck, LayoutDashboard, ShieldCheck, Handshake } from "lucide-react";
 import LogoApprovals from "@assets/Autopilot_Logo_Approvals_-_Primary_1767782851207.png";
 import LogoOnboarding from "@assets/Autopilot_Logo_Onboarding_-_Primary_1767782851208.png";
 import LogoLawd from "@assets/lawd-logo_1767792280625.png";
@@ -100,6 +100,41 @@ export default function Home() {
              <img src={LogoSyntech} alt="Syntech" className="h-8 md:h-12 w-auto object-contain" />
              <img src={LogoTongaat} alt="Tongaat Hulett" className="h-8 md:h-12 w-auto object-contain" />
           </div>
+        </div>
+      </section>
+
+      {/* Strategic Alliances Section */}
+      <section className="py-12 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <Card className="bg-blue-50 border-none shadow-sm">
+                <CardContent className="p-8 flex items-start gap-4">
+                   <div className="bg-white p-3 rounded-full shrink-0 shadow-sm">
+                     <ShieldCheck className="h-6 w-6 text-primary" />
+                   </div>
+                   <div>
+                       <h3 className="text-xl font-bold text-primary mb-2">Microsoft Partner</h3>
+                       <p className="text-gray-700 leading-relaxed">
+                         We are a trusted Microsoft Partner, leveraging technologies like SharePoint to ensure secure storage and compliance.
+                       </p>
+                   </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-orange-50 border-none shadow-sm">
+                <CardContent className="p-8 flex items-start gap-4">
+                   <div className="bg-white p-3 rounded-full shrink-0 shadow-sm">
+                     <Handshake className="h-6 w-6 text-accent" />
+                   </div>
+                   <div>
+                       <h3 className="text-xl font-bold text-accent mb-2">DocuSign Integration</h3>
+                       <p className="text-gray-700 leading-relaxed">
+                         We integrate with compliant e-signature providers like DocuSign that meet legal and security requirements.
+                       </p>
+                   </div>
+                </CardContent>
+              </Card>
+            </div>
         </div>
       </section>
       {/* Problem Statement */}

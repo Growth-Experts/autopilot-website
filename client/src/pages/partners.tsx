@@ -6,45 +6,9 @@ import { Handshake, ShieldCheck, Zap } from "lucide-react";
 export default function Partners() {
   return (
     <div className="flex flex-col">
-      <Section background="white" className="pt-20 pb-16">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Strategic Alliances. Trusted Integration.</h1>
-          <p className="text-xl text-gray-600 mb-8">
-            Built to Integrate. Powered by World-Class Technology.
-          </p>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            Autopilot is built to integrate seamlessly with your existing systems - deploying inside or alongside Microsoft Teams without disrupting your broader technology stack.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <Card className="bg-blue-50 border-none">
-            <CardContent className="p-8">
-               <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
-                 <ShieldCheck className="h-6 w-6" /> Microsoft Partner
-               </h3>
-               <p className="text-gray-700">
-                 We are a trusted Microsoft Partner, leveraging technologies like SharePoint to ensure secure storage and compliance.
-               </p>
-            </CardContent>
-          </Card>
-          
-          <Card className="bg-orange-50 border-none">
-            <CardContent className="p-8">
-               <h3 className="text-xl font-bold text-accent mb-4 flex items-center gap-2">
-                 <Handshake className="h-6 w-6" /> DocuSign Integration
-               </h3>
-               <p className="text-gray-700">
-                 We integrate with compliant e-signature providers like DocuSign that meet legal and security requirements.
-               </p>
-            </CardContent>
-          </Card>
-        </div>
-      </Section>
-
-      <Section background="gray">
+      <Section background="white" className="pt-24 pb-16 md:pt-32">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Expand Your Reach. Partner with Autopilot.</h2>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Expand Your Reach. Partner with Autopilot.</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Autopilot works with certified implementation partners to deliver faster deployments and consistent outcomes for clients.
           </p>

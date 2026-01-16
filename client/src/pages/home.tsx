@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative pt-24 pb-32 md:pt-40 md:pb-56 bg-white overflow-hidden">
+      <section className="relative pt-24 pb-20 md:pt-40 md:pb-40 bg-white overflow-hidden">
         {/* Background Visuals */}
         <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
            {/* Grid Pattern */}

@@ -7,14 +7,14 @@ export default function Footer() {
     <footer className="bg-primary text-white pt-20 pb-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
-          <div className="col-span-1 md:col-span-4 lg:col-span-3">
+          <div className="col-span-1 md:col-span-4 lg:col-span-4">
             <img src={Logo} alt="Autopilot" className="h-11 w-auto mb-6 brightness-0 invert" />
             <p className="text-gray-300 text-sm leading-relaxed">
               Autopilot replaces confusing emails, duplicate requests, and scattered internal tasks with one clear, guided workflow.
             </p>
           </div>
           
-          <div className="col-span-1 md:col-span-2 lg:col-start-5">
+          <div className="col-span-1 md:col-span-2 lg:col-start-9">
             <h4 className="font-bold text-lg mb-6 text-white">Company</h4>
             <ul className="space-y-4 text-sm text-gray-300">
               <li><Link href="/about"><a className="hover:text-white transition-colors">About Us</a></Link></li>
@@ -24,7 +24,7 @@ export default function Footer() {
             </ul>
           </div>
           
-          <div className="col-span-1 md:col-span-3 lg:col-span-3">
+          <div className="col-span-1 md:col-span-3 lg:col-start-11 lg:col-span-2">
             <h4 className="font-bold text-lg mb-6 text-white">Contact</h4>
             <ul className="space-y-4 text-sm text-gray-300">
               <li><Link href="/contact"><a className="hover:text-white transition-colors">Book a Demo</a></Link></li>

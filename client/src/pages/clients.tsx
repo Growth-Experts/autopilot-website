@@ -59,8 +59,8 @@ export default function Clients() {
 
   return (
     <div className="flex flex-col">
-       <Section background="white" className="pt-20 pb-8">
-        <div className="max-w-4xl mx-auto text-center mb-8">
+       <Section background="white" className="pt-20 pb-4">
+        <div className="max-w-4xl mx-auto text-center mb-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Proven Success Across Industries</h1>
           <p className="text-xl text-gray-600 mb-8">
             Leading organizations trust our solutions to manage high-volume, mission-critical processes.
@@ -71,7 +71,7 @@ export default function Clients() {
         </div>
       </Section>
 
-      <Section background="gray" className="pt-12 md:pt-16">
+      <Section background="gray" className="pt-6 md:pt-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {caseStudies.map((study, index) => (
             <Card key={index} className="border-none shadow-md hover:shadow-lg transition-shadow duration-300">

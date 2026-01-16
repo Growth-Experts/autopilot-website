@@ -15,7 +15,7 @@ export default function Partners() {
         </div>
 
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-           <div className="bg-white p-8 rounded-none shadow-sm border border-gray-100 text-center">
+           <div className="bg-white p-8 rounded-none shadow-sm border border-gray-100 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-blue-200 cursor-default">
              <div className="w-12 h-12 bg-blue-100 rounded-none flex items-center justify-center text-primary mx-auto mb-6">
                <Zap className="h-6 w-6" />
              </div>
@@ -23,7 +23,7 @@ export default function Partners() {
              <p className="text-sm text-gray-600">Access to standardized sales decks and content to present our solutions effectively.</p>
            </div>
            
-           <div className="bg-white p-8 rounded-none shadow-sm border border-gray-100 text-center">
+           <div className="bg-white p-8 rounded-none shadow-sm border border-gray-100 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-blue-200 cursor-default">
              <div className="w-12 h-12 bg-blue-100 rounded-none flex items-center justify-center text-primary mx-auto mb-6">
                <Zap className="h-6 w-6" />
              </div>
@@ -31,7 +31,7 @@ export default function Partners() {
              <p className="text-sm text-gray-600">Implement solutions for high-demand needs like employee and client onboarding.</p>
            </div>
            
-           <div className="bg-white p-8 rounded-none shadow-sm border border-gray-100 text-center">
+           <div className="bg-white p-8 rounded-none shadow-sm border border-gray-100 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-blue-200 cursor-default">
              <div className="w-12 h-12 bg-blue-100 rounded-none flex items-center justify-center text-primary mx-auto mb-6">
                <Zap className="h-6 w-6" />
              </div>

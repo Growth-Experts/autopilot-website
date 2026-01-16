@@ -26,9 +26,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-6 text-white">Contact</h4>
             <ul className="space-y-4 text-sm text-gray-300">
-              <li><Link href="/contact"><a className="hover:text-white transition-colors">Get in Touch</a></Link></li>
               <li><Link href="/contact"><a className="hover:text-white transition-colors">Book a Demo</a></Link></li>
-              <li><Link href="/contact"><a className="hover:text-white transition-colors">Support</a></Link></li>
             </ul>
           </div>
         </div>

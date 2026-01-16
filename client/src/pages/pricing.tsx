@@ -125,7 +125,7 @@ export default function Pricing() {
               <Card key={index} className={`relative flex flex-col h-full border-none shadow-xl rounded-none overflow-visible ${tier.highlight ? 'ring-2 ring-accent ring-offset-2' : ''}`}>
                 {tier.highlight && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <Badge className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-500 hover:to-purple-600 text-white border-none px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-md">
+                    <Badge className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white border-none px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-md">
                       Most popular
                     </Badge>
                   </div>
@@ -157,8 +157,8 @@ export default function Pricing() {
                         tier.ctaVariant === 'outline' 
                           ? 'bg-transparent border-2 border-gray-900 text-gray-900 hover:bg-gray-50' 
                           : tier.ctaVariant === 'destructive'
-                             ? 'bg-[#E91E63] hover:bg-[#D81B60] text-white border-none'
-                             : 'bg-[#0066FF] hover:bg-[#0052CC] text-white border-none'
+                             ? 'bg-accent hover:bg-accent/90 text-white border-none'
+                             : 'bg-primary hover:bg-primary/90 text-white border-none'
                       }`}
                       variant={tier.ctaVariant === 'outline' ? 'outline' : 'default'}
                    >

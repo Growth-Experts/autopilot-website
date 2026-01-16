@@ -12,6 +12,7 @@ import LogoMetrofile from "@assets/metrofile-logo_1767792280626.png";
 import LogoTongaat from "@assets/Tongaat-Huletts-Logo_1767792280626.png";
 import LogoYMCA from "@assets/YMCA_Logo_1768585772781.jpg";
 import LaptopImage from "@assets/app-screenshot_1767787178377.png";
+import OnboardingScreenshot from "@assets/unnamed_(4)_1768585890405.png";
 import OverviewImage from "@assets/app_screenshot_1767792973731.png";
 import LeftScreenshot from "@assets/app-screenshot-left_1767793647658.png";
 import { Link } from "wouter";
@@ -226,12 +227,7 @@ export default function Home() {
               
               {/* Screenshot Placeholder */}
               <div className="w-full h-48 bg-gray-100 border border-gray-200 rounded-none mb-4 flex items-center justify-center relative overflow-hidden group-hover:border-accent/20 transition-colors">
-                <div className="text-gray-400 text-sm font-medium flex flex-col items-center gap-2">
-                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
-                     <FileText className="w-6 h-6 text-gray-300" />
-                   </div>
-                   <span>App Screenshot Placeholder</span>
-                </div>
+                <img src={OnboardingScreenshot} alt="Onboarding Screenshot" className="w-full h-full object-cover object-top" />
               </div>
 
               <h3 className="text-lg text-accent font-medium mt-1">One Coordinated Onboarding Flow</h3>

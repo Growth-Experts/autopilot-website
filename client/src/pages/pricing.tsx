@@ -165,11 +165,11 @@ export default function Pricing() {
                      {tier.cta}
                    </Button>
 
-                   {tier.includes && (
-                     <p className="text-xs font-bold text-gray-900 mb-4 uppercase tracking-wider">
-                       {tier.includes}
+                   <div className="min-h-[20px] mb-4">
+                     <p className="text-xs font-bold text-gray-900 uppercase tracking-wider">
+                       {tier.includes || <span className="invisible">Spacer</span>}
                      </p>
-                   )}
+                   </div>
                    
                    <ul className="space-y-4">
                      {tier.features.map((feature, i) => (

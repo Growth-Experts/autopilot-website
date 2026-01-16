@@ -23,7 +23,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-            <img src={Logo} alt="Autopilot" className="h-8 md:h-10 w-auto" />
+            <img src={Logo} alt="Autopilot" className="h-10 md:h-14 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}

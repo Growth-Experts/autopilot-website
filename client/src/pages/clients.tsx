@@ -3,40 +3,55 @@ import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
 import { Quote } from "lucide-react";
 
+import LogoLawd from "@assets/lawd-logo_1767792280625.png";
+import LogoSyntech from "@assets/Syntech-Logo_1767792280626.png";
+import LogoYMCA from "@assets/YMCA_Logo_1768585772781.jpg";
+import LogoTalksure from "@assets/generated_images/talksure_logo_text.png";
+import LogoRubiq from "@assets/generated_images/rubiq_logo_text.png";
+import LogoCBF from "@assets/generated_images/cooperative_baptist_fellowship_logo.png";
+import LogoSACanegrowers from "@assets/generated_images/sa_canegrowers_logo.png";
+
 export default function Clients() {
   const caseStudies = [
     {
       company: "LAWD",
+      logo: LogoLawd,
       result: "Halved time spent managing onboarding",
       detail: "Supporting weekly new hires without an internal HR or IT team."
     },
     {
       company: "Syntech",
+      logo: LogoSyntech,
       result: "Cut reseller approval time from 10 days to 1 day",
       detail: "By pushing clean, validated data directly into CRM systems."
     },
     {
       company: "YMCA South Africa",
+      logo: LogoYMCA,
       result: "Transformed operational efficiency",
       detail: "Reduced audit times and enhanced financial accountability with Autopilot."
     },
     {
       company: "Talksure",
+      logo: LogoTalksure,
       result: "Reduced manual steps and cut ERP costs",
       detail: "Moved procurement approvals into Microsoft Teams with full audit trails."
     },
     {
       company: "RUBiQ",
+      logo: LogoRubiq,
       result: "Rolled out in hours",
       detail: "Gained enterprise-grade controls, easier approvals, and a smooth employee experience."
     },
     {
       company: "Cooperative Baptist Fellowship",
+      logo: LogoCBF,
       result: "Faster decisions with strong governance",
       detail: "Streamlined key approval workflows inside Microsoft Teams."
     },
     {
       company: "SA Canegrowers",
+      logo: LogoSACanegrowers,
       result: "Organisation-wide adoption in just days",
       detail: "Digitized approval processes inside Microsoft Teams improving process control."
     }
@@ -61,9 +76,13 @@ export default function Clients() {
           {caseStudies.map((study, index) => (
             <Card key={index} className="border-none shadow-md hover:shadow-lg transition-shadow duration-300">
               <CardHeader className="pb-2">
-                <div className="flex items-center gap-3 mb-2">
-                   <div className="w-10 h-10 bg-primary/10 rounded-none flex items-center justify-center text-primary">
-                     <Quote className="h-5 w-5 fill-current" />
+                <div className="flex items-center gap-4 mb-2">
+                   <div className="w-16 h-16 bg-white rounded-md flex items-center justify-center p-1 border border-gray-100 shadow-sm shrink-0 overflow-hidden">
+                     <img 
+                       src={study.logo} 
+                       alt={`${study.company} logo`} 
+                       className="w-full h-full object-contain"
+                     />
                    </div>
                    <CardTitle className="text-2xl font-bold text-gray-800">{study.company}</CardTitle>
                 </div>

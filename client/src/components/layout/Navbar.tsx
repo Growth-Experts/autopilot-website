@@ -45,12 +45,14 @@ export default function Navbar() {
         </div>
 
         <div className="hidden lg:flex items-center space-x-4">
-          <Button 
-            className="bg-accent hover:bg-accent/90 text-white font-bold px-6"
-            size="lg"
-          >
-            Book a Demo
-          </Button>
+          <Link href="/contact">
+            <Button 
+              className="bg-accent hover:bg-accent/90 text-white font-bold px-6"
+              size="lg"
+            >
+              Book a Demo
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Navigation */}
@@ -78,9 +80,11 @@ export default function Navbar() {
                       {item.label}
                   </Link>
                 ))}
-                <Button className="bg-accent hover:bg-accent/90 text-white w-full">
-                  Book a Demo
-                </Button>
+                <Link href="/contact">
+                  <Button className="bg-accent hover:bg-accent/90 text-white w-full">
+                    Book a Demo
+                  </Button>
+                </Link>
               </div>
             </SheetContent>
           </Sheet>

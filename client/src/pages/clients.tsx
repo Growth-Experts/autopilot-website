@@ -1,7 +1,7 @@
 import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
-import { Quote } from "lucide-react";
+import { Link } from "wouter";
 
 import LogoLawd from "@assets/lawd-logo_1767792280625.png";
 import LogoSyntech from "@assets/Syntech-Logo_1767792280626.png";
@@ -101,9 +101,11 @@ export default function Clients() {
         </div>
 
         <div className="text-center mt-20">
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-10 h-14 text-lg">
-            Book a Demo
-          </Button>
+          <Link href="/contact">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-10 h-14 text-lg">
+              Book a Demo
+            </Button>
+          </Link>
         </div>
       </Section>
     </div>

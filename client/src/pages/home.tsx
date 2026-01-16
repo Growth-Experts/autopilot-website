@@ -56,9 +56,11 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold h-14 px-8 text-lg w-full sm:w-auto">
-                  Book a Demo
-                </Button>
+                <Link href="/contact">
+                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold h-14 px-8 text-lg w-full sm:w-auto">
+                    Book a Demo
+                  </Button>
+                </Link>
                 <a href="#products">
                   <Button variant="outline" size="lg" className="h-14 px-8 text-lg border-primary text-primary hover:bg-primary/5 w-full sm:w-auto">
                     Explore Solutions
@@ -411,9 +413,11 @@ export default function Home() {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Replace scattered emails and loose tasks with one clean, auditable workflow. Most workflows go live in days, not months.
           </p>
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold h-14 px-10 text-lg shadow-lg hover:shadow-xl transition-all">
-            Book a Demo
-          </Button>
+          <Link href="/contact">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold h-14 px-10 text-lg shadow-lg hover:shadow-xl transition-all">
+              Book a Demo
+            </Button>
+          </Link>
         </div>
       </Section>
     </div>

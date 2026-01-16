@@ -2,6 +2,7 @@ import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import OfficeImage from "@assets/generated_images/professional_corporate_office_team.png";
 import AdamPhoto from "@assets/adam_shapiro_1767786578211.jpg";
+import { Link } from "wouter";
 
 export default function About() {
   return (
@@ -66,9 +67,11 @@ export default function About() {
              Our team is composed of workflow and integration specialists dedicated to understanding the intricacies of critical business processes. We focus on building solutions that are not only technologically advanced but also highly usable for both internal teams and external parties.
            </p>
            <div className="pt-8">
-             <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-10">
-               Book a Demo
-             </Button>
+             <Link href="/contact">
+               <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-10">
+                 Book a Demo
+               </Button>
+             </Link>
            </div>
         </div>
       </Section>

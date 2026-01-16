@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import Logo from "@assets/Autopilot_logo_1767782180335.png";
+import { Mail, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -27,6 +28,15 @@ export default function Footer() {
             <h4 className="font-bold text-lg mb-6 text-white">Contact</h4>
             <ul className="space-y-4 text-sm text-gray-300">
               <li><Link href="/contact"><a className="hover:text-white transition-colors">Book a Demo</a></Link></li>
+              
+              <li className="pt-4 flex items-center gap-3">
+                <Mail className="h-4 w-4 text-accent" />
+                <a href="mailto:info@autopilot.co.za" className="hover:text-white transition-colors">info@autopilot.co.za</a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="h-4 w-4 text-accent" />
+                <a href="tel:+27111234567" className="hover:text-white transition-colors">+27 (0) 11 123 4567</a>
+              </li>
             </ul>
           </div>
         </div>

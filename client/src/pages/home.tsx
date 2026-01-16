@@ -255,9 +255,11 @@ export default function Home() {
               </div>
             </CardContent>
             <CardFooter className="pb-8">
-              <Button className="w-full bg-accent hover:bg-accent/90 text-white">
-                Explore Onboarding <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <a href="https://autopilot-onboarding.replit.app/" target="_blank" rel="noopener noreferrer" className="w-full">
+                <Button className="w-full bg-accent hover:bg-accent/90 text-white">
+                  Explore Onboarding <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </a>
             </CardFooter>
           </Card>
 

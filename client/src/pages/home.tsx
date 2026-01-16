@@ -231,7 +231,7 @@ export default function Home() {
                 <img src={OnboardingScreenshot} alt="Onboarding Screenshot" className="w-full h-full object-cover object-top" />
               </div>
 
-              <h3 className="text-lg text-accent font-medium mt-1">One Coordinated Onboarding Flow</h3>
+              <h3 className="text-2xl text-accent font-bold mt-1">One Coordinated Onboarding Flow</h3>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-6 min-h-[80px]">
@@ -276,7 +276,7 @@ export default function Home() {
                 <img src={ApprovalsScreenshot} alt="Approvals Screenshot" className="w-full h-full object-cover object-top" />
               </div>
 
-              <h3 className="text-lg text-primary font-medium mt-1">One Workflow for All Internal Teams</h3>
+              <h3 className="text-2xl text-primary font-bold mt-1">One Workflow for All Internal Teams</h3>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-6 min-h-[80px]">

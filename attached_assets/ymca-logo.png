@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7 no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 no-js" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="profile"  href="https://gmpg.org/xfn/11" />
+		<link rel="pingback" href="https://vtymca.org/xmlrpc.php" />
+		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<meta name='robots' content='noindex, follow' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v26.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Page Not Found - VTYMCA</title>
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:title" content="Page Not Found - VTYMCA" />
+	<meta property="og:site_name" content="VTYMCA" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://vtymca.org/#website","url":"https://vtymca.org/","name":"VTYMCA","description":"THE YMCA AT VIRGINIA TECH","publisher":{"@id":"https://vtymca.org/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://vtymca.org/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://vtymca.org/#organization","name":"The YMCA at Virginia Tech","url":"https://vtymca.org/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://vtymca.org/#/schema/logo/image/","url":"https://vtymca.org/wp-content/uploads/2014/11/copy-YMCA_Logo_Red.png","contentUrl":"https://vtymca.org/wp-content/uploads/2014/11/copy-YMCA_Logo_Red.png","width":92,"height":70,"caption":"The YMCA at Virginia Tech"},"image":{"@id":"https://vtymca.org/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="alternate" type="application/rss+xml" title="VTYMCA &raquo; Feed" href="https://vtymca.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="VTYMCA &raquo; Comments Feed" href="https://vtymca.org/comments/feed/" />
+<link rel="alternate" type="text/calendar" title="VTYMCA &raquo; iCal Feed" href="https://vtymca.org/events/?ical=1" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://vtymca.org/wp-includes/css/dist/block-library/style.min.css?ver=6.9' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link rel='stylesheet' id='ap-front-styles-css' href='https://vtymca.org/wp-content/plugins/accesspress-anonymous-post/css/frontend-style.css?ver=2.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sek-base-light-css' href='https://vtymca.org/wp-content/plugins/nimble-builder/assets/front/css/sek-base-light.min.css?ver=3.3.8' type='text/css' media='all' />
+<link rel='stylesheet' id='stripe-handler-ng-style-css' href='https://vtymca.org/wp-content/plugins/stripe-payments/public/assets/css/public.css?ver=2.0.96' type='text/css' media='all' />
+<link rel='stylesheet' id='customizr-common-css' href='https://vtymca.org/wp-content/themes/customizr/inc/assets/css/tc_common.min.css?ver=4.4.24' type='text/css' media='all' />
+<link rel='stylesheet' id='customizr-skin-css' href='https://vtymca.org/wp-content/themes/customizr/inc/assets/css/blue3.min.css?ver=4.4.24' type='text/css' media='all' />
+<style id='customizr-skin-inline-css' type='text/css'>
+
+                  .site-title,.site-description,h1,h2,h3,.tc-dropcap {
+                    font-family : 'Verdana','Geneva','sans-serif';
+                    font-weight : inherit;
+                  }
+
+                  body,.navbar .nav>li>a {
+                    font-family : 'Verdana','Geneva','sans-serif';
+                    font-weight : inherit;
+                  }
+table { border-collapse: separate; }
+                           body table { border-collapse: collapse; }
+                          
+.social-links .social-icon:before { content: none } 
+header.tc-header {border-top: none;}
+
+.sticky-enabled .tc-shrink-on .site-logo img {
+    					height:30px!important;width:auto!important
+    				}
+
+    				.sticky-enabled .tc-shrink-on .brand .site-title {
+    					font-size:0.6em;opacity:0.8;line-height:1.2em
+    				}
+
+.site-logo img.sticky {
+                display: none;
+             }
+
+            .sticky-enabled .tc-sticky-logo-on .site-logo img {
+                display: none;
+             }
+
+            .sticky-enabled .tc-sticky-logo-on .site-logo img.sticky{
+                display: inline-block;
+            }
+
+#tc-push-footer { display: none; visibility: hidden; }
+         .tc-sticky-footer #tc-push-footer.sticky-footer-enabled { display: block; }
+        
+
+/*# sourceURL=customizr-skin-inline-css */
+</style>
+<link rel='stylesheet' id='customizr-style-css' href='https://vtymca.org/wp-content/themes/customizr/style.css?ver=4.4.24' type='text/css' media='all' />
+<link rel='stylesheet' id='fancyboxcss-css' href='https://vtymca.org/wp-content/themes/customizr/assets/front/js/libs/fancybox/jquery.fancybox-1.3.4.min.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='simcal-qtip-css' href='https://vtymca.org/wp-content/plugins/google-calendar-events/assets/generated/vendor/jquery.qtip.min.css?ver=3.5.9' type='text/css' media='all' />
+<link rel='stylesheet' id='simcal-default-calendar-grid-css' href='https://vtymca.org/wp-content/plugins/google-calendar-events/assets/generated/default-calendar-grid.min.css?ver=3.5.9' type='text/css' media='all' />
+<link rel='stylesheet' id='simcal-default-calendar-list-css' href='https://vtymca.org/wp-content/plugins/google-calendar-events/assets/generated/default-calendar-list.min.css?ver=3.5.9' type='text/css' media='all' />
+<link rel='stylesheet' id='sek-dyn-skp__global-css' href='https://vtymca.org/wp-content/uploads/nimble_css/skp__global.css?ver=1768578966' type='text/css' media='all' />
+<!--n2css--><!--n2js--><script type="text/javascript" id="nb-js-app-js-extra">
+/* <![CDATA[ */
+var sekFrontLocalized = {"isDevMode":"","isCustomizing":"","frontNonce":{"id":"SEKFrontNonce","handle":"ad41b0a0dc"},"skope_id":"skp__404","recaptcha_public_key":"","lazyload_enabled":"1","video_bg_lazyload_enabled":"1","load_front_assets_on_dynamically":"","assetVersion":"3.3.8","frontAssetsPath":"https://vtymca.org/wp-content/plugins/nimble-builder/assets/front/","contextuallyActiveModules":{"czr_menu_module":["__nimble__09fdbc1a6066","__nimble__336414b7531b"]},"fontAwesomeAlreadyEnqueued":"","partialFrontScripts":{"slider-module":"nb-needs-swiper","menu-module":"nb-needs-menu-js","front-parallax":"nb-needs-parallax","accordion-module":"nb-needs-accordion"}};
+//# sourceURL=nb-js-app-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="nb-js-app-js-after">
+/* <![CDATA[ */
+window.nb_={},function(e,t){if(window.nb_={isArray:function(e){return Array.isArray(e)||"[object Array]"===toString.call(e)},inArray:function(e,t){return!(!nb_.isArray(e)||nb_.isUndefined(t))&&e.indexOf(t)>-1},isUndefined:function(e){return void 0===e},isObject:function(e){var t=typeof e;return"function"===t||"object"===t&&!!e},errorLog:function(){nb_.isUndefined(console)||"function"!=typeof window.console.log||console.log.apply(console,arguments)},hasPreloadSupport:function(e){var t=document.createElement("link").relList;return!(!t||!t.supports)&&t.supports("preload")},listenTo:function(e,t){nb_.eventsListenedTo.push(e);var n={"nb-jquery-loaded":function(){return"undefined"!=typeof jQuery},"nb-app-ready":function(){return void 0!==window.nb_&&nb_.wasListenedTo("nb-jquery-loaded")},"nb-swipebox-parsed":function(){return"undefined"!=typeof jQuery&&void 0!==jQuery.fn.swipebox},"nb-main-swiper-parsed":function(){return void 0!==window.Swiper}},o=function(o){nb_.isUndefined(n[e])||!1!==n[e]()?t():nb_.errorLog("Nimble error => an event callback could not be fired because conditions not met => ",e,nb_.eventsListenedTo,t)};"function"==typeof t?nb_.wasEmitted(e)?o():document.addEventListener(e,o):nb_.errorLog("Nimble error => listenTo func param is not a function for event => ",e)},eventsEmitted:[],eventsListenedTo:[],emit:function(e,t){if(!(nb_.isUndefined(t)||t.fire_once)||!nb_.wasEmitted(e)){var n=document.createEvent("Event");n.initEvent(e,!0,!0),document.dispatchEvent(n),nb_.eventsEmitted.push(e)}},wasListenedTo:function(e){return"string"==typeof e&&nb_.inArray(nb_.eventsListenedTo,e)},wasEmitted:function(e){return"string"==typeof e&&nb_.inArray(nb_.eventsEmitted,e)},isInScreen:function(e){if(!nb_.isObject(e))return!1;var t=e.getBoundingClientRect(),n=Math.max(document.documentElement.clientHeight,window.innerHeight);return!(t.bottom<0||t.top-n>=0)},isCustomizing:function(){return!1},isLazyLoadEnabled:function(){return!nb_.isCustomizing()&&!1},preloadOrDeferAsset:function(e){if(e=e||{},nb_.preloadedAssets=nb_.preloadedAssets||[],!nb_.inArray(nb_.preloadedAssets,e.id)){var t,n=document.getElementsByTagName("head")[0],o=function(){if("style"===e.as)this.setAttribute("rel","stylesheet"),this.setAttribute("type","text/css"),this.setAttribute("media","all");else{var t=document.createElement("script");t.setAttribute("src",e.href),t.setAttribute("id",e.id),"script"===e.as&&t.setAttribute("defer","defer"),n.appendChild(t),i.call(this)}e.eventOnLoad&&nb_.emit(e.eventOnLoad)},i=function(){if(this&&this.parentNode&&this.parentNode.contains(this))try{this.parentNode.removeChild(this)}catch(e){nb_.errorLog("NB error when removing a script el",el)}};("font"!==e.as||nb_.hasPreloadSupport())&&(t=document.createElement("link"),"script"===e.as?e.onEvent?nb_.listenTo(e.onEvent,function(){o.call(t)}):o.call(t):(t.setAttribute("href",e.href),"style"===e.as?t.setAttribute("rel",nb_.hasPreloadSupport()?"preload":"stylesheet"):"font"===e.as&&nb_.hasPreloadSupport()&&t.setAttribute("rel","preload"),t.setAttribute("id",e.id),t.setAttribute("as",e.as),"font"===e.as&&(t.setAttribute("type",e.type),t.setAttribute("crossorigin","anonymous")),t.onload=function(){this.onload=null,"font"!==e.as?e.onEvent?nb_.listenTo(e.onEvent,function(){o.call(t)}):o.call(t):e.eventOnLoad&&nb_.emit(e.eventOnLoad)},t.onerror=function(t){nb_.errorLog("Nimble preloadOrDeferAsset error",t,e)}),n.appendChild(t),nb_.preloadedAssets.push(e.id),i.call(e.scriptEl))}},mayBeRevealBG:function(){this.getAttribute("data-sek-src")&&(this.setAttribute("style",'background-image:url("'+this.getAttribute("data-sek-src")+'")'),this.className+=" sek-lazy-loaded",this.querySelectorAll(".sek-css-loader").forEach(function(e){nb_.isObject(e)&&e.parentNode.removeChild(e)}))}},window.NodeList&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=function(e,t){t=t||window;for(var n=0;n<this.length;n++)e.call(t,this[n],n,this)}),nb_.listenTo("nb-docready",function(){var e=document.querySelectorAll("div.sek-has-bg");!nb_.isObject(e)||e.length<1||e.forEach(function(e){nb_.isObject(e)&&(window.sekFrontLocalized&&window.sekFrontLocalized.lazyload_enabled?nb_.isInScreen(e)&&nb_.mayBeRevealBG.call(e):nb_.mayBeRevealBG.call(e))})}),"complete"===document.readyState||"loading"!==document.readyState&&!document.documentElement.doScroll)nb_.emit("nb-docready");else{var n=function(){nb_.wasEmitted("nb-docready")||nb_.emit("nb-docready")};document.addEventListener("DOMContentLoaded",n),window.addEventListener("load",n)}}(window,document),function(){var e=function(){var e="nb-jquery-loaded";nb_.wasEmitted(e)||nb_.emit(e)},t=function(n){n=n||0,void 0!==window.jQuery?e():n<30?setTimeout(function(){t(++n)},200):window.console&&window.console.log&&console.log("Nimble Builder problem : jQuery.js was not detected on your website")},n=document.getElementById("nb-jquery");n&&n.addEventListener("load",function(){e()}),t()}(),window,document,nb_.listenTo("nb-jquery-loaded",function(){sekFrontLocalized.load_front_assets_on_dynamically&&(nb_.scriptsLoadingStatus={},nb_.ajaxLoadScript=function(e){jQuery(function(t){e=t.extend({path:"",complete:"",loadcheck:!1},e),nb_.scriptsLoadingStatus[e.path]&&"pending"===nb_.scriptsLoadingStatus[e.path].state()||(nb_.scriptsLoadingStatus[e.path]=nb_.scriptsLoadingStatus[e.path]||t.Deferred(),jQuery.ajax({url:sekFrontLocalized.frontAssetsPath+e.path+"?"+sekFrontLocalized.assetVersion,cache:!0,dataType:"script"}).done(function(){"function"!=typeof e.loadcheck||e.loadcheck()?"function"==typeof e.complete&&e.complete():nb_.errorLog("ajaxLoadScript success but loadcheck failed for => "+e.path)}).fail(function(){nb_.errorLog("ajaxLoadScript failed for => "+e.path)}))})})}),nb_.listenTo("nb-jquery-loaded",function(){jQuery(function(e){sekFrontLocalized.load_front_assets_on_dynamically&&(nb_.ajaxLoadScript({path:sekFrontLocalized.isDevMode?"js/ccat-nimble-front.js":"js/ccat-nimble-front.min.js"}),e.each(sekFrontLocalized.partialFrontScripts,function(e,t){nb_.listenTo(t,function(){nb_.ajaxLoadScript({path:sekFrontLocalized.isDevMode?"js/partials/"+e+".js":"js/partials/"+e+".min.js"})})}))})});
+            
+//# sourceURL=nb-js-app-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="nb-jquery" src="https://vtymca.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://vtymca.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://vtymca.org/wp-content/themes/customizr/assets/front/js/libs/fancybox/jquery.fancybox-1.3.4.min.js?ver=4.4.24" id="tc-fancybox-js"></script>
+<script src='https://vtymca.org/wp-content/plugins/the-events-calendar/common/build/js/underscore-before.js'></script>
+<script type="text/javascript" src="https://vtymca.org/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
+<script src='https://vtymca.org/wp-content/plugins/the-events-calendar/common/build/js/underscore-after.js'></script>
+<script type="text/javascript" id="tc-scripts-js-extra">
+/* <![CDATA[ */
+var TCParams = {"_disabled":[],"FancyBoxState":"1","FancyBoxAutoscale":"1","SliderName":"","SliderDelay":"","SliderHover":"1","centerSliderImg":"1","SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"anchorSmoothScroll":"easeOutExpo","anchorSmoothScrollExclude":{"simple":["[class*=edd]",".tc-carousel-control",".carousel-control","[data-toggle=\"modal\"]","[data-toggle=\"dropdown\"]","[data-toggle=\"tooltip\"]","[data-toggle=\"popover\"]","[data-toggle=\"collapse\"]","[data-toggle=\"tab\"]","[data-toggle=\"pill\"]","[class*=upme]","[class*=um-]"],"deep":{"classes":[],"ids":[]}},"ReorderBlocks":"1","centerAllImg":"1","HasComments":"","LeftSidebarClass":".span3.left.tc-sidebar","RightSidebarClass":".span3.right.tc-sidebar","LoadModernizr":"1","stickyCustomOffset":{"_initial":0,"_scrolling":0,"options":{"_static":true,"_element":""}},"stickyHeader":"1","dropdowntoViewport":"1","timerOnScrollAllBrowsers":"1","extLinksStyle":"","extLinksTargetExt":"1","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"dropcapEnabled":"","dropcapWhere":{"post":"","page":""},"dropcapMinWords":"50","dropcapSkipSelectors":{"tags":["IMG","IFRAME","H1","H2","H3","H4","H5","H6","BLOCKQUOTE","UL","OL"],"classes":["btn","tc-placeholder-wrap"],"id":[]},"imgSmartLoadEnabled":"1","imgSmartLoadOpts":{"parentSelectors":[".article-container",".__before_main_wrapper",".widget-front"],"opts":{"excludeImg":[".tc-holder-img"]}},"imgSmartLoadsForSliders":"1","goldenRatio":"1.618","gridGoldenRatioLimit":"350","isSecondMenuEnabled":"","secondMenuRespSet":"in-sn-before","isParallaxOn":"1","parallaxRatio":"0.55","pluginCompats":[],"adminAjaxUrl":"https://vtymca.org/wp-admin/admin-ajax.php","ajaxUrl":"https://vtymca.org/?czrajax=1","frontNonce":{"id":"CZRFrontNonce","handle":"55cf60049a"},"isDevMode":"","isModernStyle":"","i18n":{"Permanently dismiss":"Permanently dismiss"},"version":"4.4.24","frontNotifications":{"styleSwitcher":{"enabled":false,"content":"","dismissAction":"dismiss_style_switcher_note_front","ajaxUrl":"https://vtymca.org/wp-admin/admin-ajax.php"}}};
+//# sourceURL=tc-scripts-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vtymca.org/wp-content/themes/customizr/inc/assets/js/tc-scripts.min.js?ver=4.4.24" id="tc-scripts-js"></script>
+<link rel="https://api.w.org/" href="https://vtymca.org/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://vtymca.org/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2XNGNR');</script>
+<!-- End Google Tag Manager --><meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://vtymca.org"><link rel="alternate" href="https://vtymca.org/wp-json/tribe/events/v1/" /><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style type='text/css' media='screen'></style><style type='text/css' media='screen'>
+					.team-member-socials a,
+					.team-member-other-info .fas {
+						font-size: 16px !important;
+					}
+				</style>		<style type="text/css" id="wp-custom-css">
+			
+article.page .entry-header { 
+  display: none; 
+}		</style>
+			<!-- Fonts Plugin CSS - https://fontsplugin.com/ -->
+	<style>
+			</style>
+	<!-- Fonts Plugin CSS -->
+		<link rel='stylesheet' id='siteorigin-panels-front-css' href='https://vtymca.org/wp-content/plugins/siteorigin-panels/css/front-flex.min.css?ver=2.33.5' type='text/css' media='all' />
+</head>
+	
+	<body class="nb-3-3-8 nimble-no-local-data-skp__404 nimble-no-group-site-tmpl-skp__404_for_site_tmpl error404 wp-embed-responsive wp-theme-customizr sek-hide-rc-badge tribe-no-js metaslider-plugin tc-fade-hover-links tc-no-sidebar tc-center-images skin-blue3 customizr-4-4-24 tc-sticky-header sticky-disabled tc-solid-color-on-scroll no-navbar tc-regular-menu tc-sticky-footer" >
+            <a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+        
+    <div id="tc-page-wrap" class="">
+
+  		
+  	   	<header class="tc-header clearfix row-fluid tc-tagline-off tc-title-logo-on tc-sticky-logo-on tc-shrink-on tc-menu-on logo-centered tc-second-menu-in-sn-before-when-mobile">
+  			
+        <div class="brand span3 pull-left">
+        <a class="site-logo" href="https://vtymca.org/" aria-label="VTYMCA | THE YMCA AT VIRGINIA TECH"><img src="https://vtymca.org/wp-content/uploads/2015/11/Green-YMCA-Logo-Areas-of-Focus.png" alt="Back Home" width="3000" height="900" style="max-width:250px;max-height:100px" data-no-retina class=" attachment-706"/><img src="https://vtymca.org/wp-content/uploads/2019/05/ymca-blue-green-logo-no-background_34.png" alt="Back Home" width="281" height="230"  data-no-retina class="sticky attachment-3964"/></a>        </div> <!-- brand span3 -->
+
+              	<div class="navbar-wrapper clearfix span9 tc-submenu-fade tc-submenu-move tc-open-on-hover pull-menu-left">
+        	<div class="navbar resp">
+          		<div class="navbar-inner" role="navigation">
+            		<div class="row-fluid">
+              		<div class="nav-collapse collapse tc-hover-menu-wrapper"><div class="menu-main-menu-container"><ul id="menu-main-menu-2" class="nav tc-hover-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-19"><a href="https://vtymca.org/about-us/">About Us <strong class="caret"></strong></a>
+<ul class="dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9246"><a href="https://vtymca.org/history/">History</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="https://vtymca.org/office-location/">Locations</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="https://vtymca.org/contact-us/">Contact Us</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10870"><a href="https://vtymca.org/employment_opportunities/">Employment Opportunities</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15663"><a href="https://vtymca.org/y-150th-capital-campaign/">The Y 150th Capital Campaign</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5027"><a href="https://vtymca.org/meals-on-main/">Meals On Main</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-42"><a href="https://vtymca.org/programs/">Programs <strong class="caret"></strong></a>
+<ul class="dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15079"><a href="https://vtymca.org/programs/engineequity/">EnginEquity Blacksburg STEM programs</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10731"><a href="https://vtymca.org/after-school/">BMS After School Program</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-290"><a href="https://vtymca.org/international-programs/">International Programs</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2177"><a href="https://vtymca.org/pottery-2/">Pottery Studio</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-297"><a href="https://vtymca.org/student-programs/">Student Programs</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16279"><a href="https://vtymca.org/y-leaders-club/">Y Leaders Club</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-294"><a href="https://vtymca.org/ytoss/">Y-TOSS</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-8458"><a href="https://vtymca.org/special-events/">Special Events <strong class="caret"></strong></a>
+<ul class="dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16468"><a href="https://vtymca.org/y-public-living-rooms/">Y Public Living Rooms</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14131"><a href="https://vtymca.org/y-community-gallery/">Y Community Art Gallery</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16627"><a href="https://vtymca.org/y-consignment-sales/">Y Consignment Sales</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13326"><a href="https://vtymca.org/special-events/y-contra-dance/">Y Contra Dance</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16256"><a href="https://shop.vtymca.org/">Shop at Y&#8217;s Best Boutique</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6224"><a href="https://vtymca.org/recycle/">Sustainability Initiatives</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-44"><a href="https://vtymca.org/volunteer/">Volunteer <strong class="caret"></strong></a>
+<ul class="dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1984"><a href="https://vtymca.org/student-volunteers/">Student Volunteers</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-332"><a href="https://vtymca.org/group-volunteers/">Group Volunteers</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5573"><a href="https://vtymca.org/community-volunteers/">Community Volunteers</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6295"><a href="https://vtymca.org/ymca-community-events-calendar/">Y Community Calendar</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-293"><a href="https://vtymca.org/y-thrift-shops/">Y Thrift Shop</a></li>
+</ul></div></div><div class="btn-toggle-nav pull-right"><button type="button" class="btn menu-btn" data-toggle="collapse" data-target=".nav-collapse" title="Open the menu" aria-label="Open the menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button></div>          			</div><!-- /.row-fluid -->
+          		</div><!-- /.navbar-inner -->
+        	</div><!-- /.navbar resp -->
+      	</div><!-- /.navbar-wrapper -->
+    	  		</header>
+  		<div id="tc-reset-margin-top" class="container-fluid" style="margin-top:103px"></div><div id="main-wrapper" class="container">
+
+    
+    <div class="container" role="main">
+        <div class="row column-content-wrapper">
+
+            
+                <div id="content" class="span12 article-container tc-gallery-style">
+
+                            <header class="entry-header">
+          <h1 class="entry-title ">Ooops, page not found</h1><hr class="featurette-divider __before_loop">        </header>
+        
+                        
+                            <article id="post-0" class="post error404 no-results not-found row-fluid">
+                                <div class="tc-content span12"><div class="entry-content"><p>Sorry, but the requested page is not found. You might try a search below.</p> <form role="search" method="get" id="searchform" class="searchform" action="https://vtymca.org/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></div><hr class="featurette-divider __loop"></div>                            </article>
+
+                        
+                        
+                    
+                                   <hr class="featurette-divider tc-mobile-separator">
+                </div><!--.article-container -->
+
+           
+        </div><!--.row -->
+    </div><!-- .container role: main -->
+
+    <div id="tc-push-footer"></div>
+</div><!-- //#main-wrapper -->
+
+  		<!-- FOOTER -->
+  		<footer id="footer" class="">
+  		 					<div class="container footer-widgets  no-widget-icons">
+                    <div class="row widget-area" role="complementary">
+												
+							<div id="footer_one" class="span4">
+																
+										<aside id="siteorigin-panels-builder-5" class="widget widget_siteorigin-panels-builder"><div id="pl-w5ee7e8c199dad"  class="panel-layout" ><div id="pg-w5ee7e8c199dad-0"  class="panel-grid panel-no-style" ><div id="pgc-w5ee7e8c199dad-0-0"  class="panel-grid-cell panel-grid-cell-mobile-last" ><div id="panel-w5ee7e8c199dad-0-0-0" class="so-panel widget widget_media_image panel-first-child panel-last-child" data-index="0" ><a href="http://vtymca.org/"><img width="281" height="230" src="https://vtymca.org/wp-content/uploads/2019/05/ymca-blue-green-logo-no-background_34.png" class="image wp-image-3964  attachment-full size-full no-lazy" alt="" style="max-width: 100%; height: auto;" decoding="async" loading="lazy" srcset="https://vtymca.org/wp-content/uploads/2019/05/ymca-blue-green-logo-no-background_34.png 281w, https://vtymca.org/wp-content/uploads/2019/05/ymca-blue-green-logo-no-background_34-280x230.png 280w" sizes="auto, (max-width: 281px) 100vw, 281px" /></a></div></div><div id="pgc-w5ee7e8c199dad-0-1"  class="panel-grid-cell panel-grid-cell-empty" ></div></div><div id="pg-w5ee7e8c199dad-1"  class="panel-grid panel-no-style" ><div id="pgc-w5ee7e8c199dad-1-0"  class="panel-grid-cell" ><div id="panel-w5ee7e8c199dad-1-0-0" class="so-panel widget panel-first-child panel-last-child" data-index="1" ></div></div></div></div></aside>
+																							</div><!-- .{$key}_widget_class -->
+
+						
+							<div id="footer_two" class="span4">
+																
+										<aside id="nav_menu-5" class="widget widget_nav_menu"><h3 class="widget-title">Get Involved</h3><div class="menu-get-involved-container"><ul id="menu-get-involved" class="menu"><li id="menu-item-3990" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3990"><a href="https://vtymca.org/volunteer/">Volunteer</a></li>
+<li id="menu-item-3989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3989"><a href="https://vtymca.org/student-programs/">Student Programs</a></li>
+<li id="menu-item-3998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3998"><a href="https://vtymca.org/?page_id=282">Alternative Service Breaks</a></li>
+<li id="menu-item-3991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3991"><a href="https://vtymca.org/ytoss/">Y-TOSS</a></li>
+</ul></div></aside>
+																							</div><!-- .{$key}_widget_class -->
+
+						
+							<div id="footer_three" class="span4">
+																
+										<aside id="nav_menu-6" class="widget widget_nav_menu"><h3 class="widget-title">About Us</h3><div class="menu-about-us-container"><ul id="menu-about-us" class="menu"><li id="menu-item-3992" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3992"><a href="http://vtymca.org">Home</a></li>
+<li id="menu-item-3993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3993"><a href="https://vtymca.org/about-us/">About Us</a></li>
+<li id="menu-item-3994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3994"><a href="https://vtymca.org/contact-us/">Contact Us</a></li>
+<li id="menu-item-3995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3995"><a href="https://vtymca.org/office-location/">Our Location</a></li>
+<li id="menu-item-3996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3996"><a href="https://vtymca.org/employment_opportunities/">Employment Opportunities</a></li>
+</ul></div></aside>
+																							</div><!-- .{$key}_widget_class -->
+
+																	</div><!-- .row.widget-area -->
+				</div><!--.footer-widgets -->
+				    				 <div class="colophon">
+			 	<div class="container">
+			 		<div class="row-fluid">
+					    <div class="span3 social-block pull-left"><span class="social-links"></span></div><div class="span6 credits"><p>&middot; <span class="tc-copyright-text">&copy; 2026</span> <a href="https://vtymca.org" title="VTYMCA" rel="bookmark">VTYMCA</a> &middot; <span class="tc-wp-powered-text">Powered by</span> <a class="icon-wordpress" target="_blank" rel="noopener noreferrer" href="https://wordpress.org" title="Powered by WordPress"></a> &middot; <span class="tc-credits-text">Designed with the <a class="czr-designer-link" href="https://presscustomizr.com/customizr" title="Customizr theme">Customizr theme</a> </span> &middot;</p></div>	      			</div><!-- .row-fluid -->
+	      		</div><!-- .container -->
+	      	</div><!-- .colophon -->
+	    	  		</footer>
+    </div><!-- //#tc-page-wrapper -->
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/customizr/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2XNGNR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><style media="all" id="siteorigin-panels-layouts-footer">/* Layout w5ee7e8c199dad */ #pgc-w5ee7e8c199dad-0-0 , #pgc-w5ee7e8c199dad-0-1 { width:50%;width:calc(50% - ( 0.5 * 30px ) ) } #pg-w5ee7e8c199dad-0 , #pl-w5ee7e8c199dad .so-panel { margin-bottom:30px } #pgc-w5ee7e8c199dad-1-0 { width:100%;width:calc(100% - ( 0 * 30px ) ) } #pl-w5ee7e8c199dad .so-panel:last-of-type { margin-bottom:0px } #pg-w5ee7e8c199dad-0.panel-has-style > .panel-row-style, #pg-w5ee7e8c199dad-0.panel-no-style , #pg-w5ee7e8c199dad-1.panel-has-style > .panel-row-style, #pg-w5ee7e8c199dad-1.panel-no-style { -webkit-align-items:flex-start;align-items:flex-start } #pgc-w5ee7e8c199dad-1-0 { align-self:auto } @media (max-width:780px){ #pg-w5ee7e8c199dad-0.panel-no-style, #pg-w5ee7e8c199dad-0.panel-has-style > .panel-row-style, #pg-w5ee7e8c199dad-0 , #pg-w5ee7e8c199dad-1.panel-no-style, #pg-w5ee7e8c199dad-1.panel-has-style > .panel-row-style, #pg-w5ee7e8c199dad-1 { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-w5ee7e8c199dad-0 > .panel-grid-cell , #pg-w5ee7e8c199dad-0 > .panel-row-style > .panel-grid-cell , #pg-w5ee7e8c199dad-1 > .panel-grid-cell , #pg-w5ee7e8c199dad-1 > .panel-row-style > .panel-grid-cell { width:100%;margin-right:0 } #pgc-w5ee7e8c199dad-0-0 { margin-bottom:30px } #pl-w5ee7e8c199dad .panel-grid-cell { padding:0 } #pl-w5ee7e8c199dad .panel-grid .panel-grid-cell-empty { display:none } #pl-w5ee7e8c199dad .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } </style><script type="text/javascript" src="https://vtymca.org/wp-content/plugins/the-events-calendar/common/build/js/user-agent.js?ver=da75d0bdea6dde3898df" id="tec-user-agent-js"></script>
+<script type="text/javascript" id="ap-frontend-js-js-extra">
+/* <![CDATA[ */
+var ap_form_required_message = ["This field is required","accesspress-anonymous-post"];
+var ap_captcha_error_message = ["Sum is not correct.","accesspress-anonymous-post"];
+//# sourceURL=ap-frontend-js-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vtymca.org/wp-content/plugins/accesspress-anonymous-post/js/frontend.js?ver=2.8.2" id="ap-frontend-js-js"></script>
+<script type="text/javascript" id="stripe-handler-ng-js-extra">
+/* <![CDATA[ */
+var wpASPNG = {"iframeUrl":"https://vtymca.org/asp-payment-box/","ppSlug":"asp-payment-box","prefetch":"0","ckey":"f2880b7b75f686079aa2922ee23d2228","aspDevMode":"1"};
+//# sourceURL=stripe-handler-ng-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vtymca.org/wp-content/plugins/stripe-payments/public/assets/js/stripe-handler-ng.js?ver=2.0.96" id="stripe-handler-ng-js"></script>
+<script type="text/javascript" src="https://vtymca.org/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://vtymca.org/wp-content/themes/customizr/assets/front/js/libs/modernizr.min.js?ver=4.4.24" id="modernizr-js"></script>
+<script type="text/javascript" src="https://vtymca.org/wp-includes/js/jquery/ui/effect.min.js?ver=1.13.3" id="jquery-effects-core-js"></script>
+<script type="text/javascript" src="https://vtymca.org/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.7" id="page-links-to-js"></script>
+<script type="text/javascript" src="https://vtymca.org/wp-content/plugins/google-calendar-events/assets/generated/vendor/jquery.qtip.min.js?ver=3.5.9" id="simcal-qtip-js"></script>
+<script type="text/javascript" id="simcal-default-calendar-js-extra">
+/* <![CDATA[ */
+var simcal_default_calendar = {"ajax_url":"/wp-admin/admin-ajax.php","nonce":"bd74f3e3f6","locale":"en_US","text_dir":"ltr","months":{"full":["January","February","March","April","May","June","July","August","September","October","November","December"],"short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]},"days":{"full":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]},"meridiem":{"AM":"AM","am":"am","PM":"PM","pm":"pm"}};
+//# sourceURL=simcal-default-calendar-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vtymca.org/wp-content/plugins/google-calendar-events/assets/generated/default-calendar.min.js?ver=3.5.9" id="simcal-default-calendar-js"></script>
+<script type="text/javascript" src="https://vtymca.org/wp-content/plugins/google-calendar-events/assets/generated/vendor/imagesloaded.pkgd.min.js?ver=3.5.9" id="simplecalendar-imagesloaded-js"></script>
+<script type="text/javascript" src="https://vtymca.org/wp-content/plugins/floating-menu/js/jquery.easing.js?ver=6.9" id="jqueryeasing-js"></script>
+<script type="text/javascript" src="https://vtymca.org/wp-content/plugins/floating-menu/js/jquery.hoverIntent.minified.js?ver=6.9" id="jqueryhoverintent-js"></script>
+<script type="text/javascript" src="https://vtymca.org/wp-content/plugins/floating-menu/js/jquery.floater.2.2.js?ver=6.9" id="dcjqfloatingmenu-js"></script>
+<script type="text/javascript" id="nb_main_front_js_preloading-js-after">
+/* <![CDATA[ */
+            nb_.listenTo('nb-docready', function() {
+                nb_.preloadOrDeferAsset( {
+                  id : 'nb-main-js',
+                  as : 'script',
+                  href : "https://vtymca.org/wp-content/plugins/nimble-builder/assets/front/js/ccat-nimble-front.min.js?v=3.3.8",
+                  scriptEl : document.getElementById('nb-load-main-script')
+                });
+            });
+                            nb_.listenTo('nb-needs-swiper', function() {
+                    nb_.preloadOrDeferAsset( {
+                      id : "slider-module",
+                      as : 'script',
+                      href : "https://vtymca.org/wp-content/plugins/nimble-builder/assets/front/js/partials/slider-module.min.js?v=3.3.8",
+                      scriptEl : document.getElementById('nb-load-script-slider-module')
+                    });
+                });
+                                nb_.listenTo('nb-needs-menu-js', function() {
+                    nb_.preloadOrDeferAsset( {
+                      id : "menu-module",
+                      as : 'script',
+                      href : "https://vtymca.org/wp-content/plugins/nimble-builder/assets/front/js/partials/menu-module.min.js?v=3.3.8",
+                      scriptEl : document.getElementById('nb-load-script-menu-module')
+                    });
+                });
+                                nb_.listenTo('nb-needs-parallax', function() {
+                    nb_.preloadOrDeferAsset( {
+                      id : "front-parallax",
+                      as : 'script',
+                      href : "https://vtymca.org/wp-content/plugins/nimble-builder/assets/front/js/partials/front-parallax.min.js?v=3.3.8",
+                      scriptEl : document.getElementById('nb-load-script-front-parallax')
+                    });
+                });
+                                nb_.listenTo('nb-needs-accordion', function() {
+                    nb_.preloadOrDeferAsset( {
+                      id : "accordion-module",
+                      as : 'script',
+                      href : "https://vtymca.org/wp-content/plugins/nimble-builder/assets/front/js/partials/accordion-module.min.js?v=3.3.8",
+                      scriptEl : document.getElementById('nb-load-script-accordion-module')
+                    });
+                });
+                
+//# sourceURL=nb_main_front_js_preloading-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="nb_preload_front_assets-js-after">
+/* <![CDATA[ */
+            nb_.listenTo('nb-needs-swipebox', function() {
+                nb_.preloadOrDeferAsset( {
+                    id : 'nb-swipebox',
+                    as : 'script',
+                    href : "https://vtymca.org/wp-content/plugins/nimble-builder/assets/front/js/libs/jquery-swipebox.min.js?3.3.8",
+                    onEvent : 'nb-docready',
+                    // scriptEl : document.currentScript
+                });
+                nb_.preloadOrDeferAsset( {
+                  id : 'nb-swipebox-style',
+                  as : 'style',
+                  href : "https://vtymca.org/wp-content/plugins/nimble-builder/assets/front/css/libs/swipebox.min.css?3.3.8",
+                  onEvent : 'nb-docready',
+                  // scriptEl : document.currentScript
+                });
+            });
+
+            nb_.listenTo('nb-needs-swiper', function() {
+                nb_.preloadOrDeferAsset( {
+                    id : 'nb-swiper',
+                    as : 'script',
+                    href : "https://vtymca.org/wp-content/plugins/nimble-builder/assets/front/js/libs/swiper-bundle.min.js?3.3.8",
+                    onEvent : 'nb-docready',
+                    // scriptEl : document.currentScript
+                });
+            });
+            nb_.listenTo('nb-needs-videobg-js', function() {
+                nb_.preloadOrDeferAsset( {
+                    id : 'nb-video-bg-plugin',
+                    as : 'script',
+                    href : "https://vtymca.org/wp-content/plugins/nimble-builder/assets/front/js/libs/nimble-video-bg.min.js?3.3.8",
+                    onEvent : 'nb-docready',
+                    // scriptEl : document.currentScript
+                });
+            });
+                                            nb_.listenTo('nb-needs-fa', function() {
+                    nb_.preloadOrDeferAsset( {
+                      id : 'nb-font-awesome',
+                      as : 'style',
+                      href : "https://vtymca.org/wp-content/plugins/nimble-builder/assets/front/fonts/css/fontawesome-all.min.css?3.3.8",
+                      onEvent : 'nb-docready',
+                      scriptEl : document.currentScript
+                    });
+                });
+                
+//# sourceURL=nb_preload_front_assets-js-after
+/* ]]> */
+</script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://vtymca.org/wp-includes/js/wp-emoji-release.min.js?ver=6.9"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://vtymca.org/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+<div id="tc-footer-btt-wrapper" class="tc-btt-wrapper right"><i class="btt-arrow"></i></div>	</body>
+	</html>

@@ -10,6 +10,7 @@ import Logo3Way from "@assets/3way-logo_1767792280625.png";
 import LogoBidvest from "@assets/bidvest-logo_1767792280625.png";
 import LogoMetrofile from "@assets/metrofile-logo_1767792280626.png";
 import LogoTongaat from "@assets/Tongaat-Huletts-Logo_1767792280626.png";
+import LogoYMCA from "@assets/ymca-logo.png";
 import LaptopImage from "@assets/app-screenshot_1767787178377.png";
 import OverviewImage from "@assets/app_screenshot_1767792973731.png";
 import LeftScreenshot from "@assets/app-screenshot-left_1767793647658.png";
@@ -99,6 +100,7 @@ export default function Home() {
              <img src={LogoMetrofile} alt="Metrofile" className="h-6 md:h-8 w-auto object-contain" />
              <img src={LogoSyntech} alt="Syntech" className="h-8 md:h-12 w-auto object-contain" />
              <img src={LogoTongaat} alt="Tongaat Hulett" className="h-8 md:h-12 w-auto object-contain" />
+             <img src={LogoYMCA} alt="YMCA" className="h-8 md:h-12 w-auto object-contain" />
           </div>
         </div>
       </section>

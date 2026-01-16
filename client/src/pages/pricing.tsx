@@ -190,7 +190,12 @@ export default function Pricing() {
 
           {/* FAQ or Additional Info could go here */}
           <div className="mt-20 text-center">
-             <p className="text-gray-500">Need help choosing the right plan? <a href="/contact" className="text-primary font-bold hover:underline">Contact our sales team</a></p>
+             <p className="text-lg text-gray-600 mb-6 font-medium">Need help choosing the right plan?</p>
+             <a href="/contact">
+               <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5 font-bold px-8 border-2">
+                 Contact our sales team
+               </Button>
+             </a>
           </div>
         </div>
       </Section>

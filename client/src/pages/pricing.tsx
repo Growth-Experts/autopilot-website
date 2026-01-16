@@ -1,5 +1,6 @@
 import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card";
 import { Check, Info, Plus } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -158,18 +159,20 @@ export default function Pricing() {
                 </CardHeader>
                 
                 <CardContent className="pb-8">
-                   <Button 
-                      className={`w-full h-12 rounded-full font-bold mb-8 ${
-                        tier.ctaVariant === 'outline' 
-                          ? 'bg-transparent border-2 border-gray-900 text-gray-900 hover:bg-gray-50' 
-                          : tier.ctaVariant === 'destructive'
-                             ? 'bg-accent hover:bg-accent/90 text-white border-none'
-                             : 'bg-primary hover:bg-primary/90 text-white border-none'
-                      }`}
-                      variant={tier.ctaVariant === 'outline' ? 'outline' : 'default'}
-                   >
-                     {tier.cta}
-                   </Button>
+                   <Link href="/contact">
+                     <Button 
+                        className={`w-full h-12 rounded-full font-bold mb-8 ${
+                          tier.ctaVariant === 'outline' 
+                            ? 'bg-transparent border-2 border-gray-900 text-gray-900 hover:bg-gray-50' 
+                            : tier.ctaVariant === 'destructive'
+                               ? 'bg-accent hover:bg-accent/90 text-white border-none'
+                               : 'bg-primary hover:bg-primary/90 text-white border-none'
+                        }`}
+                        variant={tier.ctaVariant === 'outline' ? 'outline' : 'default'}
+                     >
+                       {tier.cta}
+                     </Button>
+                   </Link>
 
                    <div className="min-h-[20px] mb-4">
                      <p className="text-xs font-bold text-gray-900 uppercase tracking-wider">

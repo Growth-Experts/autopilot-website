@@ -133,7 +133,7 @@ export default function Pricing() {
                 
                 <CardHeader className="pb-4">
                   <h3 className="text-xl font-bold text-gray-900">{tier.name}</h3>
-                  <div className="mt-4 mb-2">
+                  <div className="mt-4 mb-2 min-h-[60px] flex flex-col justify-end">
                     {tier.isCustom ? (
                        <div className="flex items-baseline gap-1">
                           <span className="text-4xl font-extrabold text-gray-900">Custom</span>
@@ -144,11 +144,17 @@ export default function Pricing() {
                           <span className="text-gray-500 font-medium">/ month</span>
                         </div>
                     )}
-                    {!tier.isCustom && <p className="text-xs text-gray-400 mt-1">billed monthly</p>}
+                    {tier.isCustom ? (
+                       <p className="text-xs text-transparent mt-1 select-none">billed monthly</p>
+                    ) : (
+                       <p className="text-xs text-gray-400 mt-1">billed monthly</p>
+                    )}
                   </div>
-                  <p className="text-sm text-gray-600 leading-relaxed min-h-[40px]">
-                    {tier.description}
-                  </p>
+                  <div className="min-h-[60px]">
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {tier.description}
+                    </p>
+                  </div>
                 </CardHeader>
                 
                 <CardContent className="pb-8">

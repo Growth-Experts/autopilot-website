@@ -59,7 +59,7 @@ export default function About() {
         </div>
       </Section>
 
-      <Section background="white">
+      <Section background="white" className="py-14 md:py-20">
         <div className="max-w-3xl mx-auto text-center space-y-8">
            <h2 className="text-3xl font-bold">Driven by Workflow Specialists</h2>
            <p className="text-lg text-gray-600">

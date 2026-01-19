@@ -110,40 +110,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Strategic Alliances Section */}
-      <section className="py-12 bg-white border-b border-gray-100">
-        <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              <Card className="bg-blue-50 border-none shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:bg-blue-100/80 cursor-default">
-                <CardContent className="p-8 flex items-start gap-4">
-                   <div className="bg-white p-3 rounded-full shrink-0 shadow-sm">
-                     <ShieldCheck className="h-6 w-6 text-primary" />
-                   </div>
-                   <div>
-                       <h3 className="text-xl font-bold text-primary mb-2">Microsoft Partner</h3>
-                       <p className="text-gray-700 leading-relaxed">
-                         We are a trusted Microsoft Partner, leveraging technologies like SharePoint to ensure secure storage and compliance.
-                       </p>
-                   </div>
-                </CardContent>
-              </Card>
-              
-              <Card className="bg-orange-50 border-none shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:bg-orange-100/80 cursor-default">
-                <CardContent className="p-8 flex items-start gap-4">
-                   <div className="bg-white p-3 rounded-full shrink-0 shadow-sm">
-                     <Handshake className="h-6 w-6 text-accent" />
-                   </div>
-                   <div>
-                       <h3 className="text-xl font-bold text-accent mb-2">DocuSign Integration</h3>
-                       <p className="text-gray-700 leading-relaxed">
-                         We integrate with compliant e-signature providers like DocuSign that meet legal and security requirements.
-                       </p>
-                   </div>
-                </CardContent>
-              </Card>
-            </div>
-        </div>
-      </section>
+      {/* Strategic Alliances Section (Removed) */}
       {/* Problem Statement */}
       <Section background="gray" className="pb-12 md:pb-16">
         <div className="max-w-5xl mx-auto">
@@ -310,6 +277,42 @@ export default function Home() {
           </Card>
         </div>
       </Section>
+
+      {/* Strategic Alliances Section */}
+      <section className="py-12 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <Card className="bg-blue-50 border-none shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:bg-blue-100/80 cursor-default">
+                <CardContent className="p-8 flex items-start gap-4">
+                   <div className="bg-white p-3 rounded-full shrink-0 shadow-sm">
+                     <ShieldCheck className="h-6 w-6 text-primary" />
+                   </div>
+                   <div>
+                       <h3 className="text-xl font-bold text-primary mb-2">Microsoft Partner</h3>
+                       <p className="text-gray-700 leading-relaxed">
+                         We are a trusted Microsoft Partner, leveraging technologies like SharePoint to ensure secure storage and compliance.
+                       </p>
+                   </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-orange-50 border-none shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:bg-orange-100/80 cursor-default">
+                <CardContent className="p-8 flex items-start gap-4">
+                   <div className="bg-white p-3 rounded-full shrink-0 shadow-sm">
+                     <Handshake className="h-6 w-6 text-accent" />
+                   </div>
+                   <div>
+                       <h3 className="text-xl font-bold text-accent mb-2">DocuSign Integration</h3>
+                       <p className="text-gray-700 leading-relaxed">
+                         We integrate with compliant e-signature providers like DocuSign that meet legal and security requirements.
+                       </p>
+                   </div>
+                </CardContent>
+              </Card>
+            </div>
+        </div>
+      </section>
+      
       {/* Features / Advantage */}
       <section className="relative py-16 md:py-24 overflow-hidden">
         {/* Full Width Background Image */}

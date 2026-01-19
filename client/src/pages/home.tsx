@@ -250,7 +250,7 @@ export default function Home() {
                 <img src={ApprovalsScreenshot} alt="Approvals Screenshot" className="w-full h-full object-cover object-top" />
               </div>
 
-              <h3 className="text-2xl text-primary font-bold mt-1 min-h-[4rem] flex items-end">One Workflow for All Internal Teams</h3>
+              <h3 className="text-2xl text-primary font-bold mt-1 min-h-[4rem] flex items-end">One Workflow for Internal Teams</h3>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-6 min-h-[80px]">
@@ -281,7 +281,6 @@ export default function Home() {
           </Card>
         </div>
       </Section>
-
       {/* Strategic Alliances Section - Redesigned for Microsoft Partnership */}
       <section className="py-20 bg-gray-50 border-b border-gray-100">
         <div className="container mx-auto px-4">
@@ -337,7 +336,6 @@ export default function Home() {
             </div>
         </div>
       </section>
-      
       {/* Features / Advantage */}
       <section className="relative py-16 md:py-24 overflow-hidden">
         {/* Full Width Background Image */}

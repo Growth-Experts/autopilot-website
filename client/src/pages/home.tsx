@@ -290,17 +290,17 @@ export default function Home() {
                    <span>Strategic Partnership</span>
                  </div>
                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-                   Deeply Integrated with the <span className="text-[#00A4EF]">Microsoft Ecosystem</span>
+                   Your Trusted <span className="text-[#00A4EF]">Microsoft Partner</span>
                  </h2>
                  <div className="space-y-4 text-lg text-gray-600">
                     <p>
-                      For more than a decade, Autopilot has been a trusted Microsoft Partner, building solutions that live where you work. Our deep relationship ensures our platform evolves alongside Microsoft's latest innovations.
+                      For over a decade, we've built solutions that live where you work. Our deep partnership ensures Autopilot evolves alongside Microsoft's latest innovations.
                     </p>
                     <p>
-                      We build directly into the tools your team uses every day. From native apps in <strong className="text-gray-900">Microsoft Teams</strong> to seamless integrations across <strong className="text-gray-900">Office 365</strong>, we remove friction by bringing workflows to your users.
+                      We integrate directly into <strong className="text-gray-900">Microsoft Teams</strong> and <strong className="text-gray-900">Office 365</strong>, removing friction by bringing workflows to the tools your team uses every day.
                     </p>
                     <p>
-                      Leveraging <strong className="text-gray-900">Microsoft CoPilot</strong>, we're bringing next-generation AI capabilities directly into your processes—automating complex decisions while keeping your data secure within your existing compliance boundaries.
+                      With <strong className="text-gray-900">Microsoft CoPilot</strong>, we bring next-gen AI capabilities into your processes—automating decisions while keeping your data secure.
                     </p>
                  </div>
                  

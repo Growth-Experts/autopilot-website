@@ -13,6 +13,20 @@ export default function Pricing() {
 
   useEffect(() => {
     if (locationChecked) return;
+
+    // Check for hash first
+    const hash = window.location.hash.toLowerCase();
+    if (hash === '#usd') {
+      setCurrency('USD');
+      setLocationChecked(true);
+      return;
+    }
+    if (hash === '#zar') {
+      setCurrency('ZAR');
+      setLocationChecked(true);
+      return;
+    }
+
     if ("geolocation" in navigator) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -36,6 +50,21 @@ export default function Pricing() {
        setLocationChecked(true);
     }
   }, [locationChecked]);
+
+  // Listen for hash changes to update currency dynamically
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.toLowerCase();
+      if (hash === '#usd') {
+        setCurrency('USD');
+      } else if (hash === '#zar') {
+        setCurrency('ZAR');
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   const symbol = currency === 'USD' ? '$' : 'R';
   const flag = currency === 'ZAR' ? (

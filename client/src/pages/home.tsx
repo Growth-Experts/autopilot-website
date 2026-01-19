@@ -28,9 +28,9 @@ import AutopilotBackground from "@assets/autopilot-background_1767798365737.jpg"
 
 import Autopilot_app_screenshot_in_laptop from "@assets/Autopilot app screenshot in laptop.png";
 import MSPartnerBadge from "@assets/Autopilot_-_MS_partner_1768825112825.png";
-import LogoCoPilot from "@assets/copilot_1768826034695.png";
-import LogoTeams from "@assets/ms-teams_1768826034695.png";
-import LogoOffice365 from "@assets/office-365_1768826034695.png";
+import LogoCoPilot from "@assets/copilot_1768826460167.png";
+import LogoTeams from "@assets/ms-teams_1768826460169.png";
+import LogoOffice365 from "@assets/office-365_1768826460169.png";
 
 export default function Home() {
   return (
@@ -310,13 +310,13 @@ export default function Home() {
                  <div className="pt-6">
                    <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Integrated with</p>
                    <div className="flex flex-wrap items-center gap-4">
-                     <div className="bg-white px-6 py-3 rounded-xl shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
+                     <div className="bg-white px-6 py-3 rounded-none shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
                        <img src={LogoTeams} alt="Microsoft Teams" className="h-10 w-auto" />
                      </div>
-                     <div className="bg-white px-6 py-3 rounded-xl shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
+                     <div className="bg-white px-6 py-3 rounded-none shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
                        <img src={LogoOffice365} alt="Office 365" className="h-8 w-auto" />
                      </div>
-                     <div className="bg-white px-6 py-3 rounded-xl shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
+                     <div className="bg-white px-6 py-3 rounded-none shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
                        <img src={LogoCoPilot} alt="Microsoft CoPilot" className="h-8 w-auto" />
                      </div>
                    </div>

@@ -8,33 +8,11 @@ import { Badge } from "@/components/ui/badge";
 import { Switch } from "@/components/ui/switch";
 
 export default function Pricing() {
-  const [currency, setCurrency] = useState<'USD' | 'ZAR'>('USD');
-  const [locationChecked, setLocationChecked] = useState(false);
-
-  useEffect(() => {
-    if (locationChecked) return;
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          const isSouthAfrica = latitude >= -35 && latitude <= -22 && longitude >= 16 && longitude <= 33;
-          if (isSouthAfrica) setCurrency('ZAR');
-          setLocationChecked(true);
-        },
-        (error) => {
-          setLocationChecked(true);
-        }
-      );
-    }
-  }, [locationChecked]);
-
-  const symbol = currency === 'USD' ? '$' : 'R';
-  
   // Pricing tiers adapted to the new layout
   const tiers = [
     {
       name: "Starter",
-      price: currency === 'USD' ? "420" : "7 500",
+      price: "420",
       description: "Foundational workflow tools for small teams.",
       features: [
         "Up to 100 workflows / month",
@@ -49,7 +27,7 @@ export default function Pricing() {
     },
     {
       name: "Growth",
-      price: currency === 'USD' ? "850" : "15 000",
+      price: "850",
       description: "Essential automation for growing businesses.",
       features: [
         "Up to 1,000 workflows / month",
@@ -65,7 +43,7 @@ export default function Pricing() {
     },
     {
       name: "Pro",
-      price: currency === 'USD' ? "1 500" : "28 000",
+      price: "1,500",
       description: "Advanced collaboration and workflow for scaled teams.",
       features: [
         "Up to 5,000 workflows / month",
@@ -107,15 +85,6 @@ export default function Pricing() {
             Choose the plan that fits your workflow volume. Upgrade or downgrade at any time.
           </p>
           
-          <div className="flex items-center justify-center gap-4 mt-8">
-            <span className={`text-sm font-bold ${currency === 'USD' ? 'text-white' : 'text-blue-200'}`}>USD</span>
-            <Switch 
-              checked={currency === 'ZAR'}
-              onCheckedChange={(checked) => setCurrency(checked ? 'ZAR' : 'USD')}
-              className="data-[state=checked]:bg-accent"
-            />
-            <span className={`text-sm font-bold ${currency === 'ZAR' ? 'text-white' : 'text-blue-200'}`}>ZAR</span>
-          </div>
         </div>
       </Section>
 
@@ -140,8 +109,8 @@ export default function Pricing() {
                           <span className="text-4xl font-extrabold text-gray-900">Custom</span>
                        </div>
                     ) : (
-                        <div className="flex items-baseline gap-1">
-                          <span className="text-4xl font-extrabold text-gray-900">{symbol}{tier.price}</span>
+                        <div className="flex items-baseline gap-1 whitespace-nowrap">
+                          <span className="text-4xl font-extrabold text-gray-900">${tier.price}</span>
                           <span className="text-gray-500 font-medium">/ month</span>
                         </div>
                     )}

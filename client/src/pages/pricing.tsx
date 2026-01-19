@@ -187,7 +187,7 @@ export default function Pricing() {
                        <p className="text-xs text-gray-400 mt-1">billed monthly</p>
                     )}
                   </div>
-                  <div className="min-h-[60px]">
+                  <div className="min-h-[110px]">
                     <p className="text-sm text-gray-600 leading-relaxed">
                       {tier.description}
                     </p>

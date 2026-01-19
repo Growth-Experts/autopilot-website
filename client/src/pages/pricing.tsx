@@ -8,11 +8,47 @@ import { Badge } from "@/components/ui/badge";
 import { Switch } from "@/components/ui/switch";
 
 export default function Pricing() {
+  const [currency, setCurrency] = useState<'USD' | 'ZAR'>('USD');
+  const [locationChecked, setLocationChecked] = useState(false);
+
+  useEffect(() => {
+    if (locationChecked) return;
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          // Rough bounding box for South Africa
+          // Latitude: -35 to -22
+          // Longitude: 16 to 33
+          const isSouthAfrica = latitude >= -35 && latitude <= -22 && longitude >= 16 && longitude <= 33;
+          
+          if (isSouthAfrica) {
+             setCurrency('ZAR');
+          }
+          setLocationChecked(true);
+        },
+        (error) => {
+          console.error("Geolocation error:", error);
+          setLocationChecked(true);
+        }
+      );
+    } else {
+       setLocationChecked(true);
+    }
+  }, [locationChecked]);
+
+  const symbol = currency === 'USD' ? '$' : 'R';
+  const flag = currency === 'ZAR' ? (
+    <span className="inline-flex items-center justify-center ml-2 text-2xl" role="img" aria-label="South Africa Flag">
+      🇿🇦
+    </span>
+  ) : null;
+
   // Pricing tiers adapted to the new layout
   const tiers = [
     {
       name: "Starter",
-      price: "420",
+      price: currency === 'USD' ? "420" : "7 500",
       description: "Foundational workflow tools for small teams.",
       features: [
         "Up to 100 workflows / month",
@@ -27,7 +63,7 @@ export default function Pricing() {
     },
     {
       name: "Growth",
-      price: "850",
+      price: currency === 'USD' ? "850" : "15 000",
       description: "Essential automation for growing businesses.",
       features: [
         "Up to 1,000 workflows / month",
@@ -43,7 +79,7 @@ export default function Pricing() {
     },
     {
       name: "Pro",
-      price: "1,500",
+      price: currency === 'USD' ? "1,500" : "28 000",
       description: "Advanced collaboration and workflow for scaled teams.",
       features: [
         "Up to 5,000 workflows / month",
@@ -80,7 +116,9 @@ export default function Pricing() {
     <div className="flex flex-col">
       <Section background="blue" className="text-white pt-24 pb-32">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Simple, Scalable Pricing</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white flex items-center justify-center gap-2">
+            Simple, Scalable Pricing {flag}
+          </h1>
           <p className="text-xl text-blue-100 mb-8">
             Choose the plan that fits your workflow volume. Upgrade or downgrade at any time.
           </p>
@@ -110,7 +148,7 @@ export default function Pricing() {
                        </div>
                     ) : (
                         <div className="flex items-baseline gap-1 whitespace-nowrap">
-                          <span className="text-4xl font-extrabold text-gray-900">${tier.price}</span>
+                          <span className="text-4xl font-extrabold text-gray-900">{symbol}{tier.price}</span>
                           <span className="text-gray-500 font-medium">/ month</span>
                         </div>
                     )}

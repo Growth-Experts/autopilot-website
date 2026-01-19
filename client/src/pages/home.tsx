@@ -27,6 +27,7 @@ import app_screenshot_left from "@assets/app-screenshot-left.png";
 import AutopilotBackground from "@assets/autopilot-background_1767798365737.jpg";
 
 import Autopilot_app_screenshot_in_laptop from "@assets/Autopilot app screenshot in laptop.png";
+import MSPartnerBadge from "@assets/Autopilot_-_MS_partner_1768825112825.png";
 
 export default function Home() {
   return (
@@ -278,37 +279,58 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Strategic Alliances Section */}
-      <section className="py-12 bg-white border-b border-gray-100">
+      {/* Strategic Alliances Section - Redesigned for Microsoft Partnership */}
+      <section className="py-20 bg-gray-50 border-b border-gray-100">
         <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              <Card className="bg-blue-50 border-none shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:bg-blue-100/80 cursor-default">
-                <CardContent className="p-8 flex items-start gap-4">
-                   <div className="bg-white p-3 rounded-full shrink-0 shadow-sm">
-                     <ShieldCheck className="h-6 w-6 text-primary" />
+            <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12 md:gap-20">
+              {/* Left Column: Text Content */}
+              <div className="flex-1 space-y-6">
+                 <div className="inline-flex items-center gap-2 bg-blue-100 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+                   <ShieldCheck className="h-4 w-4" />
+                   <span>Strategic Partnership</span>
+                 </div>
+                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+                   Deeply Integrated with the <span className="text-[#00A4EF]">Microsoft Ecosystem</span>
+                 </h2>
+                 <div className="space-y-4 text-lg text-gray-600">
+                    <p>
+                      For more than a decade, Autopilot has been a trusted Microsoft Partner, building solutions that live where you work. Our deep relationship ensures our platform evolves alongside Microsoft's latest innovations.
+                    </p>
+                    <p>
+                      We build directly into the tools your team uses every day. From native apps in <strong className="text-gray-900">Microsoft Teams</strong> to seamless integrations across <strong className="text-gray-900">Office 365</strong>, we remove friction by bringing workflows to your users.
+                    </p>
+                    <p>
+                      Leveraging <strong className="text-gray-900">Microsoft CoPilot</strong>, we're bringing next-generation AI capabilities directly into your processes—automating complex decisions while keeping your data secure within your existing compliance boundaries.
+                    </p>
+                 </div>
+                 
+                 <div className="pt-4 flex flex-wrap gap-4">
+                   <div className="flex items-center gap-2 text-sm font-bold text-gray-700 bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-200">
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png" alt="Microsoft" className="h-4 w-auto" />
+                     <span>Teams Integrated</span>
                    </div>
-                   <div>
-                       <h3 className="text-xl font-bold text-primary mb-2">Microsoft Partner</h3>
-                       <p className="text-gray-700 leading-relaxed">
-                         We are a trusted Microsoft Partner, leveraging technologies like SharePoint to ensure secure storage and compliance.
-                       </p>
+                   <div className="flex items-center gap-2 text-sm font-bold text-gray-700 bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-200">
+                     <ShieldCheck className="h-4 w-4 text-green-600" />
+                     <span>CoPilot Ready</span>
                    </div>
-                </CardContent>
-              </Card>
+                   <div className="flex items-center gap-2 text-sm font-bold text-gray-700 bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-200">
+                     <CheckCircle className="h-4 w-4 text-blue-600" />
+                     <span>Office 365 Certified</span>
+                   </div>
+                 </div>
+              </div>
               
-              <Card className="bg-orange-50 border-none shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:bg-orange-100/80 cursor-default">
-                <CardContent className="p-8 flex items-start gap-4">
-                   <div className="bg-white p-3 rounded-full shrink-0 shadow-sm">
-                     <Handshake className="h-6 w-6 text-accent" />
-                   </div>
-                   <div>
-                       <h3 className="text-xl font-bold text-accent mb-2">DocuSign Integration</h3>
-                       <p className="text-gray-700 leading-relaxed">
-                         We integrate with compliant e-signature providers like DocuSign that meet legal and security requirements.
-                       </p>
-                   </div>
-                </CardContent>
-              </Card>
+              {/* Right Column: Badge Image */}
+              <div className="flex-1 flex justify-center md:justify-end">
+                 <div className="relative group">
+                    <div className="absolute -inset-4 bg-gradient-to-r from-blue-200 to-cyan-200 rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+                    <img 
+                      src={MSPartnerBadge} 
+                      alt="Microsoft Solutions Partner Badge" 
+                      className="relative w-full max-w-sm md:max-w-md h-auto object-contain drop-shadow-2xl transform transition-transform duration-500 hover:scale-[1.02]" 
+                    />
+                 </div>
+              </div>
             </div>
         </div>
       </section>

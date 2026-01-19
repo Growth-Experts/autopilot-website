@@ -26,6 +26,8 @@ import app_screenshot__1__Background_Removed from "@assets/app screenshot (1) Ba
 import app_screenshot_left from "@assets/app-screenshot-left.png";
 import AutopilotBackground from "@assets/autopilot-background_1767798365737.jpg";
 
+import Autopilot_app_screenshot_in_laptop from "@assets/Autopilot app screenshot in laptop.png";
+
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -78,7 +80,7 @@ export default function Home() {
               style={{ right: 'calc(50% - 50vw)' }}
             >
                <img 
-                 src={LaptopImage} 
+                 src={Autopilot_app_screenshot_in_laptop} 
                  alt="Autopilot Dashboard" 
                  className="w-full h-auto object-contain object-right"
                />
@@ -108,7 +110,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Strategic Alliances Section */}
       <section className="py-12 bg-white border-b border-gray-100">
         <div className="container mx-auto px-4">

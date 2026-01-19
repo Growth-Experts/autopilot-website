@@ -44,9 +44,7 @@ export default function Partners() {
         <div className="text-center">
           <h3 className="text-2xl font-bold mb-6">Join Our Partner Network</h3>
           <Link href="/contact">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold px-10">
-              Contact Adam
-            </Button>
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold px-10">Contact Autopilot</Button>
           </Link>
         </div>
       </Section>

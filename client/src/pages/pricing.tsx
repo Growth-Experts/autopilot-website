@@ -147,8 +147,8 @@ export default function Pricing() {
                           <span className="text-4xl font-extrabold text-gray-900">Custom</span>
                        </div>
                     ) : (
-                        <div className="flex items-baseline gap-1 whitespace-nowrap">
-                          <span className="text-4xl font-extrabold text-gray-900">{symbol}{tier.price}</span>
+                        <div className="flex flex-col items-start xl:flex-row xl:items-baseline gap-1">
+                          <span className={`font-extrabold text-gray-900 ${currency === 'ZAR' ? 'text-3xl' : 'text-4xl'}`}>{symbol}{tier.price}</span>
                           <span className="text-gray-500 font-medium">/ month</span>
                         </div>
                     )}

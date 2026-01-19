@@ -28,6 +28,9 @@ import AutopilotBackground from "@assets/autopilot-background_1767798365737.jpg"
 
 import Autopilot_app_screenshot_in_laptop from "@assets/Autopilot app screenshot in laptop.png";
 import MSPartnerBadge from "@assets/Autopilot_-_MS_partner_1768825112825.png";
+import LogoCoPilot from "@assets/copilot_1768826034695.png";
+import LogoTeams from "@assets/ms-teams_1768826034695.png";
+import LogoOffice365 from "@assets/office-365_1768826034695.png";
 
 export default function Home() {
   return (
@@ -304,18 +307,12 @@ export default function Home() {
                     </p>
                  </div>
                  
-                 <div className="pt-4 flex flex-wrap gap-4">
-                   <div className="flex items-center gap-2 text-sm font-bold text-gray-700 bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-200">
-                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png" alt="Microsoft" className="h-4 w-auto" />
-                     <span>Teams Integrated</span>
-                   </div>
-                   <div className="flex items-center gap-2 text-sm font-bold text-gray-700 bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-200">
-                     <ShieldCheck className="h-4 w-4 text-green-600" />
-                     <span>CoPilot Ready</span>
-                   </div>
-                   <div className="flex items-center gap-2 text-sm font-bold text-gray-700 bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-200">
-                     <CheckCircle className="h-4 w-4 text-blue-600" />
-                     <span>Office 365 Certified</span>
+                 <div className="pt-6">
+                   <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Integrated with</p>
+                   <div className="flex flex-wrap items-center gap-6">
+                     <img src={LogoTeams} alt="Microsoft Teams" className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+                     <img src={LogoOffice365} alt="Office 365" className="h-6 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+                     <img src={LogoCoPilot} alt="Microsoft CoPilot" className="h-6 w-auto opacity-80 hover:opacity-100 transition-opacity" />
                    </div>
                  </div>
               </div>

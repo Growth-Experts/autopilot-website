@@ -57,7 +57,7 @@ export default function Pricing() {
         "Basic Audit Logs",
         "Email Support"
       ],
-      cta: "Get Started",
+      cta: "Contact Us",
       ctaVariant: "outline" as const,
       highlight: false
     },
@@ -73,7 +73,7 @@ export default function Pricing() {
         "90 days review history"
       ],
       includes: "EVERYTHING IN STARTER, PLUS:",
-      cta: "Try it free",
+      cta: "Contact Us",
       ctaVariant: "default" as const, // Blue
       highlight: false
     },
@@ -89,7 +89,7 @@ export default function Pricing() {
         "Unlimited review history"
       ],
       includes: "EVERYTHING IN GROWTH, PLUS:",
-      cta: "Try it free",
+      cta: "Contact Us",
       ctaVariant: "default" as const,
       highlight: true
     },
@@ -106,7 +106,7 @@ export default function Pricing() {
         "White-glove onboarding"
       ],
       includes: "EVERYTHING IN PRO, PLUS:",
-      cta: "Contact us",
+      cta: "Contact Us",
       ctaVariant: "destructive" as const, // Pink/Reddish
       highlight: false
     }

@@ -308,11 +308,17 @@ export default function Home() {
                  </div>
                  
                  <div className="pt-6">
-                   <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Integrated with</p>
-                   <div className="flex flex-wrap items-center gap-6">
-                     <img src={LogoTeams} alt="Microsoft Teams" className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-                     <img src={LogoOffice365} alt="Office 365" className="h-6 w-auto opacity-80 hover:opacity-100 transition-opacity" />
-                     <img src={LogoCoPilot} alt="Microsoft CoPilot" className="h-6 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+                   <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Integrated with</p>
+                   <div className="flex flex-wrap items-center gap-4">
+                     <div className="bg-white px-6 py-3 rounded-xl shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
+                       <img src={LogoTeams} alt="Microsoft Teams" className="h-10 w-auto" />
+                     </div>
+                     <div className="bg-white px-6 py-3 rounded-xl shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
+                       <img src={LogoOffice365} alt="Office 365" className="h-8 w-auto" />
+                     </div>
+                     <div className="bg-white px-6 py-3 rounded-xl shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
+                       <img src={LogoCoPilot} alt="Microsoft CoPilot" className="h-8 w-auto" />
+                     </div>
                    </div>
                  </div>
               </div>

@@ -80,8 +80,8 @@ export default function Home() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[50vw] z-20"
-              style={{ right: 'calc(50% - 50vw)' }}
+              className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[58vw] z-20"
+              style={{ right: 'calc(50% - 58vw)' }}
             >
                <img 
                  src={Autopilot_app_screenshot_in_laptop} 

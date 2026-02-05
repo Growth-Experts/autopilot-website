@@ -26,7 +26,7 @@ import app_screenshot__1__Background_Removed from "@assets/app screenshot (1) Ba
 import app_screenshot_left from "@assets/app-screenshot-left.png";
 import AutopilotBackground from "@assets/autopilot-background_1767798365737.jpg";
 
-import Autopilot_app_screenshot_in_laptop from "@assets/Autopilot_app_screenshot_in_laptop_1770272218990.png";
+import Autopilot_app_screenshot_in_laptop from "@assets/Autopilot_app_screenshot_in_laptop_1770272012219.png";
 import MSPartnerBadge from "@assets/Autopilot_(2)_1770271633028.png";
 import LogoCoPilot from "@assets/copilot_1768826460167.png";
 import LogoTeams from "@assets/ms-teams_1768826460169.png";
@@ -80,13 +80,13 @@ export default function Home() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[92vw] max-w-[1120px] z-20"
-              style={{ right: 'calc(50% - 46vw)' }}
+              className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[50vw] z-20"
+              style={{ right: 'calc(50% - 50vw)' }}
             >
                <img 
                  src={Autopilot_app_screenshot_in_laptop} 
                  alt="Autopilot Dashboard" 
-                 className="w-full h-auto object-contain object-center"
+                 className="w-full h-auto object-contain object-right"
                />
             </motion.div>
             

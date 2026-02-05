@@ -191,7 +191,7 @@ export default function Home() {
           <p className="text-gray-600">Streamline your operations with our dedicated solutions.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Autopilot Onboarding - Swapped to Accent/Orange */}
           <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
             <div className="h-3 bg-accent w-full"></div>
@@ -200,12 +200,7 @@ export default function Home() {
                 <img src={LogoOnboarding} alt="Autopilot Onboarding" className="h-full w-auto" />
               </div>
               
-              {/* Screenshot Placeholder */}
-              <div className="w-full h-48 bg-gray-100 border border-gray-200 rounded-none mb-4 flex items-center justify-center relative overflow-hidden group-hover:border-accent/20 transition-colors">
-                <img src={OnboardingScreenshot} alt="Onboarding Screenshot" className="w-full h-full object-cover object-top" />
-              </div>
-
-              <h3 className="text-2xl text-accent font-bold mt-1">One Coordinated Onboarding Flow</h3>
+              <h3 className="text-3xl md:text-4xl text-accent font-bold mt-1">One Coordinated Onboarding Flow</h3>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-6 min-h-[80px]">
@@ -245,12 +240,7 @@ export default function Home() {
                 <img src={LogoApprovals} alt="Autopilot Approvals" className="h-full w-auto" />
               </div>
 
-              {/* Screenshot Placeholder */}
-              <div className="w-full h-48 bg-gray-100 border border-gray-200 rounded-none mb-4 flex items-center justify-center relative overflow-hidden group-hover:border-[#3A82D3]/20 transition-colors">
-                <img src={ApprovalsScreenshot} alt="Approvals Screenshot" className="w-full h-full object-cover object-top" />
-              </div>
-
-              <h3 className="text-2xl text-primary font-bold mt-1">One Workflow for Internal Teams</h3>
+              <h3 className="text-3xl md:text-4xl text-primary font-bold mt-1">One Workflow for Internal Teams</h3>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-6 min-h-[80px]">

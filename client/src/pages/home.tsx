@@ -44,24 +44,24 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
-            {/* Left Column: Text Content */}
+          <div className="max-w-4xl mx-auto text-center">
+            {/* Centered Text Content */}
             <motion.div 
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="space-y-8 text-center lg:text-left z-10"
+              className="space-y-8 z-10"
             >
               <h1 className="text-4xl md:text-6xl md:leading-[1.1] font-bold text-primary tracking-tight">
                 Stop Chasing Email Threads. <br className="hidden md:block" />
                 <span className="text-accent">Start Process Automation That Scales.</span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+              <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
                 Autopilot replaces confusing emails, duplicate requests, and scattered internal tasks with one clear, guided workflow.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                 <Link href="/book-demo" data-testid="link-book-demo-hero">
                   <Button
                     size="lg"
@@ -78,26 +78,6 @@ export default function Home() {
                 </a>
               </div>
             </motion.div>
-
-            {/* Right Column: Laptop Image */}
-            <motion.div 
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[75vw] z-20"
-              style={{ right: 'calc(50% - 50vw)' }}
-            >
-               <img 
-                 src={Autopilot_app_screenshot_in_laptop} 
-                 alt="Autopilot Dashboard" 
-                 className="w-full h-auto object-contain object-right"
-               />
-            </motion.div>
-            
-            {/* Mobile/Tablet Image (visible only on smaller screens) */}
-            <div className="lg:hidden w-full scale-150 origin-top">
-               <img src={Autopilot_app_screenshot_in_laptop} alt="Autopilot Dashboard" className="w-full h-auto" />
-            </div>
           </div>
         </div>
       </section>

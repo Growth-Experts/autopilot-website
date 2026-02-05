@@ -26,7 +26,7 @@ import app_screenshot__1__Background_Removed from "@assets/app screenshot (1) Ba
 import app_screenshot_left from "@assets/app-screenshot-left.png";
 import AutopilotBackground from "@assets/autopilot-background_1767798365737.jpg";
 
-import Autopilot_app_screenshot_in_laptop from "@assets/Autopilot_app_screenshot_in_laptop_(1)_1770272351504.png";
+import Autopilot_app_screenshot_in_laptop from "@assets/Autopilot_app_screenshot_in_laptop_(2)_1770272820211.png";
 import MSPartnerBadge from "@assets/Autopilot_(2)_1770271633028.png";
 import LogoCoPilot from "@assets/copilot_1768826460167.png";
 import LogoTeams from "@assets/ms-teams_1768826460169.png";

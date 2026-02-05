@@ -2,8 +2,7 @@ import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, Users, HelpCircle, Handshake } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { InlineWidget } from "react-calendly";
 
 export default function Contact() {
   return (
@@ -79,41 +78,20 @@ export default function Contact() {
             </Card>
           </div>
 
-          {/* Right Column: Contact Form */}
+          {/* Right Column: Calendly */}
           <div className="lg:col-span-8 flex flex-col h-full">
-            <div className="bg-white p-8 md:p-12 rounded-none shadow-lg border border-gray-100 flex-1 h-full">
-              <h2 className="text-2xl font-bold mb-6">Schedule Your Live Demo</h2>
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium">First Name</label>
-                    <Input placeholder="John" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium">Last Name</label>
-                    <Input placeholder="Doe" />
-                  </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">Work Email</label>
-                  <Input type="email" placeholder="john@company.com" />
-                </div>
+            <div
+              className="bg-white p-4 md:p-6 rounded-none shadow-lg border border-gray-100 flex-1 h-full"
+              data-testid="card-contact-calendly"
+            >
+              <h2 className="text-2xl font-bold mb-2" data-testid="text-contact-calendly-title">Schedule Your Live Demo</h2>
+              <p className="text-gray-600 mb-6" data-testid="text-contact-calendly-subtitle">
+                Pick a time that works for you — we’ll send a calendar invite immediately.
+              </p>
 
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">Company Name</label>
-                  <Input placeholder="Acme Corp" />
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">How can we help?</label>
-                  <Textarea placeholder="Tell us about your process challenges..." className="min-h-[150px]" />
-                </div>
-
-                <Button type="submit" size="lg" className="w-full md:w-auto bg-accent hover:bg-accent/90 text-white font-bold px-8">
-                  Request Demo
-                </Button>
-              </form>
+              <div className="border border-gray-200 shadow-sm rounded-none overflow-hidden" data-testid="embed-contact-calendly">
+                <InlineWidget url="https://calendly.com/marklehrer-autopilot/30min" styles={{ height: "820px", width: "100%" }} />
+              </div>
             </div>
           </div>
         </div>

@@ -27,7 +27,7 @@ import app_screenshot_left from "@assets/app-screenshot-left.png";
 import AutopilotBackground from "@assets/autopilot-background_1767798365737.jpg";
 
 import Autopilot_app_screenshot_in_laptop from "@assets/Autopilot app screenshot in laptop.png";
-import MSPartnerBadge from "@assets/Autopilot_-_MS_partner_1768825112825.png";
+import MSPartnerBadge from "@assets/Autopilot_(2)_1770271633028.png";
 import LogoCoPilot from "@assets/copilot_1768826460167.png";
 import LogoTeams from "@assets/ms-teams_1768826460169.png";
 import LogoOffice365 from "@assets/office-365_1768826460169.png";

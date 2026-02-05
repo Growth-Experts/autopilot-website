@@ -101,11 +101,21 @@ export default function Clients() {
         </div>
 
         <div className="text-center mt-20">
-          <Link href="/contact">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-10 h-14 text-lg">
+          <a
+            href="https://calendly.com/marklehrer-autopilot/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+            data-testid="link-book-demo-clients"
+          >
+            <Button
+              size="lg"
+              className="bg-accent hover:bg-accent/90 text-white font-bold px-10 h-14 text-lg"
+              data-testid="button-book-demo-clients"
+            >
               Book a Demo
             </Button>
-          </Link>
+          </a>
         </div>
       </Section>
     </div>

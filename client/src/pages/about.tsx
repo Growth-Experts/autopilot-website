@@ -87,11 +87,20 @@ export default function About() {
              Our team is composed of workflow and integration specialists dedicated to understanding the intricacies of critical business processes. We focus on building solutions that are not only technologically advanced but also highly usable for both internal teams and external parties.
            </p>
            <div className="pt-8">
-             <Link href="/contact">
-               <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-10">
+             <a
+               href="https://calendly.com/marklehrer-autopilot/30min"
+               target="_blank"
+               rel="noopener noreferrer"
+               data-testid="link-book-demo-about"
+             >
+               <Button
+                 size="lg"
+                 className="bg-accent hover:bg-accent/90 text-white font-bold px-10"
+                 data-testid="button-book-demo-about"
+               >
                  Book a Demo
                </Button>
-             </Link>
+             </a>
            </div>
         </div>
       </Section>

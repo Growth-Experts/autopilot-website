@@ -27,7 +27,17 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-3 lg:col-start-11 lg:col-span-2">
             <h4 className="font-bold text-lg mb-6 text-white">Contact</h4>
             <ul className="space-y-4 text-sm text-gray-300">
-              <li><Link href="/contact"><a className="hover:text-white transition-colors">Book a Demo</a></Link></li>
+              <li>
+                <a
+                  href="https://calendly.com/marklehrer-autopilot/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                  data-testid="link-book-demo-footer"
+                >
+                  Book a Demo
+                </a>
+              </li>
               
               <li className="pt-4 flex items-center gap-3">
                 <Mail className="h-4 w-4 text-accent" />

@@ -40,11 +40,13 @@ export default function About() {
             <div className="md:w-1/3 bg-gray-200 min-h-[300px] relative">
                <img src={AdamPhoto} alt="Adam Shapiro" className="absolute inset-0 w-full h-full object-cover" />
             </div>
-            <div className="md:w-2/3 p-8 md:p-12 space-y-4">
-              <h3 className="text-2xl font-bold text-primary">Adam Shapiro</h3>
-              <p className="text-sm text-accent font-bold uppercase tracking-wide">Founder</p>
+            <div className="md:w-2/3 p-8 md:p-12 space-y-6">
+              <div className="space-y-2">
+                <h3 className="text-2xl font-bold text-primary" data-testid="text-founder-name">Adam Shapiro</h3>
+                <p className="text-sm text-accent font-bold uppercase tracking-wide" data-testid="text-founder-title">Founder</p>
+              </div>
               
-              <div className="space-y-4 text-gray-600">
+              <div className="space-y-4 text-gray-600" data-testid="text-founder-bio">
                 <p>
                   Adam Shapiro is a technology entrepreneur with over two decades of experience building and scaling digital businesses.
                 </p>
@@ -54,6 +56,24 @@ export default function About() {
                 <p>
                   Today, Adam focuses on helping organizations simplify complexity, improve accountability, and scale with confidence.
                 </p>
+              </div>
+
+              <div className="pt-2">
+                <a
+                  href="https://www.linkedin.com/in/adamshapirosafrica/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-full sm:w-auto"
+                  data-testid="link-follow-adam-linkedin"
+                >
+                  <Button
+                    size="lg"
+                    className="w-full sm:w-auto bg-[#0A66C2] hover:bg-[#0A66C2]/90 text-white font-bold px-10 h-12 rounded-full shadow-sm hover:shadow-md transition-all"
+                    data-testid="button-follow-adam-linkedin"
+                  >
+                    Follow Adam on LinkedIn
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

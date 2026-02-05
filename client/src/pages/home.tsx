@@ -26,7 +26,7 @@ import app_screenshot__1__Background_Removed from "@assets/app screenshot (1) Ba
 import app_screenshot_left from "@assets/app-screenshot-left.png";
 import AutopilotBackground from "@assets/autopilot-background_1767798365737.jpg";
 
-import Autopilot_app_screenshot_in_laptop from "@assets/Autopilot app screenshot in laptop.png";
+import Autopilot_app_screenshot_in_laptop from "@assets/Autopilot_app_screenshot_in_laptop_1770272012219.png";
 import MSPartnerBadge from "@assets/Autopilot_(2)_1770271633028.png";
 import LogoCoPilot from "@assets/copilot_1768826460167.png";
 import LogoTeams from "@assets/ms-teams_1768826460169.png";
@@ -92,7 +92,7 @@ export default function Home() {
             
             {/* Mobile/Tablet Image (visible only on smaller screens) */}
             <div className="lg:hidden w-full">
-               <img src={LaptopImage} alt="Autopilot Dashboard" className="w-full h-auto" />
+               <img src={Autopilot_app_screenshot_in_laptop} alt="Autopilot Dashboard" className="w-full h-auto" />
             </div>
           </div>
         </div>

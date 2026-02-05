@@ -85,9 +85,7 @@ export default function Contact() {
               data-testid="card-contact-calendly"
             >
               <h2 className="text-2xl font-bold mb-2" data-testid="text-contact-calendly-title">Schedule Your Live Demo</h2>
-              <p className="text-gray-600 mb-6" data-testid="text-contact-calendly-subtitle">
-                Pick a time that works for you — we’ll send a calendar invite immediately.
-              </p>
+              <p className="text-gray-600 mb-6" data-testid="text-contact-calendly-subtitle">Pick a time that works for you and we’ll send a calendar invite immediately.</p>
 
               <div className="border border-gray-200 shadow-sm rounded-none overflow-hidden" data-testid="embed-contact-calendly">
                 <InlineWidget url="https://calendly.com/marklehrer-autopilot/30min" styles={{ height: "820px", width: "100%" }} />

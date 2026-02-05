@@ -107,7 +107,7 @@ export default function Contact() {
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium">How can we help?</label>
-                  <Textarea placeholder="Tell us about your process challenges..." className="min-h-[150px]" />
+                  <Textarea placeholder="Tell us about your process challenges..." className="min-h-[96px]" />
                 </div>
 
                 <Button type="submit" size="lg" className="w-full md:w-auto bg-accent hover:bg-accent/90 text-white font-bold px-8">

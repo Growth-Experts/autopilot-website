@@ -12,9 +12,7 @@ export default function BookDemo() {
           <h1 className="mt-3 text-4xl md:text-5xl font-bold text-gray-900" data-testid="text-book-demo-title">
             Book a Demo
           </h1>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto" data-testid="text-book-demo-subtitle">
-            Schedule a time to see how Autopilot can streamline your onboarding process.
-          </p>
+          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto" data-testid="text-book-demo-subtitle">Schedule a time to see how Autopilot can streamline your workflow processes.</p>
         </div>
 
         <div className="mt-10 md:mt-12 max-w-5xl mx-auto">

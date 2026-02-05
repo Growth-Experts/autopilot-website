@@ -28,15 +28,9 @@ export default function Footer() {
             <h4 className="font-bold text-lg mb-6 text-white">Contact</h4>
             <ul className="space-y-4 text-sm text-gray-300">
               <li>
-                <a
-                  href="https://calendly.com/marklehrer-autopilot/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
-                  data-testid="link-book-demo-footer"
-                >
-                  Book a Demo
-                </a>
+                <Link href="/book-demo" data-testid="link-book-demo-footer">
+                  <a className="hover:text-white transition-colors">Book a Demo</a>
+                </Link>
               </li>
               
               <li className="pt-4 flex items-center gap-3">

@@ -62,12 +62,7 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
-                <a
-                  href="https://calendly.com/marklehrer-autopilot/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-testid="link-book-demo-hero"
-                >
+                <Link href="/book-demo" data-testid="link-book-demo-hero">
                   <Button
                     size="lg"
                     className="bg-accent hover:bg-accent/90 text-white font-bold h-14 px-8 text-lg w-full sm:w-auto"
@@ -75,7 +70,7 @@ export default function Home() {
                   >
                     Book a Demo
                   </Button>
-                </a>
+                </Link>
                 <a href="#products">
                   <Button variant="outline" size="lg" className="h-14 px-8 text-lg border-primary text-primary hover:bg-primary/5 w-full sm:w-auto">
                     Explore Solutions

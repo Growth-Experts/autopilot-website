@@ -53,12 +53,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden lg:flex items-center space-x-4">
-          <a
-            href="https://calendly.com/marklehrer-autopilot/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-testid="link-book-demo-navbar"
-          >
+          <Link href="/book-demo" data-testid="link-book-demo-navbar">
             <Button 
               className="bg-accent hover:bg-accent/90 text-white font-bold px-6"
               size="lg"
@@ -66,7 +61,7 @@ export default function Navbar() {
             >
               Book a Demo
             </Button>
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Navigation */}
@@ -98,10 +93,8 @@ export default function Navbar() {
                       {item.label}
                   </Link>
                 ))}
-                <a
-                  href="https://calendly.com/marklehrer-autopilot/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/book-demo"
                   className="w-full"
                   data-testid="link-book-demo-navbar-mobile"
                 >
@@ -111,7 +104,7 @@ export default function Navbar() {
                   >
                     Book a Demo
                   </Button>
-                </a>
+                </Link>
               </div>
             </SheetContent>
           </Sheet>

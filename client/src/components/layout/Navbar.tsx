@@ -19,10 +19,16 @@ export default function Navbar() {
     { label: "Contact", href: "/contact" },
   ];
 
+  const handleNavClick = (href: string) => {
+    if (location === href) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center" onClick={() => handleNavClick("/")} data-testid="link-nav-logo">
             <img src={Logo} alt="Autopilot" className="h-10 md:h-14 w-auto" />
         </Link>
 
@@ -38,6 +44,8 @@ export default function Navbar() {
                   ? "text-primary font-bold"
                   : "text-gray-600"
               )}
+              onClick={() => handleNavClick(item.href)}
+              data-testid={`link-nav-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
             >
                 {item.label}
             </Link>
@@ -75,7 +83,11 @@ export default function Navbar() {
                         ? "text-primary font-bold"
                         : "text-gray-600"
                     )}
-                    onClick={() => setIsOpen(false)}
+                    onClick={() => {
+                      handleNavClick(item.href);
+                      setIsOpen(false);
+                    }}
+                    data-testid={`link-mobile-nav-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
                   >
                       {item.label}
                   </Link>

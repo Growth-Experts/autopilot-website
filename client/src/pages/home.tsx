@@ -12,7 +12,7 @@ import LogoMetrofile from "@assets/metrofile-logo_1767792280626.png";
 import LogoTongaat from "@assets/Tongaat-Huletts-Logo_1767792280626.png";
 import LogoYMCA from "@assets/YMCA_Logo_1768585772781.jpg";
 import LaptopImage from "@assets/app-screenshot_1767787178377.png";
-import OnboardingScreenshot from "@assets/image_1770271784776.png";
+import OnboardingScreenshot from "@assets/unnamed_(4)_1768585890405.png";
 import ApprovalsScreenshot from "@assets/unnamed_(11)_1768586007598.png";
 import OverviewImage from "@assets/app_screenshot_1767792973731.png";
 import LeftScreenshot from "@assets/app-screenshot-left_1767793647658.png";
@@ -83,33 +83,11 @@ export default function Home() {
               className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[50vw] z-20"
               style={{ right: 'calc(50% - 50vw)' }}
             >
-              <div className="relative w-full" data-testid="laptop-hero">
-                {/* Screen content (clipped) */}
-                <div
-                  className="absolute"
-                  style={{ left: '7.2%', top: '12.2%', width: '85.4%', height: '57.2%' }}
-                  data-testid="laptop-screen-mask"
-                >
-                  <div className="w-full h-full overflow-hidden rounded-[6px]" data-testid="laptop-screen-clip">
-                    <img
-                      src={OnboardingScreenshot}
-                      alt="Autopilot Workflow Screenshot"
-                      className="w-full h-full object-cover object-top"
-                      data-testid="img-laptop-screen"
-                    />
-                  </div>
-                  {/* subtle screen tint to match the frame */}
-                  <div className="absolute inset-0 bg-black/5 pointer-events-none" />
-                </div>
-
-                {/* Laptop frame on top */}
-                <img 
-                  src={Autopilot_app_screenshot_in_laptop} 
-                  alt="Autopilot Laptop" 
-                  className="relative w-full h-auto object-contain object-right"
-                  data-testid="img-laptop-frame"
-                />
-              </div>
+               <img 
+                 src={Autopilot_app_screenshot_in_laptop} 
+                 alt="Autopilot Dashboard" 
+                 className="w-full h-auto object-contain object-right"
+               />
             </motion.div>
             
             {/* Mobile/Tablet Image (visible only on smaller screens) */}

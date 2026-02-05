@@ -80,7 +80,7 @@ export default function Home() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[50vw] z-20"
+              className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[75vw] z-20"
               style={{ right: 'calc(50% - 50vw)' }}
             >
                <img 
@@ -91,7 +91,7 @@ export default function Home() {
             </motion.div>
             
             {/* Mobile/Tablet Image (visible only on smaller screens) */}
-            <div className="lg:hidden w-full">
+            <div className="lg:hidden w-full scale-150 origin-top">
                <img src={Autopilot_app_screenshot_in_laptop} alt="Autopilot Dashboard" className="w-full h-auto" />
             </div>
           </div>

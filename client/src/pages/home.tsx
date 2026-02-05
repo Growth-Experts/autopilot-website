@@ -264,9 +264,17 @@ export default function Home() {
               </div>
             </CardContent>
             <CardFooter className="pb-8">
-              <Button className="w-full bg-[#3A82D3] hover:bg-[#3A82D3]/90 text-white">
-                Explore Approvals <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <a
+                href="https://56cf1ef1-47a4-459b-acb5-bde375fe4bb0-00-1sla7650pccd5.kirk.replit.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+                data-testid="link-explore-approvals"
+              >
+                <Button className="w-full bg-[#3A82D3] hover:bg-[#3A82D3]/90 text-white" data-testid="button-explore-approvals">
+                  Explore Approvals <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </a>
             </CardFooter>
           </Card>
         </div>

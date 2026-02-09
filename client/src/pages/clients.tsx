@@ -52,7 +52,8 @@ export default function Clients() {
       company: "Cooperative Baptist Fellowship",
       logo: LogoCBF,
       result: "Faster decisions with strong governance",
-      detail: "Streamlined key approval workflows inside Microsoft Teams."
+      detail: "Streamlined key approval workflows inside Microsoft Teams.",
+      link: "/case-studies/cbf"
     },
     {
       company: "SA Canegrowers",

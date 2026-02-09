@@ -35,7 +35,8 @@ export default function Clients() {
       company: "Talksure",
       logo: LogoTalksure,
       result: "Reduced manual steps and cut ERP costs",
-      detail: "Moved procurement approvals into Microsoft Teams with full audit trails."
+      detail: "Moved procurement approvals into Microsoft Teams with full audit trails.",
+      link: "/case-studies/talksure"
     },
     {
       company: "RUBiQ",

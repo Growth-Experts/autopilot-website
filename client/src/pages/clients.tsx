@@ -24,7 +24,8 @@ export default function Clients() {
       company: "Syntech",
       logo: LogoSyntech,
       result: "Cut reseller approval time from 10 days to 1 day",
-      detail: "By pushing clean, validated data directly into CRM systems."
+      detail: "By pushing clean, validated data directly into CRM systems.",
+      link: "/case-studies/syntech"
     },
     {
       company: "YMCA South Africa",

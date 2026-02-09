@@ -45,7 +45,8 @@ export default function Clients() {
       company: "RUBiQ",
       logo: LogoRubiq,
       result: "Rolled out in hours",
-      detail: "Gained enterprise-grade controls, easier approvals, and a smooth employee experience."
+      detail: "Gained enterprise-grade controls, easier approvals, and a smooth employee experience.",
+      link: "/case-studies/rubiq"
     },
     {
       company: "Cooperative Baptist Fellowship",

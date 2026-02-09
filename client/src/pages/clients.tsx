@@ -31,7 +31,8 @@ export default function Clients() {
       company: "YMCA South Africa",
       logo: LogoYMCA,
       result: "Transformed operational efficiency",
-      detail: "Reduced audit times and enhanced financial accountability with Autopilot."
+      detail: "Reduced audit times and enhanced financial accountability with Autopilot.",
+      link: "/case-studies/ymca"
     },
     {
       company: "Talksure",

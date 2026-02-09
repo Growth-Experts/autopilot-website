@@ -19,6 +19,7 @@ import SACanegrowersCaseStudy from "@/pages/case-studies/sa-canegrowers";
 import TalksureCaseStudy from "@/pages/case-studies/talksure";
 import LawdCaseStudy from "@/pages/case-studies/lawd";
 import SyntechCaseStudy from "@/pages/case-studies/syntech";
+import YMCACaseStudy from "@/pages/case-studies/ymca";
 
 function Router() {
   return (
@@ -32,6 +33,7 @@ function Router() {
         <Route path="/case-studies/talksure" component={TalksureCaseStudy} />
         <Route path="/case-studies/lawd" component={LawdCaseStudy} />
         <Route path="/case-studies/syntech" component={SyntechCaseStudy} />
+        <Route path="/case-studies/ymca" component={YMCACaseStudy} />
         <Route path="/pricing" component={Pricing} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />

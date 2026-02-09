@@ -84,7 +84,7 @@ export default function Home() {
         
         {/* Arcade Video Embed - Full Width Outside Container */}
         <div className="container mx-auto px-4 relative z-10 mt-16 mb-20">
-          <div className="w-full shadow-2xl rounded-lg overflow-hidden bg-gray-50">
+          <div className="max-w-5xl mx-auto shadow-2xl rounded-lg overflow-hidden bg-gray-50">
             <div style={{ position: 'relative', paddingBottom: 'calc(48.75% + 41px)', height: 0, width: '100%' }}>
               <iframe 
                 src="https://demo.arcade.software/oBSvKoVqjMGdDIh4vcSy?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true" 

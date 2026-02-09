@@ -15,6 +15,7 @@ import Pricing from "@/pages/pricing";
 import About from "@/pages/about";
 import Contact from "@/pages/contact";
 import BookDemo from "@/pages/book-demo";
+import SACanegrowersCaseStudy from "@/pages/case-studies/sa-canegrowers";
 
 function Router() {
   return (
@@ -24,6 +25,7 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/partners" component={Partners} />
         <Route path="/clients" component={Clients} />
+        <Route path="/case-studies/sa-canegrowers" component={SACanegrowersCaseStudy} />
         <Route path="/pricing" component={Pricing} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />

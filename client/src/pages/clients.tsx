@@ -53,7 +53,8 @@ export default function Clients() {
       company: "SA Canegrowers",
       logo: LogoSACanegrowers,
       result: "Organisation-wide adoption in just days",
-      detail: "Digitized approval processes inside Microsoft Teams improving process control."
+      detail: "Digitized approval processes inside Microsoft Teams improving process control.",
+      link: "/case-studies/sa-canegrowers"
     }
   ];
 
@@ -73,31 +74,74 @@ export default function Clients() {
 
       <Section background="gray" className="pt-6 md:pt-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {caseStudies.map((study, index) => (
-            <Card 
-              key={index} 
-              className={`border-none shadow-md hover:shadow-lg transition-shadow duration-300 ${
-                index === caseStudies.length - 1 ? "md:col-span-2 md:w-[calc(50%-1rem)] md:mx-auto" : ""
-              }`}
-            >
-              <CardHeader className="pb-2">
-                <div className="flex items-center gap-4 mb-2">
-                   <div className="w-16 h-16 bg-white rounded-md flex items-center justify-center p-1 border border-gray-100 shadow-sm shrink-0 overflow-hidden">
-                     <img 
-                       src={study.logo} 
-                       alt={`${study.company} logo`} 
-                       className="w-full h-full object-contain"
-                     />
-                   </div>
-                   <CardTitle className="text-2xl font-bold text-gray-800">{study.company}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-lg font-bold text-primary mb-3">"{study.result}"</p>
-                <p className="text-gray-600">{study.detail}</p>
-              </CardContent>
-            </Card>
-          ))}
+          {caseStudies.map((study, index) => {
+            const CardContentWrapper = ({ children, className }: { children: React.ReactNode, className?: string }) => (
+              <Card 
+                key={index} 
+                className={`border-none shadow-md hover:shadow-lg transition-shadow duration-300 ${
+                  index === caseStudies.length - 1 ? "md:col-span-2 md:w-[calc(50%-1rem)] md:mx-auto" : ""
+                } ${className || ''}`}
+              >
+                {children}
+              </Card>
+            );
+
+            if (study.link) {
+              return (
+                <Link key={index} href={study.link} className={`block ${index === caseStudies.length - 1 ? "md:col-span-2 md:w-[calc(50%-1rem)] md:mx-auto" : ""}`}>
+                  <Card className="border-none shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer ring-1 ring-transparent hover:ring-accent/20 h-full">
+                    <CardHeader className="pb-2">
+                      <div className="flex items-center gap-4 mb-2">
+                        <div className="w-16 h-16 bg-white rounded-md flex items-center justify-center p-1 border border-gray-100 shadow-sm shrink-0 overflow-hidden">
+                          <img 
+                            src={study.logo} 
+                            alt={`${study.company} logo`} 
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                        <div className="flex flex-col">
+                          <CardTitle className="text-2xl font-bold text-gray-800">{study.company}</CardTitle>
+                          <span className="text-sm font-medium text-accent flex items-center gap-1 mt-1">
+                            Read Case Study <span className="text-lg">→</span>
+                          </span>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-lg font-bold text-primary mb-3">"{study.result}"</p>
+                      <p className="text-gray-600">{study.detail}</p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              );
+            }
+
+            return (
+              <Card 
+                key={index} 
+                className={`border-none shadow-md hover:shadow-lg transition-shadow duration-300 ${
+                  index === caseStudies.length - 1 ? "md:col-span-2 md:w-[calc(50%-1rem)] md:mx-auto" : ""
+                }`}
+              >
+                <CardHeader className="pb-2">
+                  <div className="flex items-center gap-4 mb-2">
+                    <div className="w-16 h-16 bg-white rounded-md flex items-center justify-center p-1 border border-gray-100 shadow-sm shrink-0 overflow-hidden">
+                      <img 
+                        src={study.logo} 
+                        alt={`${study.company} logo`} 
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <CardTitle className="text-2xl font-bold text-gray-800">{study.company}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-lg font-bold text-primary mb-3">"{study.result}"</p>
+                  <p className="text-gray-600">{study.detail}</p>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
 
         <div className="text-center mt-20">

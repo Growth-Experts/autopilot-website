@@ -77,6 +77,21 @@ export default function Home() {
                   </Button>
                 </a>
               </div>
+
+              {/* Arcade Video Embed */}
+              <div className="mt-16 mb-8 max-w-5xl mx-auto shadow-2xl rounded-lg overflow-hidden bg-gray-50">
+                <div style={{ position: 'relative', paddingBottom: 'calc(48.75% + 41px)', height: 0, width: '100%' }}>
+                  <iframe 
+                    src="https://demo.arcade.software/oBSvKoVqjMGdDIh4vcSy?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true" 
+                    title="Submit a customer quote request and route it to the right owners" 
+                    frameBorder="0" 
+                    loading="lazy" 
+                    allowFullScreen 
+                    allow="clipboard-write" 
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} 
+                  />
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>

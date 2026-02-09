@@ -17,7 +17,8 @@ export default function Clients() {
       company: "LAWD",
       logo: LogoLawd,
       result: "Halved time spent managing onboarding",
-      detail: "Supporting weekly new hires without an internal HR or IT team."
+      detail: "Supporting weekly new hires without an internal HR or IT team.",
+      link: "/case-studies/lawd"
     },
     {
       company: "Syntech",

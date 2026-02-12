@@ -7,11 +7,12 @@ import { Menu } from "lucide-react";
 import { useState } from "react";
 
 export default function Navbar() {
-  const [location] = useLocation();
+  const [location, setLocation] = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
     { label: "Home", href: "/" },
+    { label: "Products", href: "/#products" },
     { label: "Partners", href: "/partners" },
     { label: "Clients", href: "/clients" },
     { label: "Pricing", href: "/pricing" },
@@ -19,7 +20,23 @@ export default function Navbar() {
     { label: "Contact", href: "/contact" },
   ];
 
+  const scrollToProducts = () => {
+    const el = document.getElementById("products");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const handleNavClick = (href: string) => {
+    if (href === "/#products") {
+      if (location === "/") {
+        scrollToProducts();
+      } else {
+        setLocation("/");
+        setTimeout(scrollToProducts, 100);
+      }
+      return;
+    }
     if (location === href) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
@@ -35,16 +52,23 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center space-x-8">
           {navItems.map((item) => (
-            <Link 
-              key={item.href} 
-              href={item.href}
+            <Link
+              key={item.href}
+              href={item.href === "/#products" ? "/" : item.href}
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary",
-                location === item.href
-                  ? "text-primary font-bold"
-                  : "text-gray-600"
+                item.href === "/#products"
+                  ? "text-gray-600"
+                  : location === item.href
+                    ? "text-primary font-bold"
+                    : "text-gray-600"
               )}
-              onClick={() => handleNavClick(item.href)}
+              onClick={(e) => {
+                if (item.href === "/#products") {
+                  e.preventDefault();
+                }
+                handleNavClick(item.href);
+              }}
               data-testid={`link-nav-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
             >
                 {item.label}
@@ -75,16 +99,21 @@ export default function Navbar() {
             <SheetContent side="right">
               <div className="flex flex-col space-y-6 mt-10">
                 {navItems.map((item) => (
-                  <Link 
-                    key={item.href} 
-                    href={item.href}
+                  <Link
+                    key={item.href}
+                    href={item.href === "/#products" ? "/" : item.href}
                     className={cn(
                       "text-lg font-medium transition-colors hover:text-primary block",
-                      location === item.href
-                        ? "text-primary font-bold"
-                        : "text-gray-600"
+                      item.href === "/#products"
+                        ? "text-gray-600"
+                        : location === item.href
+                          ? "text-primary font-bold"
+                          : "text-gray-600"
                     )}
-                    onClick={() => {
+                    onClick={(e) => {
+                      if (item.href === "/#products") {
+                        e.preventDefault();
+                      }
                       handleNavClick(item.href);
                       setIsOpen(false);
                     }}

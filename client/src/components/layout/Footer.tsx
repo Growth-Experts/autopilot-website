@@ -48,8 +48,8 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
           <p>&copy; {new Date().getFullYear()} Autopilot. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white">Privacy Policy</a>
-            <a href="#" className="hover:text-white">Terms of Service</a>
+            <a href="https://cdn.autopilot.co.za/legal/teams/Autopilot%20Privacy%20Policy.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white">Privacy Policy</a>
+            <a href="https://cdn.autopilot.co.za/legal/Autopilot%20Client%20Terms%20%20Conditions%2020160224.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white">Terms of Service</a>
           </div>
         </div>
       </div>

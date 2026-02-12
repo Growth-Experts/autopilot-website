@@ -31,6 +31,7 @@ import MSPartnerBadge from "@assets/Autopilot_(2)_1770271633028.png";
 import LogoCoPilot from "@assets/copilot_1768826460167.png";
 import LogoTeams from "@assets/ms-teams_1768826460169.png";
 import LogoOffice365 from "@assets/office-365_1768826460169.png";
+import ProductsOverview from "@assets/products-overview.png";
 
 export default function Home() {
   return (
@@ -202,7 +203,7 @@ export default function Home() {
                 <img src={LogoOnboarding} alt="Autopilot Onboarding" className="h-full w-auto" />
               </div>
               
-              <h3 className="text-3xl md:text-4xl text-accent font-bold mt-1">One Coordinated Onboarding Flow</h3>
+              <h3 className="text-3xl md:text-4xl text-accent font-bold mt-1">Onboarding</h3>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-6 min-h-[80px]">
@@ -242,7 +243,7 @@ export default function Home() {
                 <img src={LogoApprovals} alt="Autopilot Approvals" className="h-full w-auto" />
               </div>
 
-              <h3 className="text-3xl md:text-4xl text-primary font-bold mt-1">One Workflow for Internal Teams</h3>
+              <h3 className="text-3xl md:text-4xl text-primary font-bold mt-1">Approvals</h3>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-6 min-h-[80px]">
@@ -281,7 +282,7 @@ export default function Home() {
           </Card>
         </div>
       </Section>
-      {/* Strategic Alliances Section - Redesigned for Microsoft Partnership */}
+      {/* Strategic Partnership & Copilot Ecosystem */}
       <section className="py-20 bg-gray-50 border-b border-gray-100">
         <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12 md:gap-20">
@@ -302,35 +303,46 @@ export default function Home() {
                       We integrate directly into <strong className="text-gray-900">Microsoft Teams</strong> and <strong className="text-gray-900">Office 365</strong>, removing friction by bringing workflows to the tools your team uses every day.
                     </p>
                     <p>
-                      With <strong className="text-gray-900">Microsoft CoPilot</strong>, we bring next-gen AI capabilities into your processes—automating decisions while keeping your data secure.
+                      With <strong className="text-gray-900">Microsoft CoPilot</strong>, we bring next-gen AI capabilities into your processes - automating decisions while keeping your data secure.
                     </p>
                  </div>
-                 
+
                  <div className="pt-6">
                    <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Integrated with</p>
-                   <div className="flex flex-wrap items-center gap-4">
-                     <div className="bg-white px-6 py-3 rounded-none shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
-                       <img src={LogoTeams} alt="Microsoft Teams" className="h-10 w-auto" />
+                   <div className="flex flex-nowrap items-center gap-3">
+                     <div className="bg-white px-4 py-2 rounded-none shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
+                       <img src={LogoTeams} alt="Microsoft Teams" className="h-8 w-auto" />
                      </div>
-                     <div className="bg-white px-6 py-3 rounded-none shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
-                       <img src={LogoOffice365} alt="Office 365" className="h-8 w-auto" />
+                     <div className="bg-white px-4 py-2 rounded-none shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
+                       <img src={LogoOffice365} alt="Office 365" className="h-7 w-auto" />
                      </div>
-                     <div className="bg-white px-6 py-3 rounded-none shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
-                       <img src={LogoCoPilot} alt="Microsoft CoPilot" className="h-8 w-auto" />
+                     <div className="bg-white px-4 py-2 rounded-none shadow-sm border border-gray-200 flex items-center justify-center hover:shadow-md transition-shadow">
+                       <img src={LogoCoPilot} alt="Microsoft CoPilot" className="h-7 w-auto" />
                      </div>
                    </div>
                  </div>
               </div>
-              
-              {/* Right Column: Badge Image */}
-              <div className="flex-1 flex justify-center md:justify-end">
-                 <div className="relative group">
-                    <div className="absolute -inset-4 bg-gradient-to-r from-blue-200 to-cyan-200 rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
-                    <img 
-                      src={MSPartnerBadge} 
-                      alt="Microsoft Solutions Partner Badge" 
-                      className="relative w-full max-w-sm md:max-w-md h-auto object-contain drop-shadow-2xl transform transition-transform duration-500 hover:scale-[1.02]" 
-                    />
+
+              {/* Right Column: Copilot Ecosystem Image + Badge */}
+              <div className="md:w-[55%] md:flex-none flex flex-col items-center gap-6">
+                 <div className="relative rounded-lg overflow-hidden shadow-xl">
+                   <img
+                     src={ProductsOverview}
+                     alt="Autopilot featured in the Microsoft Copilot ecosystem"
+                     className="w-full"
+                   />
+                   <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-md p-2 shadow-md">
+                     <img
+                       src={MSPartnerBadge}
+                       alt="Microsoft Solutions Partner Badge"
+                       className="h-12 w-auto object-contain"
+                     />
+                   </div>
+                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-4 py-3">
+                     <p className="text-white text-xs font-medium">
+                       Autopilot featured in the Microsoft Copilot partner ecosystem
+                     </p>
+                   </div>
                  </div>
               </div>
             </div>

@@ -24,7 +24,9 @@ export default function Navbar() {
     const el = document.getElementById("products");
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
+      return true;
     }
+    return false;
   };
 
   const handleNavClick = (href: string) => {
@@ -33,7 +35,14 @@ export default function Navbar() {
         scrollToProducts();
       } else {
         setLocation("/");
-        setTimeout(scrollToProducts, 100);
+        // Retry scroll until element is available after navigation
+        let attempts = 0;
+        const tryScroll = () => {
+          if (scrollToProducts() || attempts > 10) return;
+          attempts++;
+          setTimeout(tryScroll, 100);
+        };
+        setTimeout(tryScroll, 50);
       }
       return;
     }

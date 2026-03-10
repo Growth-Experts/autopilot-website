@@ -1,6 +1,5 @@
 import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
-import OfficeImage from "@assets/generated_images/professional_corporate_office_team.png";
 import AdamPhoto from "@assets/adam_shapiro_1767786578211.jpg";
 import { Link } from "wouter";
 
@@ -8,27 +7,17 @@ export default function About() {
   return (
     <div className="flex flex-col">
       <Section background="white">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+        <div className="max-w-3xl mx-auto text-center space-y-6">
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight">
               Autopilot Turns <br/>
               <span className="text-accent">Complexity into Clarity</span>
             </h1>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-xl text-gray-600 leading-relaxed">
               Autopilot was founded in 2014 to solve the problem of disorganized, manual business processes inside modern organizations.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-xl text-gray-600 leading-relaxed">
               Today, Autopilot builds workflow automation solutions within the Microsoft ecosystem - helping organizations streamline onboarding, approvals, and internal processes while maintaining full accountability and compliance.
             </p>
-          </div>
-          <div className="relative">
-             <div className="absolute -inset-4 bg-accent/10 rounded-none transform rotate-3"></div>
-             <img 
-               src={OfficeImage} 
-               alt="Autopilot Team" 
-               className="relative rounded-none shadow-xl w-full object-cover aspect-video"
-             />
-          </div>
         </div>
       </Section>
 

@@ -13,8 +13,8 @@ export default function Navbar() {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Products", href: "/#products" },
-    { label: "Partners", href: "/partners" },
     { label: "Clients", href: "/clients" },
+    { label: "Partners", href: "/partners" },
     { label: "Pricing", href: "/pricing" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
@@ -65,7 +65,7 @@ export default function Navbar() {
               key={item.href}
               href={item.href === "/#products" ? "/" : item.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-base font-medium transition-colors hover:text-primary",
                 item.href === "/#products"
                   ? "text-gray-600"
                   : location === item.href

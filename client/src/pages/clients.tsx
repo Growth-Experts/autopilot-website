@@ -6,7 +6,7 @@ import { Link } from "wouter";
 import LogoLawd from "@assets/lawd-logo_1767792280625.png";
 import LogoSyntech from "@assets/Syntech-Logo_1767792280626.png";
 import LogoYMCA from "@assets/YMCA_Logo_1768585772781.jpg";
-import LogoTalksure from "@assets/generated_images/talksure_logo_text.png";
+import LogoTalksure from "@assets/talksure logo.png";
 import LogoRubiq from "@assets/generated_images/rubiq_logo_text.png";
 import LogoCBF from "@assets/generated_images/cooperative_baptist_fellowship_logo.png";
 import LogoSACanegrowers from "@assets/generated_images/sa_canegrowers_logo.png";

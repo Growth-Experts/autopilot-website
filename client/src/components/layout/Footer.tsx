@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import Logo from "@assets/Autopilot_logo_1767782180335.png";
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-4 lg:col-span-4">
             <img src={Logo} alt="Autopilot" className="h-11 w-auto mb-6 brightness-0 invert" />
             <p className="text-gray-300 text-sm leading-relaxed">
-              Autopilot replaces confusing emails, duplicate requests, and scattered internal tasks with one clear, guided workflow.
+              Autopilot replaces confusing emails, duplicate requests and scattered internal tasks with one clear, guided workflow.
             </p>
           </div>
           
@@ -36,10 +36,6 @@ export default function Footer() {
               <li className="pt-4 flex items-center gap-3">
                 <Mail className="h-4 w-4 text-accent" />
                 <a href="mailto:info@autopilot.co.za" className="hover:text-white transition-colors">info@autopilot.co.za</a>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone className="h-4 w-4 text-accent" />
-                <a href="tel:+27111234567" className="hover:text-white transition-colors">+27 (0) 11 123 4567</a>
               </li>
             </ul>
           </div>

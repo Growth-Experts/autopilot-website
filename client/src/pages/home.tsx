@@ -6,6 +6,7 @@ import LogoApprovals from "@assets/Autopilot_Logo_Approvals_-_Primary_1767782851
 import LogoOnboarding from "@assets/Autopilot_Logo_Onboarding_-_Primary_1767782851208.png";
 import LogoLawd from "@assets/lawd-logo_1767792280625.png";
 import LogoSyntech from "@assets/Syntech-Logo_1767792280626.png";
+import LogoTalksure from "@assets/talksure logo.png";
 import Logo3Way from "@assets/3way-logo_1767792280625.png";
 import LogoBidvest from "@assets/bidvest-logo_1767792280625.png";
 import LogoMetrofile from "@assets/metrofile-logo_1767792280626.png";
@@ -88,8 +89,8 @@ export default function Home() {
           <div className="max-w-5xl mx-auto shadow-2xl rounded-lg overflow-hidden bg-gray-50">
             <div style={{ position: 'relative', paddingBottom: 'calc(48.75% + 41px)', height: 0, width: '100%' }}>
               <iframe 
-                src="https://demo.arcade.software/oBSvKoVqjMGdDIh4vcSy?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true" 
-                title="Submit a customer quote request and route it to the right owners" 
+                src="https://demo.arcade.software/QjLs7UfXhKdAMmmkghO5?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true"
+                title="Start an employee onboarding request and route it to the right team"
                 frameBorder="0" 
                 loading="lazy" 
                 allowFullScreen 
@@ -268,7 +269,7 @@ export default function Home() {
             </CardContent>
             <CardFooter className="pb-8">
               <a
-                href="https://56cf1ef1-47a4-459b-acb5-bde375fe4bb0-00-1sla7650pccd5.kirk.replit.dev/"
+                href="https://autopilot-approvals.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full"
@@ -292,7 +293,7 @@ export default function Home() {
                    <ShieldCheck className="h-4 w-4" />
                    <span>Strategic Partnership</span>
                  </div>
-                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight whitespace-nowrap">
                    Your Trusted <span className="text-[#00A4EF]">Microsoft Partner</span>
                  </h2>
                  <div className="space-y-4 text-lg text-gray-600">
@@ -429,11 +430,11 @@ export default function Home() {
           
           <div className="bg-white/10 backdrop-blur-sm p-8 rounded-none border border-white/20 transition-all duration-300 hover:bg-white/15 hover:border-white/40 hover:-translate-y-1 hover:shadow-lg">
             <div className="h-12 rounded-none mb-6 flex items-center justify-center px-4 bg-[#fff]">
-               <img src={LogoSyntech} alt="Syntech" className="h-8 object-contain" />
+               <img src={LogoTalksure} alt="Talksure" className="h-8 object-contain" />
             </div>
-            <div className="text-4xl font-bold text-accent mb-2">10x</div>
-            <h4 className="text-xl font-bold mb-2 text-white">Faster Approvals</h4>
-            <p className="text-blue-100">Syntech cut reseller approval time from 10 days to 1 day by pushing clean, validated data directly into CRM systems.</p>
+            <div className="text-4xl font-bold text-accent mb-2">1,200+</div>
+            <h4 className="text-xl font-bold mb-2 text-white">Employees, One Process</h4>
+            <p className="text-blue-100">Talksure moved procurement approvals into Microsoft Teams, reducing manual steps and cutting ERP costs across the business.</p>
           </div>
         </div>
         

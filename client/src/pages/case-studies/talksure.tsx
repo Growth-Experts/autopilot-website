@@ -2,7 +2,7 @@ import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft, Check, Quote } from "lucide-react";
-import LogoTalksure from "@assets/generated_images/talksure_logo_text.png";
+import LogoTalksure from "@assets/talksure logo.png";
 
 export default function TalksureCaseStudy() {
   return (

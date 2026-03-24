@@ -51,20 +51,6 @@ export default function Clients() {
       link: "/case-studies/talksure"
     },
     {
-      company: "RUBiQ",
-      logo: LogoRubiq,
-      result: "Rolled out in hours",
-      detail: "Gained enterprise-grade controls, easier approvals, and a smooth employee experience.",
-      link: "/case-studies/rubiq"
-    },
-    {
-      company: "Cooperative Baptist Fellowship",
-      logo: LogoCBF,
-      result: "Faster decisions with strong governance",
-      detail: "Streamlined key approval workflows inside Microsoft Teams.",
-      link: "/case-studies/cbf"
-    },
-    {
       company: "SA Canegrowers",
       logo: LogoSACanegrowers,
       result: "Organisation-wide adoption in just days",
@@ -77,6 +63,20 @@ export default function Clients() {
       result: "Full financial control across 180+ stores",
       detail: "Digitized procurement, invoicing, and payment batches across a national branch network.",
       link: "/case-studies/pedros"
+    },
+    {
+      company: "RUBiQ",
+      logo: LogoRubiq,
+      result: "Rolled out in hours",
+      detail: "Gained enterprise-grade controls, easier approvals, and a smooth employee experience.",
+      link: "/case-studies/rubiq"
+    },
+    {
+      company: "Cooperative Baptist Fellowship",
+      logo: LogoCBF,
+      result: "Faster decisions with strong governance",
+      detail: "Streamlined key approval workflows inside Microsoft Teams.",
+      link: "/case-studies/cbf"
     }
   ];
 

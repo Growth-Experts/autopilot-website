@@ -2,7 +2,7 @@ import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft, Check, Quote } from "lucide-react";
-import LogoLawd from "@assets/lawd-logo_1767792280625.png";
+import LogoLawd from "@assets/lawd-logo-new.png";
 
 export default function LawdCaseStudy() {
   return (

@@ -2,7 +2,7 @@ import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft, Zap, BarChart, Eye, Shield } from "lucide-react";
-import LogoSyntech from "@assets/Syntech-Logo_1767792280626.png";
+import LogoSyntech from "@assets/syntech-logo-new.png";
 
 export default function SyntechCaseStudy() {
   return (

@@ -3,13 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
 import { Link } from "wouter";
 
-import LogoLawd from "@assets/lawd-logo_1767792280625.png";
-import LogoSyntech from "@assets/Syntech-Logo_1767792280626.png";
+import LogoLawd from "@assets/lawd-logo-new.png";
+import LogoSyntech from "@assets/syntech-logo-new.png";
 import LogoYMCA from "@assets/YMCA_Logo_1768585772781.jpg";
 import LogoTalksure from "@assets/talksure logo.png";
-import LogoRubiq from "@assets/generated_images/rubiq_logo_text.png";
-import LogoCBF from "@assets/generated_images/cooperative_baptist_fellowship_logo.png";
+import LogoRubiq from "@assets/rubiq-logo.png";
+import LogoCBF from "@assets/cbf-logo.png";
 import LogoSACanegrowers from "@assets/generated_images/sa_canegrowers_logo.png";
+import LogoPedros from "@assets/pedros-logo.jpg";
 
 type CaseStudy = {
   company: string;
@@ -72,7 +73,7 @@ export default function Clients() {
     },
     {
       company: "Pedros",
-      logo: null,
+      logo: LogoPedros,
       result: "Full financial control across 180+ stores",
       detail: "Digitized procurement, invoicing, and payment batches across a national branch network.",
       link: "/case-studies/pedros"

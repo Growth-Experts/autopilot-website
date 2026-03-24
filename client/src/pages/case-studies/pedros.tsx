@@ -2,6 +2,7 @@ import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft, Eye, BarChart, Shield, TrendingUp } from "lucide-react";
+import LogoPedros from "@assets/pedros-logo.jpg";
 
 export default function PedrosCaseStudy() {
   return (
@@ -17,7 +18,7 @@ export default function PedrosCaseStudy() {
 
           <div className="flex items-center gap-6 mb-8">
             <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center p-2 border border-gray-100 shadow-sm shrink-0 overflow-hidden">
-              <span className="text-2xl font-black text-gray-800 tracking-tight">Pedros</span>
+              <img src={LogoPedros} alt="Pedros logo" className="w-full h-full object-contain" />
             </div>
             <div>
               <p className="text-sm font-bold uppercase tracking-wider text-accent mb-2">Customer Story</p>

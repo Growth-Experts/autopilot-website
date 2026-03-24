@@ -2,7 +2,7 @@ import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft, Shield, Zap, Users } from "lucide-react";
-import LogoCBF from "@assets/generated_images/cooperative_baptist_fellowship_logo.png";
+import LogoCBF from "@assets/cbf-logo.png";
 
 export default function CBFCaseStudy() {
   return (

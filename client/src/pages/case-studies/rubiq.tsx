@@ -2,7 +2,7 @@ import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft, Shield, Users, Clock, Zap } from "lucide-react";
-import LogoRubiq from "@assets/generated_images/rubiq_logo_text.png";
+import LogoRubiq from "@assets/rubiq-logo.png";
 
 export default function RubiqCaseStudy() {
   return (

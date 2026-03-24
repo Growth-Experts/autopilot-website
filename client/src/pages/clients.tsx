@@ -110,7 +110,7 @@ export default function Clients() {
 
             if (study.link) {
               return (
-                <Link key={index} href={study.link} className={`block ${index === caseStudies.length - 1 ? "md:col-span-2 md:w-[calc(50%-1rem)] md:mx-auto" : ""}`}>
+                <Link key={index} href={study.link} className="block">
                   <Card className="border-none shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer ring-1 ring-transparent hover:ring-accent/20 h-full">
                     <CardHeader className="pb-2">
                       <div className="flex items-center gap-4 mb-2">

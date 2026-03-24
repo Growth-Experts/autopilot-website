@@ -228,7 +228,7 @@ export default function Home() {
               </div>
             </CardContent>
             <CardFooter className="pb-8">
-              <a href="https://autopilot-onboarding.replit.app/" target="_blank" rel="noopener noreferrer" className="w-full">
+              <a href="https://autopilotonboarding.com/" target="_blank" rel="noopener noreferrer" className="w-full">
                 <Button className="w-full bg-accent hover:bg-accent/90 text-white">
                   Explore Onboarding <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -269,7 +269,7 @@ export default function Home() {
             </CardContent>
             <CardFooter className="pb-8">
               <a
-                href="https://autopilot-approvals.netlify.app/"
+                href="https://autopilotapprovals.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full"

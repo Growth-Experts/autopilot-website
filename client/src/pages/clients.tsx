@@ -11,8 +11,16 @@ import LogoRubiq from "@assets/generated_images/rubiq_logo_text.png";
 import LogoCBF from "@assets/generated_images/cooperative_baptist_fellowship_logo.png";
 import LogoSACanegrowers from "@assets/generated_images/sa_canegrowers_logo.png";
 
+type CaseStudy = {
+  company: string;
+  logo: string | null;
+  result: string;
+  detail: string;
+  link: string;
+};
+
 export default function Clients() {
-  const caseStudies = [
+  const caseStudies: CaseStudy[] = [
     {
       company: "LAWD",
       logo: LogoLawd,
@@ -61,6 +69,13 @@ export default function Clients() {
       result: "Organisation-wide adoption in just days",
       detail: "Digitized approval processes inside Microsoft Teams improving process control.",
       link: "/case-studies/sa-canegrowers"
+    },
+    {
+      company: "Pedros",
+      logo: null,
+      result: "Full financial control across 180+ stores",
+      detail: "Digitized procurement, invoicing, and payment batches across a national branch network.",
+      link: "/case-studies/pedros"
     }
   ];
 
@@ -99,11 +114,15 @@ export default function Clients() {
                     <CardHeader className="pb-2">
                       <div className="flex items-center gap-4 mb-2">
                         <div className="w-16 h-16 bg-white rounded-md flex items-center justify-center p-1 border border-gray-100 shadow-sm shrink-0 overflow-hidden">
-                          <img 
-                            src={study.logo} 
-                            alt={`${study.company} logo`} 
-                            className="w-full h-full object-contain"
-                          />
+                          {study.logo ? (
+                            <img
+                              src={study.logo}
+                              alt={`${study.company} logo`}
+                              className="w-full h-full object-contain"
+                            />
+                          ) : (
+                            <span className="text-sm font-black text-gray-800 tracking-tight">{study.company}</span>
+                          )}
                         </div>
                         <div className="flex flex-col">
                           <CardTitle className="text-2xl font-bold text-gray-800">{study.company}</CardTitle>

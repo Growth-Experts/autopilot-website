@@ -1,7 +1,7 @@
 import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowLeft, Check, Shield, Users, Clock } from "lucide-react";
+import { ArrowLeft, Shield, Users, Clock, Zap } from "lucide-react";
 import LogoRubiq from "@assets/generated_images/rubiq_logo_text.png";
 
 export default function RubiqCaseStudy() {
@@ -15,25 +15,25 @@ export default function RubiqCaseStudy() {
               <ArrowLeft className="mr-2 h-4 w-4" /> Back to Clients
             </Button>
           </Link>
-          
+
           <div className="flex items-center gap-6 mb-8">
             <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center p-2 border border-gray-100 shadow-sm shrink-0 overflow-hidden">
-              <img 
-                src={LogoRubiq} 
-                alt="RUBiQ logo" 
+              <img
+                src={LogoRubiq}
+                alt="RUBiQ logo"
                 className="w-full h-full object-contain"
               />
             </div>
             <div>
               <p className="text-sm font-bold uppercase tracking-wider text-accent mb-2">Customer Story</p>
               <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-                Accelerating Governance, Risk, and Compliance
+                RUBiQ's Governance at Speed
               </h1>
             </div>
           </div>
 
           <p className="text-xl text-gray-600 leading-relaxed border-l-4 border-accent pl-6 italic">
-            "Rolled out in hours"
+            How a GRC leader eliminated the "Compliance Tax"
           </p>
         </div>
       </Section>
@@ -41,32 +41,60 @@ export default function RubiqCaseStudy() {
       {/* Main Content */}
       <Section background="gray" className="py-12 md:py-20">
         <div className="max-w-3xl mx-auto space-y-12">
-          
+
           {/* Overview */}
           <div>
             <h2 className="text-2xl font-bold mb-4">Overview</h2>
             <div className="prose prose-lg text-gray-600">
               <p className="mb-4">
-                RUBiQ, a leader in Governance, Risk, and Compliance (GRC) software, needed a way to streamline their own internal processes to match the efficiency they deliver to their clients.
+                RUBiQ is a titan in the Governance, Risk, and Compliance (GRC) software space. They provide efficiency to their clients, yet internally, they faced a common scaling challenge: their own manual workflows couldn't keep pace with their expertise. To maintain their reputation, they needed to bridge the gap between "knowing" compliance and "automating" it.
               </p>
-              <p className="mb-4">
-                By implementing Autopilot, RUBiQ was able to gain enterprise-grade controls, easier approvals, and a smooth employee experience, all rolled out in record time.
-              </p>
+            </div>
+          </div>
+
+          {/* Challenge */}
+          <div>
+            <h2 className="text-2xl font-bold mb-6">The Challenge: The Friction of Manual Governance</h2>
+            <p className="text-gray-600 mb-6">For RUBiQ, manual governance was draining their team's mental energy:</p>
+            <div className="grid gap-4">
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <h3 className="font-bold text-gray-900 mb-2">The Approval Bottleneck</h3>
+                <p className="text-gray-600">Critical decisions were trapped in email chains, creating "administrative drag" that slowed down the entire organization.</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <h3 className="font-bold text-gray-900 mb-2">The Scalability Wall</h3>
+                <p className="text-gray-600">As a leader in GRC, any internal slip-up in security or control was a risk to their brand authority.</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <h3 className="font-bold text-gray-900 mb-2">The Implementation Paradox</h3>
+                <p className="text-gray-600">Most enterprise-grade solutions take months to deploy — a "time tax" that RUBiQ simply couldn't afford to pay.</p>
+              </div>
             </div>
           </div>
 
           {/* Solution */}
           <div className="bg-white p-8 md:p-10 rounded-xl shadow-sm border border-gray-100">
-            <h2 className="text-2xl font-bold mb-6 text-primary">Key Benefits</h2>
-            
+            <h2 className="text-2xl font-bold mb-6 text-primary">The Solution: Enterprise-Grade Control on Autopilot</h2>
+            <p className="text-gray-600 mb-6">RUBiQ implemented Autopilot to handle the heavy lifting of governance.</p>
+
             <div className="grid gap-6">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-primary">
                   <Clock size={20} />
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Rapid Deployment</h3>
-                  <p className="text-gray-600">The entire solution was rolled out in hours, not weeks or months, allowing for immediate impact and quick ROI.</p>
+                  <h3 className="font-bold text-gray-900 mb-1">Rapid Deployment (Hours, Not Months)</h3>
+                  <p className="text-gray-600">Enterprise software usually involves endless consulting hours, but Autopilot was rolled out in record time — literally hours.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-primary">
+                  <Zap size={20} />
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 mb-1">Streamlined Approval Engines</h3>
+                  <p className="text-gray-600">They replaced "chasing people down" with automated, simplified approval paths, significantly speeding up decision-making.</p>
                 </div>
               </div>
 
@@ -75,28 +103,8 @@ export default function RubiqCaseStudy() {
                   <Shield size={20} />
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Enterprise-Grade Controls</h3>
-                  <p className="text-gray-600">Robust governance and control mechanisms were established to ensure compliance and security across all workflows.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-primary">
-                  <Check size={20} />
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Easier Approvals</h3>
-                  <p className="text-gray-600">Approval processes were simplified and streamlined, reducing bottlenecks and speeding up decision-making.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-primary">
-                  <Users size={20} />
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Smooth Employee Experience</h3>
-                  <p className="text-gray-600">Employees experienced a frictionless workflow, improving satisfaction and productivity.</p>
+                  <h3 className="font-bold text-gray-900 mb-1">Robust Governance Mechanisms</h3>
+                  <p className="text-gray-600">They established enterprise-grade controls that ensure every workflow is compliant and secure by default, not by effort.</p>
                 </div>
               </div>
             </div>
@@ -104,27 +112,31 @@ export default function RubiqCaseStudy() {
 
           {/* Results */}
           <div>
-            <h2 className="text-2xl font-bold mb-6">The Outcome</h2>
-            <p className="text-lg text-gray-600 mb-8">
-              Autopilot enabled RUBiQ to maintain high standards of governance while significantly improving operational efficiency and agility.
+            <h2 className="text-2xl font-bold mb-6">The Results: Agile Governance in Action</h2>
+            <p className="text-lg text-gray-600 mb-6">
+              RUBiQ realized that a better employee experience leads to a better client experience.
             </p>
-            
-            <div className="bg-blue-50 p-8 rounded-lg border border-blue-100 text-center">
-              <h3 className="text-2xl font-bold text-primary mb-2">Rolled Out In Hours</h3>
-              <p className="text-gray-600">
-                Speed to value was immediate, proving that enterprise-grade automation doesn't have to come with long implementation timelines.
-              </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+              <div className="bg-blue-50 p-6 rounded-lg border border-blue-100 text-center">
+                <h3 className="font-bold text-primary mb-2">Immediate ROI</h3>
+                <p className="text-gray-600 text-sm">Because the solution was active in hours, the speed to value was instantaneous.</p>
+              </div>
+              <div className="bg-blue-50 p-6 rounded-lg border border-blue-100 text-center">
+                <h3 className="font-bold text-primary mb-2">Frictionless Employee Experience</h3>
+                <p className="text-gray-600 text-sm">Employees moved from "fighting the system" to "working with the flow," leading to a measurable spike in productivity.</p>
+              </div>
+              <div className="bg-blue-50 p-6 rounded-lg border border-blue-100 text-center">
+                <h3 className="font-bold text-primary mb-2">Total Operational Agility</h3>
+                <p className="text-gray-600 text-sm">RUBiQ now moves with the speed of a startup but the controls of a global enterprise.</p>
+              </div>
             </div>
           </div>
 
           <div className="border-t border-gray-200 pt-12">
-            <h2 className="text-2xl font-bold mb-4">Experience the Speed of Autopilot</h2>
-            <p className="text-gray-600 mb-8">
-              See how quickly you can transform your organization's workflows.
-            </p>
-            
             <div className="bg-accent/5 border border-accent/20 p-8 rounded-xl text-center">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Ready to get started?</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Does Your Automation Move at the Speed of Business?</h3>
+              <p className="text-gray-600 mb-6">Are you waiting months for "control," or are you ready to launch in hours?</p>
               <Link href="/book-demo">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-8">
                   Request a Demo

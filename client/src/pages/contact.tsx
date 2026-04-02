@@ -1,7 +1,7 @@
 import Section from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, Users, HelpCircle, Handshake } from "lucide-react";
+import { Mail, Users, HelpCircle, Handshake } from "lucide-react";
 import { InlineWidget } from "react-calendly";
 
 export default function Contact() {
@@ -30,10 +30,6 @@ export default function Contact() {
                   <div className="flex items-center gap-3 font-medium">
                     <Mail className="h-4 w-4 text-accent" />
                     <span>info@autopilot.co.za</span>
-                  </div>
-                  <div className="flex items-center gap-3 font-medium">
-                    <Phone className="h-4 w-4 text-accent" />
-                    <span>+27 (0) 11 123 4567</span>
                   </div>
                 </div>
               </CardContent>

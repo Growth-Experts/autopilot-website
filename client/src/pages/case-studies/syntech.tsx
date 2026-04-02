@@ -151,7 +151,7 @@ export default function SyntechCaseStudy() {
               <p className="text-gray-600 mb-6">
                 Syntech proved that speed is a form of service. Is your onboarding a labyrinth or a launchpad?
               </p>
-              <Link href="/book-demo">
+              <Link href="https://autopilotworkflows.com/book-demo">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-8">
                   Request a Demo
                 </Button>

@@ -137,7 +137,7 @@ export default function RubiqCaseStudy() {
             <div className="bg-accent/5 border border-accent/20 p-8 rounded-xl text-center">
               <h3 className="text-xl font-bold text-gray-900 mb-2">Does Your Automation Move at the Speed of Business?</h3>
               <p className="text-gray-600 mb-6">Are you waiting months for "control," or are you ready to launch in hours?</p>
-              <Link href="/book-demo">
+              <Link href="https://autopilotworkflows.com/book-demo">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-8">
                   Request a Demo
                 </Button>

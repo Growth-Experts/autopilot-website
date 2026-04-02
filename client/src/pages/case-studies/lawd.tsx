@@ -159,7 +159,7 @@ export default function LawdCaseStudy() {
               <p className="text-gray-600 mb-6">
                 LAWD is now hiring one new staff member every single week — scaling without the cognitive strain of manual management. Move from the stressed-out hell of mental checklists to the organized heaven of automated growth.
               </p>
-              <Link href="/book-demo">
+              <Link href="https://autopilotworkflows.com/book-demo">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-8">
                   Request a Demo
                 </Button>

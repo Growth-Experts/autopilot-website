@@ -67,7 +67,7 @@ export default function Contact() {
                 <div className="space-y-2 pt-1">
                   <div className="flex items-center gap-3 font-medium">
                     <Mail className="h-4 w-4 text-accent" />
-                    <span>partners@autopilot.co.za</span>
+                    <span>info@autopilot.co.za</span>
                   </div>
                 </div>
               </CardContent>

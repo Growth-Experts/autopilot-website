@@ -118,7 +118,7 @@ export default function Home() {
               <img src={LogoSyntech} alt="Syntech" className="h-10 w-auto object-contain" />
               <img src={LogoTongaat} alt="Tongaat Hulett" className="h-10 w-auto object-contain" />
               <img src={LogoYMCA} alt="YMCA" className="h-10 w-auto object-contain" />
-              <img src={LogoClarkElbing} alt="Clark+Elbing" className="h-10 w-auto object-contain" />
+              <img src={LogoClarkElbing} alt="Clark+Elbing" className="h-28 w-auto object-contain" />
               <img src={LogoCBC} alt="Central Baptist Church" className="h-10 w-auto object-contain" />
             </div>
           </div>

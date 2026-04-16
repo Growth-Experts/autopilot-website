@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative pt-24 pb-20 md:pt-40 md:pb-40 bg-white overflow-hidden">
+      <section className="relative pt-24 pb-10 md:pt-40 md:pb-20 bg-white overflow-hidden">
         {/* Background Visuals */}
         <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
            {/* Grid Pattern */}
@@ -87,7 +87,7 @@ export default function Home() {
         </div>
         
         {/* Arcade Video Embed - Full Width Outside Container */}
-        <div className="container mx-auto px-4 relative z-10 mt-16 mb-20">
+        <div className="container mx-auto px-4 relative z-10 mt-16 mb-10">
           <div className="max-w-5xl mx-auto shadow-2xl rounded-lg overflow-hidden bg-gray-50">
             <div style={{ position: 'relative', paddingBottom: 'calc(48.75% + 41px)', height: 0, width: '100%' }}>
               <iframe 

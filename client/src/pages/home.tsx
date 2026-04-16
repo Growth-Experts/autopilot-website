@@ -109,16 +109,18 @@ export default function Home() {
           <p className="text-center text-gray-500 font-medium mb-8 text-sm uppercase tracking-wider">
             Proudly powering process for these leading companies
           </p>
-          <div className="grid grid-cols-5 gap-x-10 gap-y-8 items-center justify-items-center max-w-4xl mx-auto">
-             <img src={Logo3Way} alt="3Way" className="h-10 w-auto object-contain" />
-             <img src={LogoBidvest} alt="Bidvest" className="h-10 w-auto object-contain" />
-             <img src={LogoLawd} alt="LAWD" className="h-10 w-auto object-contain" />
-             <img src={LogoMetrofile} alt="Metrofile" className="h-8 w-auto object-contain" />
-             <img src={LogoSyntech} alt="Syntech" className="h-10 w-auto object-contain" />
-             <img src={LogoTongaat} alt="Tongaat Hulett" className="h-10 w-auto object-contain" />
-             <img src={LogoYMCA} alt="YMCA" className="h-10 w-auto object-contain" />
-             <img src={LogoClarkElbing} alt="Clark+Elbing" className="h-10 w-auto object-contain" />
-             <img src={LogoCBC} alt="Central Baptist Church" className="h-10 w-auto object-contain" />
+          <div className="flex flex-col items-center gap-y-8 max-w-4xl mx-auto">
+            <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-8">
+              <img src={Logo3Way} alt="3Way" className="h-10 w-auto object-contain" />
+              <img src={LogoBidvest} alt="Bidvest" className="h-10 w-auto object-contain" />
+              <img src={LogoLawd} alt="LAWD" className="h-10 w-auto object-contain" />
+              <img src={LogoMetrofile} alt="Metrofile" className="h-8 w-auto object-contain" />
+              <img src={LogoSyntech} alt="Syntech" className="h-10 w-auto object-contain" />
+              <img src={LogoTongaat} alt="Tongaat Hulett" className="h-10 w-auto object-contain" />
+              <img src={LogoYMCA} alt="YMCA" className="h-10 w-auto object-contain" />
+              <img src={LogoClarkElbing} alt="Clark+Elbing" className="h-10 w-auto object-contain" />
+              <img src={LogoCBC} alt="Central Baptist Church" className="h-10 w-auto object-contain" />
+            </div>
           </div>
         </div>
       </section>

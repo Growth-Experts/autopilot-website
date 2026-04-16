@@ -12,6 +12,8 @@ import LogoBidvest from "@assets/bidvest-logo_1767792280625.png";
 import LogoMetrofile from "@assets/metrofile-logo_1767792280626.png";
 import LogoTongaat from "@assets/Tongaat-Huletts-Logo_1767792280626.png";
 import LogoYMCA from "@assets/YMCA_Logo_1768585772781.jpg";
+import LogoClarkElbing from "@assets/CE_logo_fullcolor.jpg";
+import LogoCBC from "@assets/CBC_bluelogo2.webp";
 import LaptopImage from "@assets/app-screenshot_1767787178377.png";
 import OnboardingScreenshot from "@assets/unnamed_(4)_1768585890405.png";
 import ApprovalsScreenshot from "@assets/unnamed_(11)_1768586007598.png";
@@ -115,86 +117,18 @@ export default function Home() {
              <img src={LogoSyntech} alt="Syntech" className="h-8 md:h-12 w-auto object-contain" />
              <img src={LogoTongaat} alt="Tongaat Hulett" className="h-8 md:h-12 w-auto object-contain" />
              <img src={LogoYMCA} alt="YMCA" className="h-8 md:h-12 w-auto object-contain" />
+             <img src={LogoClarkElbing} alt="Clark+Elbing" className="h-8 md:h-10 w-auto object-contain" />
+             <img src={LogoCBC} alt="Central Baptist Church" className="h-8 md:h-12 w-auto object-contain" />
           </div>
         </div>
       </section>
-      {/* Strategic Alliances Section (Removed) */}
-      {/* Problem Statement */}
-      <Section background="gray" className="pb-12 md:pb-16">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12 max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Being Disorganized Looks Unprofessional</h2>
-            <p className="text-lg text-gray-600 leading-relaxed">Unclear next steps and endless back-and-forth emails make your organization look hard to work with.
-             
-            The result? Poor first impressions, avoidable delays, and unnecessary risk.</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
-            {/* The Manual Way (Problem) */}
-            <div className="bg-white p-8 border border-red-100 rounded-none shadow-sm relative overflow-hidden h-full">
-              <div className="absolute top-0 left-0 w-1 h-full bg-red-400"></div>
-              <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-red-50 text-red-500">
-                  <X size={20} />
-                </span>
-                The Manual Way
-              </h3>
-              <ul className="space-y-5">
-                <li className="flex items-start gap-3 text-gray-600">
-                  <Mail className="w-5 h-5 text-red-300 shrink-0 mt-0.5" />
-                  <span>Buried in endless email threads</span>
-                </li>
-                <li className="flex items-start gap-3 text-gray-600">
-                  <FileQuestion className="w-5 h-5 text-red-300 shrink-0 mt-0.5" />
-                  <span>Incomplete or missing data</span>
-                </li>
-                <li className="flex items-start gap-3 text-gray-600">
-                  <AlertCircle className="w-5 h-5 text-red-300 shrink-0 mt-0.5" />
-                  <span>No visibility on process status</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* The Autopilot Way (Solution) */}
-            <div className="bg-white p-8 border border-blue-100 rounded-none shadow-lg relative overflow-hidden transform md:scale-105 z-10 h-full">
-              <div className="absolute top-0 left-0 w-1 h-full bg-primary"></div>
-              <h3 className="text-xl font-bold text-primary mb-6 flex items-center gap-3">
-                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-primary">
-                  <Check size={20} />
-                </span>
-                The Autopilot Way
-              </h3>
-              <ul className="space-y-5">
-                <li className="flex items-start gap-3 text-gray-700 font-medium">
-                  <GitBranch className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  <span>One streamlined, guided workflow</span>
-                </li>
-                <li className="flex items-start gap-3 text-gray-700 font-medium">
-                  <FileCheck className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  <span>Clean, validated data capture</span>
-                </li>
-                <li className="flex items-start gap-3 text-gray-700 font-medium">
-                  <LayoutDashboard className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  <span>Real-time tracking & audit logs</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="pt-12 text-center">
-            <p className="text-xl font-medium text-primary">
-              Autopilot replaces fragmented communication with structured, auditable workflows that keep everyone aligned.
-            </p>
-          </div>
-        </div>
-      </Section>
       {/* Products Section */}
       <Section background="white" id="products" className="scroll-mt-24 pt-12 md:pt-16">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Products</h2>
           <p className="text-gray-600">Streamline your operations with our dedicated solutions.</p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Autopilot Onboarding - Swapped to Accent/Orange */}
           <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
@@ -203,7 +137,7 @@ export default function Home() {
               <div className="mb-4 h-12 flex items-center justify-start">
                 <img src={LogoOnboarding} alt="Autopilot Onboarding" className="h-full w-auto" />
               </div>
-              
+
               <h3 className="text-3xl md:text-4xl text-accent font-bold mt-1">Onboarding</h3>
             </CardHeader>
             <CardContent>
@@ -281,6 +215,76 @@ export default function Home() {
               </a>
             </CardFooter>
           </Card>
+        </div>
+      </Section>
+      {/* Strategic Alliances Section (Removed) */}
+      {/* Problem Statement */}
+      <Section background="gray" className="pb-12 md:pb-16">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Being Disorganized Looks Unprofessional</h2>
+            <p className="text-lg text-gray-600 leading-relaxed">Unclear next steps and endless back-and-forth emails make your organization look hard to work with.
+             
+            The result? Poor first impressions, avoidable delays, and unnecessary risk.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
+            {/* The Manual Way (Problem) */}
+            <div className="bg-white p-8 border border-red-100 rounded-none shadow-sm relative overflow-hidden h-full">
+              <div className="absolute top-0 left-0 w-1 h-full bg-red-400"></div>
+              <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-red-50 text-red-500">
+                  <X size={20} />
+                </span>
+                The Manual Way
+              </h3>
+              <ul className="space-y-5">
+                <li className="flex items-start gap-3 text-gray-600">
+                  <Mail className="w-5 h-5 text-red-300 shrink-0 mt-0.5" />
+                  <span>Buried in endless email threads</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-600">
+                  <FileQuestion className="w-5 h-5 text-red-300 shrink-0 mt-0.5" />
+                  <span>Incomplete or missing data</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-600">
+                  <AlertCircle className="w-5 h-5 text-red-300 shrink-0 mt-0.5" />
+                  <span>No visibility on process status</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* The Autopilot Way (Solution) */}
+            <div className="bg-white p-8 border border-blue-100 rounded-none shadow-lg relative overflow-hidden transform md:scale-105 z-10 h-full">
+              <div className="absolute top-0 left-0 w-1 h-full bg-primary"></div>
+              <h3 className="text-xl font-bold text-primary mb-6 flex items-center gap-3">
+                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-primary">
+                  <Check size={20} />
+                </span>
+                The Autopilot Way
+              </h3>
+              <ul className="space-y-5">
+                <li className="flex items-start gap-3 text-gray-700 font-medium">
+                  <GitBranch className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                  <span>One streamlined, guided workflow</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-700 font-medium">
+                  <FileCheck className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                  <span>Clean, validated data capture</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-700 font-medium">
+                  <LayoutDashboard className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                  <span>Real-time tracking & audit logs</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="pt-12 text-center">
+            <p className="text-xl font-medium text-primary">
+              Autopilot replaces fragmented communication with structured, auditable workflows that keep everyone aligned.
+            </p>
+          </div>
         </div>
       </Section>
       {/* Strategic Partnership & Copilot Ecosystem */}

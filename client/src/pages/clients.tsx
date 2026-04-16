@@ -171,7 +171,7 @@ export default function Clients() {
         </div>
 
         <div className="text-center mt-20">
-          <Link href="https://autopilotworkflows.com/book-demo" className="inline-block" data-testid="link-book-demo-clients">
+          <Link href="https://calendly.com/marklehrer-autopilot/30min" className="inline-block" data-testid="link-book-demo-clients">
             <Button
               size="lg"
               className="bg-accent hover:bg-accent/90 text-white font-bold px-10 h-14 text-lg"

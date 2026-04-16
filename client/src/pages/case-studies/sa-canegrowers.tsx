@@ -164,7 +164,7 @@ export default function SACanegrowersCaseStudy() {
             
             <div className="bg-accent/5 border border-accent/20 p-8 rounded-xl text-center">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Let’s remove the friction and bring structure back into the flow.</h3>
-              <Link href="https://autopilotworkflows.com/book-demo">
+              <Link href="https://calendly.com/marklehrer-autopilot/30min">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-8">
                   Request a Demo
                 </Button>

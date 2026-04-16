@@ -156,7 +156,7 @@ export default function PedrosCaseStudy() {
               <p className="text-gray-600 mb-6">
                 See how Autopilot can bring control and visibility to your growing operations.
               </p>
-              <Link href="https://autopilotworkflows.com/book-demo">
+              <Link href="https://calendly.com/marklehrer-autopilot/30min">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold px-8">
                   Request a Demo
                 </Button>

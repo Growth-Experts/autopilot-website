@@ -86,7 +86,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden lg:flex items-center space-x-4">
-          <Link href="https://autopilotworkflows.com/book-demo" data-testid="link-book-demo-navbar">
+          <Link href="https://calendly.com/marklehrer-autopilot/30min" data-testid="link-book-demo-navbar">
             <Button 
               className="bg-accent hover:bg-accent/90 text-white font-bold px-6"
               size="lg"
@@ -132,7 +132,7 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <Link
-                  href="https://autopilotworkflows.com/book-demo"
+                  href="https://calendly.com/marklehrer-autopilot/30min"
                   className="w-full"
                   data-testid="link-book-demo-navbar-mobile"
                 >

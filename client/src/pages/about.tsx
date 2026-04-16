@@ -79,7 +79,7 @@ export default function About() {
             <p className="text-lg text-gray-600">
               Most workflows go live in days, not months. Book a demo and we'll show you how Autopilot fits your processes.
             </p>
-            <Link href="https://autopilotworkflows.com/book-demo" data-testid="link-book-demo-about">
+            <Link href="https://calendly.com/marklehrer-autopilot/30min" data-testid="link-book-demo-about">
               <Button
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-white font-bold px-10 h-14 text-lg"

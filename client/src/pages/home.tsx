@@ -66,7 +66,7 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                <Link href="https://autopilotworkflows.com/book-demo" data-testid="link-book-demo-hero">
+                <Link href="https://calendly.com/marklehrer-autopilot/30min" data-testid="link-book-demo-hero">
                   <Button
                     size="lg"
                     className="bg-accent hover:bg-accent/90 text-white font-bold h-14 px-8 text-lg w-full sm:w-auto"

@@ -14,6 +14,7 @@ import LogoTongaat from "@assets/Tongaat-Huletts-Logo_1767792280626.png";
 import LogoYMCA from "@assets/YMCA_Logo_1768585772781.jpg";
 import LogoClarkElbing from "@assets/CE_logo_fullcolor.jpg";
 import LogoCBC from "@assets/CBC_bluelogo2.webp";
+import LogoIQBusiness from "@assets/iq-business-logo-dark.svg";
 import LaptopImage from "@assets/app-screenshot_1767787178377.png";
 import OnboardingScreenshot from "@assets/unnamed_(4)_1768585890405.png";
 import ApprovalsScreenshot from "@assets/unnamed_(11)_1768586007598.png";
@@ -116,6 +117,7 @@ export default function Home() {
               <img src={LogoLawd} alt="LAWD" className="h-10 w-auto object-contain" />
               <img src={LogoMetrofile} alt="Metrofile" className="h-8 w-auto object-contain" />
               <img src={LogoSyntech} alt="Syntech" className="h-10 w-auto object-contain" />
+              <img src={LogoIQBusiness} alt="IQbusiness" className="h-[55px] w-auto object-contain" />
               <img src={LogoTongaat} alt="Tongaat Hulett" className="h-10 w-auto object-contain" />
               <img src={LogoYMCA} alt="YMCA" className="h-10 w-auto object-contain" />
               <img src={LogoClarkElbing} alt="Clark+Elbing" className="h-28 w-auto object-contain" />

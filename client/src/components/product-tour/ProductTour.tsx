@@ -163,7 +163,7 @@ export function ProductTour({
         </div>
 
         {/* Always rendered on mobile so the frame doesn't jump on steps without a caption. */}
-        <div className="flex min-h-[4.75rem] items-stretch border-t border-[#0B1220]/10 bg-white md:hidden">
+        <div className="flex min-h-[5.875rem] items-stretch border-t border-[#0B1220]/10 bg-white md:hidden">
           {sheetText && (
             <button
               type="button"

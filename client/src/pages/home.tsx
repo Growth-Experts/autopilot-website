@@ -22,6 +22,11 @@ import OverviewImage from "@assets/app_screenshot_1767792973731.png";
 import LeftScreenshot from "@assets/app-screenshot-left_1767793647658.png";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
+import { ProductTour } from "@/components/product-tour/ProductTour";
+import {
+  ONBOARDING_TOUR_ASPECT_RATIO,
+  onboardingTourSteps,
+} from "@/components/product-tour/onboarding-tour";
 
 import app_screenshot__1_ from "@assets/app screenshot (1).png";
 
@@ -87,20 +92,14 @@ export default function Home() {
           </div>
         </div>
         
-        {/* Arcade Video Embed - Full Width Outside Container */}
+        {/* Product Tour - Full Width Outside Container */}
         <div className="container mx-auto px-4 relative z-10 mt-16 mb-10">
           <div className="max-w-5xl mx-auto shadow-2xl rounded-lg overflow-hidden bg-gray-50">
-            <div style={{ position: 'relative', paddingBottom: 'calc(48.75% + 41px)', height: 0, width: '100%' }}>
-              <iframe 
-                src="https://demo.arcade.software/QjLs7UfXhKdAMmmkghO5?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true"
-                title="Start an employee onboarding request and route it to the right team"
-                frameBorder="0" 
-                loading="lazy" 
-                allowFullScreen 
-                allow="clipboard-write" 
-                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} 
-              />
-            </div>
+            <ProductTour
+              steps={onboardingTourSteps}
+              aspectRatio={ONBOARDING_TOUR_ASPECT_RATIO}
+              label="Start an employee onboarding request and route it to the right team"
+            />
           </div>
         </div>
       </section>

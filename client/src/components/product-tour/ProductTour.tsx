@@ -49,6 +49,7 @@ export function ProductTour({
   className,
 }: ProductTourProps) {
   const [index, setIndex] = useState(() => clampIndex(initialStep, steps.length));
+  const [visit, setVisit] = useState(0);
   const rootRef = useRef<HTMLDivElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const stage = useElementSize(stageRef);
@@ -63,6 +64,7 @@ export function ProductTour({
     (next: number) => {
       const target = clampIndex(next, steps.length);
       setIndex(target);
+      setVisit((v) => v + 1);
       onStepChange?.(target);
     },
     [steps.length, onStepChange],
@@ -129,7 +131,7 @@ export function ProductTour({
         >
           <AnimatePresence initial={false}>
             <motion.div
-              key={layerKey(step)}
+              key={layerKey(step, visit)}
               className="absolute inset-0"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -509,10 +511,10 @@ function Tooltip({
   );
 }
 
-/** Stands in for the tooltip on small screens; min height keeps the frame from jumping between steps. */
+/** Stands in for the tooltip on small screens; min height fits three lines so the controls don't move between steps. */
 function CaptionSheet({ text, onAdvance }: { text?: string; onAdvance?: () => void }) {
   const className =
-    "flex min-h-[4.25rem] w-full items-center gap-3 border-t border-[#0B1220]/10 bg-white px-4 py-3 text-left md:hidden";
+    "flex min-h-[5.875rem] w-full items-center gap-3 border-t border-[#0B1220]/10 bg-white px-4 py-3 text-left md:hidden";
   if (!text) return <div aria-hidden="true" className={className} />;
   const content = (
     <p className="flex-1 text-sm leading-relaxed text-[#0B1220]">
@@ -646,10 +648,13 @@ function clamp(value: number, min: number, max: number) {
   return Math.min(Math.max(value, min), Math.max(min, max));
 }
 
-/** Same element key for consecutive steps on one image, so the zoom animates instead of crossfading. */
-function layerKey(step: TourStep) {
+/**
+ * Same element key for consecutive steps on one image, so the zoom animates instead of crossfading.
+ * Videos get a fresh key per visit: re-entering a still-exiting layer would reuse a clip that already ended.
+ */
+function layerKey(step: TourStep, visit: number) {
   if (step.type === "card") return `card:${step.id}`;
-  return step.type === "image" ? `image:${step.image}` : `video:${step.id}`;
+  return step.type === "image" ? `image:${step.image}` : `video:${step.id}:${visit}`;
 }
 
 function previewSource(step: TourStep) {
